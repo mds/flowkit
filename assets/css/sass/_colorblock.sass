@@ -1,0 +1,87 @@
+.fk-colorblock
+  width: 100%
+  min-height: 28rem
+  position: relative
+  z-index: -20
+
+  // +medium
+  //   border-radius: 2.5em
+
+.fk-colorblock--red
+  background: $color-red
+  margin-top: 5.5rem
+  min-height: 24rem
+
+  +medium
+    margin-top: 5rem
+    min-height: 25rem
+
+  +large
+    margin-top: 3.5rem
+    min-height: 29rem
+    border-radius: 0 0 2.5rem 0
+
+.fk-colorblock--mustard
+  background: $color-mustard
+  min-height: 28rem
+
+  +medium
+    min-height: 24rem
+
+  +large
+    border-radius: 0 0 0 2.5rem
+
+.fk-colorblock--blue
+  background: $color-blue
+  min-height: 10rem
+
+  +small
+    min-height: 18rem
+
+  +medium
+    min-height: 22rem
+
+  +large
+    min-height: 24rem
+    border-radius: 0 0 2.5rem 0
+
+.fk-colorblock--purple
+  background: $color-purple
+  min-height: 62rem
+  position: absolute
+
+  +medium
+    min-height: 22rem
+
+  +large
+    border-radius: 0
+
+.fk-colorblock--mds
+  background: $color-mds url("../img/mds-coffee.jpg") no-repeat
+  background-size: cover
+  background-position: center center
+
+  +small
+    height: 28rem
+    background-position: center center
+
+  +medium
+    height: 34rem
+    background-position: center center
+
+  +large
+    border-radius: 0 0 0 2.5rem
+
+.fk-colorblock--light
+  background: $color-light
+
+@media (color-gamut:p3)
+
+  .fk-colorblock--red
+    background: color(display-p3 1.0 .4 .35)
+
+  .fk-colorblock--mustard
+    background: color(display-p3 1.0 .7 .1)
+
+  .fk-colorblock--blue
+    background: color(display-p3 .2 .6 1.0)

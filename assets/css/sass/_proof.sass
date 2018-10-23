@@ -1,0 +1,231 @@
+.fk-testimonial-container
+  display: grid
+  grid-template-columns: 1fr
+  align-items: center
+
+  +medium
+    grid-template-columns: 1fr 1fr
+
+  & > div
+    display: inline-block
+    margin: auto
+
+    +medium
+      display: block
+      margin: 0
+
+.fk-testimonial
+  padding: 2rem 1rem
+
+  +large
+    padding: 1rem 1rem 2rem
+
+.fk-testimonial img
+  width: 2.625rem
+  height: 2.625rem
+  border-radius: 1rem
+  text-align: center
+  display: block
+  margin: auto
+
+  +medium
+    display: inline-block
+    text-align: left
+    float: left
+    margin: 0 3rem 3rem 0
+    margin-right: 5rem
+
+.fk-testimonial h3
+  font-weight: 800
+  font-size: 1rem
+  line-height: 1.2
+  padding: 1rem 0 .25rem
+  position: relative
+  display: block
+  text-align: center
+
+  +medium
+    text-align: left
+
+  &:before
+    content: ""
+    display: none
+    width: 1rem
+    height: 2px
+    background: $color-dark
+    position: absolute
+    top: calc(50% + .25rem)
+    transform: translateY(-%50)
+    left: 4rem
+
+    +medium
+      display: block
+      left: 4rem
+      width: 3rem
+
+.fk-testimonial p
+  font-size: .75rem
+  text-indent: .5rem
+  text-align: center
+
+  a
+    font-weight: 800
+
+  +medium
+    text-align: left
+
+ul.fk-logos
+  display: flex
+  flex-wrap: wrap
+  padding: 0 0 3rem
+
+  +small
+    padding: 0 0 4rem
+
+  +large
+    padding: 0 2rem 4rem
+
+  li
+    flex: 0 0 25%
+    max-height: 5rem
+    padding: 1rem 0
+    /* uncomment to initiate grayscale effect */
+    // opacity: .4
+    // filter: gray
+    // -webkit-filter: grayscale(1)
+    // filter: grayscale(1)
+    +easeall
+
+    +small
+      padding: 1rem 2rem
+      max-height: 6rem
+
+    +large
+      padding: 2rem 4rem
+      max-height: 8rem
+
+    &:hover
+      /* uncomment to initiate grayscale effect */
+      // opacity: 1
+      // -webkit-filter: grayscale(0)
+      // filter: none
+      +easeall
+
+  $logo-dribbble-scale: .675
+  $logo-facebook-scale: .75
+  $logo-gopro-scale: .5
+  $logo-microsoft-scale: .75
+  $logo-salesforce-scale: .5
+  $logo-shopify-scale: .75
+  $logo-stripe-scale: .5
+  $logo-ueno-scale: .5
+  $logo-nike-scale: .45
+  $logo-palantir-scale: .75
+  $logo-intuit-scale: .85
+  $logo-metalab-scale: .325
+  $logo-uber-scale: .675
+  $logo-nbc-scale: .5
+  $logo-sapientrazorfish-scale: .75
+  $logo-automattic-scale: 1.1
+
+  .fk-logo--dribbble
+    transform: scale($logo-dribbble-scale) translateX(0) translateY(0)
+    &:hover
+      transform: scale($logo-dribbble-scale + .05) translateX(0) translateY(0)
+
+
+  .fk-logo--facebook
+    transform: scale($logo-facebook-scale) translateX(0) translateY(0)
+    &:hover
+      transform: scale($logo-facebook-scale + .05) translateX(0) translateY(0)
+
+
+  .fk-logo--gopro
+    transform: scale($logo-gopro-scale) translateX(0) translateY(-.2rem)
+    &:hover
+      transform: scale($logo-gopro-scale + .05) translateX(0) translateY(-.2rem)
+
+
+  .fk-logo--microsoft
+    transform: scale($logo-microsoft-scale) translateX(0) translateY(0)
+    &:hover
+      transform: scale($logo-microsoft-scale + .05) translateX(0) translateY(0)
+
+
+  .fk-logo--salesforce
+    transform: scale($logo-salesforce-scale) translateX(0) translateY(-1rem)
+    &:hover
+      transform: scale($logo-salesforce-scale + .05) translateX(0) translateY(-1rem)
+
+
+  .fk-logo--shopify
+    transform: scale($logo-shopify-scale) translateX(0) translateY(.5rem)
+    &:hover
+      transform: scale($logo-shopify-scale + .05) translateX(0) translateY(.5rem)
+
+
+  .fk-logo--stripe
+    transform: scale($logo-stripe-scale) translateX(0) translateY(.25rem)
+    &:hover
+      transform: scale($logo-stripe-scale + .05) translateX(0) translateY(.25rem)
+
+
+  .fk-logo--ueno
+    transform: scale($logo-ueno-scale) translateX(0) translateY(.75rem)
+    &:hover
+      transform: scale($logo-ueno-scale + .05) translateX(0) translateY(.75rem)
+
+
+  .fk-logo--nike
+    transform: scale($logo-nike-scale) translateX(0) translateY(1rem)
+    &:hover
+      transform: scale($logo-nike-scale + .05) translateX(0) translateY(1rem)
+
+
+  .fk-logo--palantir
+    transform: scale($logo-palantir-scale) translateX(0) translateY(.2rem)
+    &:hover
+      transform: scale($logo-palantir-scale + .05) translateX(0) translateY(.2rem)
+
+
+  .fk-logo--intuit
+    transform: scale($logo-intuit-scale) translateX(0) translateY(0)
+    &:hover
+      transform: scale($logo-intuit-scale + .05) translateX(0) translateY(0)
+
+
+  .fk-logo--metalab
+    transform: scale($logo-metalab-scale) translateX(0) translateY(-1.75rem)
+    &:hover
+      transform: scale($logo-metalab-scale + .05) translateX(0) translateY(-1.75rem)
+
+  .fk-logo--uber
+    transform: scale($logo-uber-scale) translateX(0) translateY(.5rem)
+    &:hover
+      transform: scale($logo-uber-scale + .05) translateX(0) translateY(.5rem)
+
+  .fk-logo--nbc
+    transform: scale($logo-nbc-scale) translateX(0) translateY(-.75rem)
+    &:hover
+      transform: scale($logo-nbc-scale + .05) translateX(0) translateY(-.75rem)
+
+  .fk-logo--sapientrazorfish
+    transform: scale($logo-sapientrazorfish-scale) translateX(0) translateY(1rem)
+    &:hover
+      transform: scale($logo-sapientrazorfish-scale + .05) translateX(0) translateY(1rem)
+
+  .fk-logo--automattic
+    transform: scale($logo-automattic-scale) translateX(0) translateY(.5rem)
+    &:hover
+      transform: scale($logo-automattic-scale + .05) translateX(0) translateY(.5rem)
+
+
+
+
+
+
+
+
+
+
+a

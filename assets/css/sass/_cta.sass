@@ -1,0 +1,65 @@
+.fk-cta-group
+  text-align: center
+  margin-top: .25rem
+  position: relative
+  right: 0
+
+  +medium
+    margin-top: 0
+
+  +large
+    margin-top: .25rem
+
+.fk-cta-group-container
+  position: relative
+  float: right
+
+.fk-cta
+  padding: .4rem 1rem
+  // width: 3.5rem
+  font-size: .675rem
+  font-weight: 600
+  color: $color-white
+  background: $color-blue
+  border: none
+  border-radius: 4rem
+  margin-left: .25rem
+  margin-bottom: .25rem
+  position: relative
+  display: inline-block
+  top: 0
+  right: 0
+  cursor: pointer
+  select: none
+  +easeall
+
+  +medium
+    padding: .375rem 1.25rem
+    font-size: .75rem
+
+  +large
+    font-size: .875rem
+
+
+  &:hover
+    top: -.2rem
+    box-shadow: 4px 4px 12px 0 rgba($color-dark, .04), 8px 8px 24px 0 rgba($color-dark, .08)//, inset 4px 4px 24px rgba($color-white, .1)
+    +easeall
+
+  &:focus
+    outline: none
+
+  &:active
+    top: 1px
+
+.fk-cta-primary
+  background: $color-orange
+
+@media (color-gamut:p3)
+
+  .fk-cta-secondary
+    background: color(display-p3 .2 .6 1.0)
+
+  .fk-cta-primary
+    background: color(display-p3 1.0 .5 .1)
+

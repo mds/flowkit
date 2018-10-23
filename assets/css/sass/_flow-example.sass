@@ -1,0 +1,51 @@
+.fk-flow-example
+  position: relative
+
+  &-large
+    max-width: 48.75rem
+    margin: auto
+    display: none
+
+    +large
+      display: block
+
+  &-small
+    max-width: 18rem
+    margin: auto
+    display: block
+    position: relative
+    left: -1.5rem
+
+    +large
+      display: none
+
+
+.fk-flow-example-flows,
+.fk-flow-example-devices
+  position: absolute
+  margin: auto
+
+.fk-flow-example-devices
+  width: 200px
+  z-index: 10
+  top: 0rem
+  left: 4rem
+
+  +large
+    width: 824px
+    z-index: 10
+    top: -3rem
+    left: 0
+
+.fk-flow-example-flows
+  width: 285px
+  z-index: 20
+  top: 0rem
+  left: 0rem
+
+  +large
+    width: 788px
+    z-index: 20
+    top: -2.6rem
+    left: 0rem
+

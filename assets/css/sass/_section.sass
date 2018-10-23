@@ -1,0 +1,344 @@
+section
+  position: relative
+
+section.fk-main
+  margin-bottom: 0rem
+  +large
+    margin-bottom: 4rem
+
+  h2
+    padding: 4rem 0 2rem
+    +medium
+      padding: 4rem 0 2rem
+      max-width: 37rem
+
+section.fk-video
+  margin-bottom: 0rem
+  +large
+    margin-bottom: 4rem
+
+section.fk-flows
+  margin-bottom: 7rem
+  +large
+    margin-bottom: 10rem
+
+  h2
+    padding: 4rem 0 2rem
+    +large
+      padding: 6rem 0 8rem
+
+section.fk-endpoints
+  margin-bottom: 4rem
+  +large
+    margin-bottom: 8rem
+
+  h2
+    padding: 6rem 0 4rem
+    +large
+      padding: 12rem 0 8rem
+
+section.fk-decision
+  margin-bottom: 2rem
+  +large
+    // margin-bottom: 8rem
+
+  h2
+    padding: 4rem 0 2rem
+    +small
+      padding: 4rem 0 3rem
+    +medium
+      padding: 8rem 0 3rem
+    +large
+      padding: 10rem 0 5rem
+
+  .fk-colorblock
+    position: absolute
+    bottom: 12rem
+    left: 0
+
+    +large
+      bottom: 12rem
+
+
+section.fk-mds
+  margin-bottom: 2rem
+
+  +large
+    margin-bottom: 6rem
+    height: calc(100% - 8rem)
+
+  h2
+    padding: 4rem 0 3rem
+    +medium
+      padding: 0srem 0 3rem
+    +large
+      padding: 12rem 0 8rem
+
+  .fk-follow-btn
+    text-align: center
+    margin: auto
+    position: relative
+    top: 2rem
+    left: 0
+    right: 0
+
+section.fk-proof
+  padding: 1rem 0 0
+
+  +large
+    padding: 0rem 0 2rem
+    box-shadow: inset -4px 0 0 0 $color-dark
+    margin-right: -2px
+
+  h2
+    max-width: 18rem
+    padding: 4rem 0
+
+    +large
+      max-width: 40rem
+
+////////////////////////////////////////////////////////////////////////
+
+
+section img
+  text-align: center
+
+.fk-path-alt
+  stroke-dasharray: 6, 12
+  stroke-dashoffset: 0
+  transition: stroke-dasharray .25s
+  animation: strokeDance 5s infinite ease-in-out
+
+@keyframes strokeDance
+  0%, 100%
+    stroke-dashoffset: 0
+  50%
+    stroke-dashoffset: 240
+
+///////////////////////////////////////////////////////////////
+// flow montage with play button
+
+.fk-video
+  position: relative
+  overflow-x: hidden
+  overflow: initial
+
+.fk-video .fk-play-btn
+  text-align: center
+  width: 6rem
+  height: 6rem
+  border-radius: 50%
+  display: block
+  margin: auto
+  left: 0
+  right: 0
+  position: relative
+  top: -.5rem
+  background: $color-dark
+  transform: translateY(8%) scale(1) // wistia does weird insertions and screws up positioning. this is a hack to fix it.
+  +easeall
+
+  &:hover
+    transform: translateY(8%) scale(1.1)
+    +fk-shadow
+    +easeall
+
+  +medium
+    top: -2rem
+    width: 7.5rem
+    height: 7.5rem
+    transform: translateY(32%) scale(1)
+    +easeall
+
+    &:hover
+      transform: translateY(32%) scale(1.1)
+      +fk-shadow
+      +easeall
+
+.fk-video .fk-play-btn .fk-play-icon
+  position: absolute
+  width: 27px
+  height: 30px
+  top: 2.125rem
+  left: 2.325rem
+
+  +medium
+    width: 37px
+    height: 40px
+    top: 2.5rem
+    left: 2.8rem
+
+.fk-video-thumb
+  width: 7rem
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 0
+  right: 0
+  margin: auto
+
+  .fk-thumbnail
+    border-radius: 50%
+
+  +medium
+    width: 12rem
+
+.fk-montage-small
+  margin: auto
+  max-width: 315px
+
+  +medium
+    display: none
+
+.fk-montage-medium
+  margin: auto
+  max-width: 860px
+  display: none
+  width: 100%
+
+  +medium
+    display: block
+
+  +large
+    display: none
+
+.fk-montage-large
+  display: none
+  width: calc(100% + 77px)
+  margin-left: -38px
+
+  +large
+    display: block
+
+
+////////////////////////////////////////////////////////////////////////
+// Section Lines
+
+.fk-section-lines
+  display: none
+
+  & > div
+    position: absolute
+
+  +large
+    display: block
+
+.fk-section-line-1-1
+  top: -4px
+  right: -4px
+
+.fk-section-line-1-2
+  bottom: -120px
+  right: -1px
+
+.fk-section-line-2-1
+  top: -82px
+  right: -3px
+
+.fk-section-line-2-2
+  bottom: -8px
+  right: -3px
+
+.fk-section-line-3-1
+  top: 8.2rem
+  left: -2px
+
+.fk-section-line-3-2
+  top: 36.4rem
+  left: -2px
+
+.fk-section-line-3-3
+  bottom: -8px
+  left: -5px
+
+.fk-section-line-4-1
+  top: -14.5rem
+  right: -4px
+
+.fk-section-line-4-2
+  top: 29rem
+  right: -4px
+
+.fk-section-line-4-3
+  bottom: -223px
+  right: -4px
+
+.fk-section-line-4-4
+  bottom: -4px
+  right: 18.875rem
+
+.fk-section-line-5-1
+  top: -14.4rem
+  left: -2px
+
+.fk-section-line-5-2
+  bottom: -44.2rem
+  left: -2px
+  height: 817px
+
+  img
+    height: 100%
+
+.fk-section-line-5-3
+  top: -5px
+  left: -5px
+
+.fk-section-line-6-1
+  top: -16rem
+  right: -2px
+
+.fk-section-line-6-2
+  bottom: -10rem
+  right: -2px
+
+.fk-section-line-6-3
+  top: -20rem
+  right: -2px
+
+.fk-section-lines--pricing
+  bottom: -32rem
+  margin: auto
+  position: relative
+
+.fk-section-line-pricing-1
+  bottom: -32rem
+  left: 14.25rem
+
+.fk-section-line-pricing-2
+  bottom: -32rem
+  left: 37.125rem
+
+.fk-section-line-pricing-3
+  bottom: -32rem
+  right: 4rem
+
+///////////////////////////////////////////////////////////////
+section.fk-affiliate
+
+  ol, ul
+    margin-left: 1.25rem
+
+  li
+    font-size: 1rem
+    max-width: 80%
+    font-weight: 400
+    list-style-type: none
+    padding: 0 0
+    margin-left: 2rem
+
+    &:before
+      content: url('../img/tiny-flow.svg')
+      display: block
+      width: 16px
+      height: 16px
+      position: relative
+      top: .875rem
+      left: -3rem
+
+  h2
+    max-width: 48rem
+    padding: 3rem 1rem
+    margin-bottom: 0rem
+
+    +small
+      padding: 3rem 1rem

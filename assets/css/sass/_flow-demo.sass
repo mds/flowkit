@@ -1,0 +1,337 @@
+.fk-endpoints
+  overflow-x: hidden
+  overflow: initial
+
+.fk-flow-demo
+  width: 21rem
+  position: relative
+  margin: auto
+  left: 0rem
+  top: 1rem
+
+  +medium
+    top: -1rem
+
+  +large
+    top: 0
+    left: 0
+    width: 47.25rem
+
+.fk-flow-demo-container
+  & > div
+    position: absolute
+
+.fk-flow-demo-container-large
+  display: none
+
+  +large
+    display: inline-block
+
+.fk-flow-demo-container-small
+  display: inline-block
+
+  +large
+    display: none
+
+// large
+.fk-flow-demo-container-large
+  .fk-flow-demo-device
+    max-width: 11rem
+    top: 17.5rem
+    left: 0rem
+
+  .fk-flow-demo-flow1
+    max-width: 19.25rem
+    top: 7.1rem
+    left: 4.7rem
+
+  .fk-flow-demo-flow2
+    max-width: 20.75rem
+    top: -4rem
+    left: 25.95rem
+
+  .fk-flow-demo-flow3
+    max-width: 22rem
+    top: 6.7rem
+    left: 24.3rem
+
+// small
+.fk-flow-demo-container-small
+  .fk-flow-demo-device
+    max-width: 11rem
+    top: 17.5rem
+    left: 0rem
+
+  .fk-flow-demo-flow1
+    max-width: 111px
+    top: 10rem
+    left: 4.8rem
+
+  .fk-flow-demo-flow2
+    max-width: 91px
+    top: -3.2rem
+    right: 1.2rem
+
+  .fk-flow-demo-flow3
+    max-width: 115px
+    top: 9.5rem
+    right: 1.5rem
+
+.fk-flow-demo-hit
+  position: absolute
+
+  &:hover:after
+    background: rgba($color-flow-alt, .75)
+    +easeall
+
+  &:before
+    content: ""
+    display: block
+    width: 1rem
+    height: 1rem
+    top: 1.5rem
+    left: 1.5rem
+    background: $color-white
+    border-radius: 50%
+    box-shadow: 1px 2px 4px 0 rgba($color-dark, .2)
+    position: absolute
+    z-index: 100
+
+  &:after
+    content: ""
+    display: block
+    width: 4rem
+    height: 4rem
+    background: rgba($color-flow-alt, .5)
+    border-radius: 50%
+    position: absolute
+    z-index: 10
+    cursor: pointer
+    text-align: center
+    animation: pulse-large 2s infinite ease-in-out
+    +easeall
+
+  &.fk-flow-demo-hit--is-active
+    width: 0
+    height: 0
+
+    &:before
+      background: $color-dark
+
+    &:after
+      background: rgba($color-flow-alt, 0)
+      +easeall
+
+@keyframes pulse-large
+  0%, 100%
+    transform: scale(1)
+  50%
+    transform: scale(1.2)
+
+@keyframes pulse-small
+  0%, 100%
+    transform: scale(1)
+  50%
+    transform: scale(1.05)
+
+.fk-flow-piece-container
+  position: relative
+
+  &:before,
+  &:after
+    display: inline-block
+    font-weight: 800
+    font-size: 1.25rem
+    background: rgba($color-dark, .1)
+    padding: .5rem 1rem
+    border-radius: 2rem
+    opacity: 1
+    position: absolute
+
+  &:before
+    content: "A"
+
+  &:after
+    content: "B"
+
+///////////////////////////////////////////////////
+
+.fk-flow-demo-piece1.fk-faded .fk-flow-piece-container,
+.fk-flow-demo-piece2.fk-faded .fk-flow-piece-container,
+.fk-flow-demo-piece3.fk-faded .fk-flow-piece-container
+  &:before,
+  &:after
+    opacity: 0
+    transform: scale(.5)
+    +easeall
+
+///////////////////////////////////////////////////
+
+.fk-flow-demo-container-large
+  .fk-flow-demo-hit1
+    top: -1.85rem
+    left: 8rem
+
+  .fk-flow-demo-hit2
+    bottom: 2.25rem
+    left: 7.5rem
+
+  .fk-flow-demo-hit3
+    top: 10.6rem
+    left: 9.1rem
+
+.fk-flow-demo-container-small
+  .fk-flow-demo-hit1
+    top: -1.85rem
+    left: 2rem
+
+  .fk-flow-demo-hit2
+    bottom: 2.35rem
+    left: 1rem
+
+  .fk-flow-demo-hit3
+    top: 9rem
+    left: 1rem
+
+.fk-flow-demo-modal
+  background: rgba($color-white, .95)
+  width: 17rem
+  border-radius: .75rem
+  position: absolute
+  z-index: 200
+  padding: 1rem
+  transform: translateY(0rem) scale(1)
+  +fk-shadow
+  +easeall
+
+  li
+    padding: 1rem
+    font-weight: 800
+    font-size: 1.25rem
+
+.fk-value
+  font-weight: 400
+  color: $color-medium
+  font-size: .875em
+  background: #F5F5F5
+  display: block
+  padding: .25rem 1rem
+  border-radius: 4px
+  box-shadow: 0 1px 2px 0 rgba($color-black, 0.15)
+  position: relative
+  float: right
+  width: 9rem
+
+  &:before
+    content: "▼"
+    text-align: center
+    font-size: .675rem
+    color: white
+    position: absolute
+    width: 2rem
+    top: .5rem
+    right: 0
+    z-index: 10
+
+  &:after
+    content: ""
+    display: block
+    height: 100%
+    width: 2rem
+    background: #a0a0a0
+    position: absolute
+    border-radius: 0 4px 4px 0
+    top: 0
+    right: 0
+
+.fk-flow-demo-modal--fade-out
+  transform: translateY(2rem) scale(.9)
+  opacity: 0
+  +easeall
+
+.fk-flow-demo-modal--fade-in
+  transform: translateY(.5rem) scale(1)
+  transition: transform .25 ease-out
+  opacity: 1
+
+.fk-flow-demo-container-large
+  .fk-flow-demo-modal-pos1
+    top: -2.7rem
+    left: 3rem
+
+  .fk-flow-demo-modal-pos2
+    top: -2rem
+    left: 32rem
+
+  .fk-flow-demo-modal-pos3
+    top: 9.6rem
+    left: 28rem
+
+.fk-flow-demo-container-small
+  .fk-flow-demo-modal-pos1
+    top: 0rem
+    left: 2.5rem
+
+  .fk-flow-demo-modal-pos2
+    top: 0rem
+    right: 0rem
+
+  .fk-flow-demo-modal-pos3
+    top: 10.5rem
+    right: 0rem
+
+.fk-flow-demo-flow
+  opacity: 1
+  transition: opacity .25s ease-out
+
+.fk-flow-demo-flow.fk-faded  img,
+.fk-flow-demo-flow.fk-faded  svg
+  opacity: .2
+  transition: opacity .25s ease-out
+
+.fk-flow-demo-piece1 .fk-flow-piece-container
+  &:before // A
+    bottom: -3rem
+    left: -1.1rem
+    transform: scale(1)
+    +easeall
+
+  &:after // B
+    top: 1rem
+    right: 0rem
+    transform: scale(1)
+    +easeall
+
+.fk-flow-demo-piece2 .fk-flow-piece-container
+  &:before // A
+    bottom: -3rem
+    left: 0rem
+    transform: scale(1)
+    +easeall
+
+  &:after // B
+    top: -3rem
+    right: -1rem
+    transform: scale(1)
+    +easeall
+
+.fk-flow-demo-piece3 .fk-flow-piece-container
+  &:before // A
+    top: -2.5rem
+    left: -.85rem
+    transform: scale(1)
+    +easeall
+
+  &:after // B
+    bottom: -2.5rem
+    right: -1rem
+    transform: scale(1)
+    +easeall
+
+    +medium
+      bottom: -2.5rem
+      right: -1rem
+
+
+
+

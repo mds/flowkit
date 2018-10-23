@@ -1,0 +1,63 @@
+header
+  display: grid
+  grid-template-columns: 2fr 1fr 2fr
+  align-items: center
+  padding: 2.5rem 1rem
+  +easeall
+
+  +medium
+    padding: 1rem 3.75rem 1rem 4rem
+    +easeall
+
+  .fk-cta-secondary
+    display: none
+
+    +medium
+      display: inline-block
+
+.fk-sketch
+  padding-top: 0
+
+  +medium
+    padding-top: 0
+
+  img
+    width: 24px
+    height: 24px
+    margin: .325rem .875rem .4rem .5rem
+    display: inline-block
+    float: left
+
+    +medium
+      width: 24px
+      height: 24px
+      display: inline-block
+      float: left
+      margin: 1rem .875rem 0 0
+
+    +large
+      width: 26px
+      height: 26px
+      margin: 1.125rem .875rem 0 0
+
+p.fk-small
+  font-size: .75em
+  font-weight: 600
+  color: $color-medium-small
+  display: none
+  line-height: 1.3
+
+  +medium
+    display: inline-block
+    font-size: .625em
+    margin: 0
+    float: none
+    line-height: 2.8
+
+  +large
+    font-size: .75rem
+    line-height: 2.8
+
+  a
+    color: $color-blue-small
+

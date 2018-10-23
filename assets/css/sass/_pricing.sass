@@ -1,0 +1,120 @@
+.fk-tiers
+  display: grid
+  grid-template-columns: repeat(1, 80%)
+  grid-gap: 1rem
+  justify-content: center
+  position: relative
+  max-width: 30rem
+  margin: 8rem auto 0
+
+  +medium
+    margin: 8rem auto 4rem
+    max-width: 100%
+    grid-template-columns: repeat(3, 30%)
+
+  +large
+    margin: 8rem auto
+
+  h3,
+  h3 strong
+    color: $color-dark
+    font-weight: 800
+    font-size: 1.75rem
+    padding: 1rem 0
+    margin: 0
+    text-align: center
+
+.fk-price-block
+  background: $color-white
+  border-radius: 20px
+  width: 100%
+  padding: 2.5rem 1.5rem
+  display: grid
+  position: relative
+  top: 0
+  +fk-shadow
+  +easeall
+
+  +large
+    padding: 2.5rem 3.75rem
+
+  &:hover
+    top: -.5rem
+    +easeall
+
+
+  h4 // price
+    margin: 0
+    padding: 0 0 1rem 0
+    font-weight: 600
+
+  .fk-price-sub
+    display: inline-block
+    margin: auto
+
+  h4 // subtext
+    font-size: 1rem
+    text-align: left
+    display: inline
+    margin: 0
+    padding: 0
+
+  .fk-icon-check
+    width: inherit
+    padding-right: .5rem
+    margin-top: 1px
+    float: left
+    display: inline
+
+  p // desc
+    color: $color-medium
+    font-size: 1.125rem
+    line-height: 1.5rem
+    text-align: center
+    padding: 2.25rem 1.5rem 2.5rem
+
+  .fk-price-cta
+    font-size: 1rem
+    color: $color-white
+    border-radius: 4rem
+    font-weight: bold
+    padding: .75rem
+    width: 100%
+    display: block
+    text-align: center
+    position: relative
+    max-width: 20rem
+    margin: auto
+    top: 0
+    +easeall
+
+    &:hover
+      top: -.2rem
+      box-shadow: 4px 4px 12px 0 rgba($color-dark, .04), 8px 8px 24px 0 rgba($color-dark, .08)//, inset 4px 4px 24px rgba($color-white, .1)
+      +easeall
+
+// Set individual colors for each tier
+.fk-price-block--solo
+  .fk-icon-check
+    fill: $color-blue
+  .fk-price-cta
+    background: $color-blue
+
+.fk-price-block--team
+  .fk-icon-check
+    fill: $color-orange
+  .fk-price-cta
+    background: $color-orange
+
+.fk-price-block--enterprise
+  .fk-icon-check
+    fill: $color-red
+  .fk-price-cta
+    background: $color-red
+
+
+
+
+
+
+

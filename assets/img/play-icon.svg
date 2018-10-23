@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="40px" viewBox="0 0 37 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>play-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-17" transform="translate(-706.000000, -1061.000000)" fill="#FFFFFF">
+            <g id="video" transform="translate(80.000000, 897.000000)">
+                <g id="play" transform="translate(580.000000, 124.000000)">
+                    <path d="M50.4362175,40.5428484 L80.8761416,57.1413624 L80.8761416,57.1413624 C82.3307887,57.9345634 82.8669966,59.7568044 82.0737956,61.2114515 C81.7978988,61.7174171 81.3821072,62.1332086 80.8761416,62.4091054 L50.4362175,79.0076194 L50.4362175,79.0076194 C48.9815705,79.8008204 47.1593295,79.2646125 46.3661285,77.8099654 C46.1258846,77.3693834 46,76.8755741 46,76.3737479 L46,43.17672 L46,43.17672 C46,41.5198657 47.3431458,40.17672 49,40.17672 C49.5018263,40.17672 49.9956356,40.3026045 50.4362175,40.5428484 Z" id="play-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

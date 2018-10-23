@@ -1,0 +1,122 @@
+.fk-decision-container-small
+  display: block
+  +small
+    display: none
+
+  .fk-decision-piece
+    width: 175px
+    margin: auto
+    top: -4rem
+    left: 0
+    right: 0
+
+.fk-decision-container-large
+  display: none
+  +small
+    display: block
+
+.fk-decision
+
+  h2
+    padding-bottom: 4rem
+
+  .fk-cta-group
+    display: grid
+    grid-template-columns: 1fr 0rem 1fr
+    margin-bottom: 4rem
+
+    +small
+      margin-bottom: 6rem
+      grid-template-columns: 1fr 7.5rem 1fr
+
+  .fk-sketch
+    margin: auto
+    display: none
+
+    img
+      text-align: center
+      width: 3.75rem
+      height: 3.75rem
+      margin: -2.5rem 0
+
+    +small
+      display: block
+
+  .fk-cta
+    width: 8rem
+    font-size: .875rem
+    padding: .75rem 0
+    text-align: center
+
+    &-primary
+      margin-left: 1rem
+      float: left
+
+      +medium
+        margin-left: 1rem
+
+    &-secondary
+      margin-right: 1rem
+      float: right
+
+      +medium
+        margin-right: 1rem
+
+    +small
+      font-size: 1rem
+      width: 12rem
+
+    +large
+      font-size: 1.125rem
+      width: 16rem
+
+.fk-decision-container
+  max-width: 27rem
+  margin: auto
+  position: relative
+
+  img
+    margin: 0
+    padding: 0
+
+.fk-decision-piece
+  position: absolute
+
+.fk-decision-piece1
+  width: 6.25rem
+  text-align: left
+  top: -4rem
+  left: 0
+
+  +small
+    left: 2.5rem
+
+  +medium
+    left: 2rem
+
+  +large
+    left: 0rem
+
+.fk-decision-piece2
+  width: 5rem
+  bottom: -12rem
+  right: 0
+  left: 0
+  margin: auto
+
+  +medium
+    left: 0
+
+.fk-decision-piece3
+  width: 6.25rem
+  right: 0
+  top: -4.8rem
+
+  +small
+    right: 2.5rem
+
+  +medium
+    right: 2rem
+
+  +large
+    right: 0rem

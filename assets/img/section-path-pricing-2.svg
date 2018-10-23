@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="139px" viewBox="0 0 180 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>section-path-4-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-17" transform="translate(-1092.000000, -5988.000000)">
+            <g id="Group-14" transform="translate(80.000000, 5223.000000)">
+                <g id="Flow-/-Left-/-Curve-/-Up-/-Default" transform="translate(1019.000000, 770.000000)">
+                    <path d="M171,0 L171,92 C171,114.09139 153.09139,132 131,132 L8.52651283e-14,132" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" transform="translate(85.500000, 66.000000) scale(-1, 1) translate(-85.500000, -66.000000) "></path>
+                    <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(0.000000, 0.000000) scale(-1, 1) rotate(-90.000000) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)" fill="#252525" fill-rule="evenodd">
+                        <path d="M4,15.258963 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
