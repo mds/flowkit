@@ -1,0 +1,203 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit – User Flow Library for Figma and Sketch
+
+  body#fk-eula
+    .fk-container
+      header
+        .fk-sketch
+          a(href='/')
+            img(alt='sketch icon', src='../assets/img/sketch.svg')
+          p.fk-small A Sketch Library
+        .fk-logo
+          h1  
+        .fk-cta-group
+          .fk-cta-group-container
+            a.fk-cta.fk-cta-primary(href='#buy') Buy
+      section.fk-main
+        .fk-container-content
+          h2
+            | Flowkit
+            strong 2.0
+          p
+            | Flowkit 2.0 has been redesigned from scratch for both Figma and Sketch. Both design tool libraries have the same content, but each file format was designed natively to leverage the unique features of each tool. Please note, the use of the word “
+            strong component
+            | ” below applies to both Figma Components and Sketch Symbols.
+          h3 New Grid
+          p
+            | Each component has been redesigned at 360x360 pixels with padding included. This means that all flows, blocks, annotations, etc. can now be aligned side by side, with zero margin, and have a consistent spacing throughout the entire document. This eliminates the need to guess how tall or wide any specific component should be.
+          h3 Master Components
+          p
+            | The Master Components are the foundational pieces that create all of the component instances. The total number of Master components for the flow lines has been reduced from 22 components in Flowkit 1.0 to now only 12 Master components in Flowkit 2.0.
+          p
+            | Each variation of the Master components all scale correctly while manually scaling the bounding box of a component or by using keyboard shortcuts like
+            code cmd + nudge
+            |  and
+            code cmd+shift+nudge
+            | . Any edits made to these components will affect all instances in the library. It is not recommended to modify these.
+          h3 Naming Conventions
+          p
+            | Each directional component uses the following, linear naming convention. It begins with the point of origin and ends with the destination.
+          p
+            code
+              | **Type Indicator / Initial Direction / Initial Modifier / Final Direction / Final Modifier**
+          ul
+            li
+              strong Type Indicator
+              |  can be either
+              code Flow
+              |  or
+              code Tap
+              | , depending on the type of flow you are creating.
+              code Flow
+              |  is intended to be used for high-level user flows, whereas
+              code Tap
+              |  is intended to be used with wireframes or actual screen designs all on the same artboard.
+            li
+              strong Initial Direction
+              |  is the direction of the path. This can be
+              code Right
+              | ,
+              code Left
+              | ,
+              code Up
+              | , or
+              code Down
+            li
+              strong Initial Modifier
+              |  is what comes immediately after the Primary Direction. This can be
+              code Straight
+              | ,
+              code Curve
+              | , or
+              code Snake
+              | .
+            li
+              strong Final Direction
+              |  comes immediately after the Initial Modifier.
+              code Right
+              |  and
+              code Left
+              |  components can be either
+              code Up
+              | , or
+              code Down
+              | , whereas
+              code Up
+              |  and
+              code Down
+              |  components will have Secondary Modifiers as
+              code Left
+              | , or
+              code Right
+              | .
+            li
+              strong Final Modifier
+              |  is the final section of the Flow component and determines the direction of the arrow. This can be
+              code Straight
+              | ,
+              code U-turn
+              | , or
+              code Hook
+              | .
+          h3 Flows
+          p
+            | These are the primary components in the system. There are 11 options (listed below) for each direction. All Flow components can be scaled without skewing or stretching. Each Flow component also contains nested endpoints that can be hidden or overridden with different end points.
+          p
+            | There are 11 variants in total for each direction. For example,
+            code Flow Right
+            |  uses the following:
+          ol
+            li Flow / Right / Straight
+            li Flow / Right / Curve / Down / Straight
+            li Flow / Right / Curve / Down / U-turn
+            li Flow / Right / Curve / Down / Hook
+            li Flow / Right / Curve / Up / Straight
+            li Flow / Right / Curve / Up / U-turn
+            li Flow / Right / Curve / Up / Hook
+            li Flow / Right / Snake / Down / Straight
+            li Flow / Right / Snake / Down / Hook
+            li Flow / Right / Snake / Up / Straight
+            li Flow / Right / Snake / Up / Hook
+          h3 Taps
+          p
+            | These are intended to be used on top of UI screen designs when laying out flow documents. They are named exactly the same as Flow components, whereas Tap is the Type Indicator instead of Flow. Each endpoint has been pre-overridden with the Tap endpoint and can additionally be changed to other interactions, such as Swipe, Long Press, and Double Tap.
+          h3 End Points
+          p
+            | In Flowkit 2.0 every single
+            code End Point
+            |  is the same dimension and can be interchanged with any other end point version for full customization. These include
+            code circles
+            | ,
+            code arrows
+            | ,
+            code taps
+            | ,
+            code swipes
+            | , and more.
+          h3 Splits
+          p
+            | There are 4 directional Split components for indicating a fork in a user flow. These are created with nested Flow components, but can also be extended or modified for more complex flows.
+          h3 Blocks
+          p
+            | Blocks are used as main sections of user flows. Just like every other component, it's built on a 360x360 grid. There are multiple Block options such as
+            code default
+            | ,
+            code dashed
+            | ,
+            code emphasis
+            | , and
+            code solid
+            | . There are also
+            code device
+            |  blocks for
+            code iOS
+            | ,
+            code Android
+            | , and a
+            code Browser
+            |  to provide further device clarification.
+          h3 Labels
+          p
+            | There are multiple label styles including
+            code solid
+            |  and
+            code outline
+            |  versions of
+            code default
+            | ,
+            code red
+            | ,
+            code blue
+            | , and
+            code green
+            | . Labels are intended for use with Flow or Tap lines to provide more context about a specific user path.
+          h3 Annotations
+          p
+            | There are two types of annotation components. The general Annotation Labels can be used anywhere within your flow to provide more situational context, whereas the Annotation Points are intended to callout specific areas of your screen designs.
+      //- /fk-main
+      //- /fk-container
+      p.fk-team
+        a(href='http://twitter.com/mds') Questions?
+        a(href='/affiliate') Affilates
+        a(href='/eula') EULA
+      //- Drip
+      script(type='text/javascript').
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '7684207';
+        (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/7684207.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+        })();
+      //- Go Squared
+      script.
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+        _gs('GSN-965741-P');

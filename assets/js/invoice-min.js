@@ -1,1 +1,0 @@
-$(document).ready(function(){$.getJSON("https://4f340729ac6b867:ec9b13da494e0f5e57ce@www.sendowl.com/api/v1/products?callback=?",function(e){console.log(e)}),sendOwl.captureLinks();var e=new jsPDF;e.text(20,30,"This belongs to: "+name),e.addPage(),$(".makeInvoice").click(function(){e.save("a4.pdf")})});

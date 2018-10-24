@@ -1,0 +1,605 @@
+//- 01 index.pug
+extends includes/layout.pug
+
+block head
+  title Flowkit – User Flow Library for Figma and Sketch
+
+//- block meta pulls in here
+
+block content
+  body
+    .fk-container
+      header
+        .fk-sketch
+          img(alt='sketch icon', src='assets/img/sketch.svg')
+          p.fk-small
+            | For Figma &amp; Sketch
+        .fk-logo
+          h1 Flowkit
+        .fk-cta-group
+          .fk-cta-group-container
+            a.fk-cta.fk-cta-primary(href='#buy') Buy
+
+      section.fk-main
+        .fk-carousel.fk-colorblock--blue.unselectable
+          .fk-carousel-container
+            .fk-arrow-desc-container
+              div
+                p.fk-arrow-desc tap right arrow
+              div
+                p.fk-label.fk-label--right
+                  span.fk-current 1
+                  |  of 11
+            .fk-arrow-container.fk-arrow-is-pulsing
+              .fk-arrow.fk-arrow--tap.fk-arrow--default(data-pos='pos1')
+                img.svg(src='assets/img/01-tap-right.svg')
+                img.svg.is-hidden(src='assets/img/02-tap-right-curve-down.svg')
+                img.svg.is-hidden(src='assets/img/03-tap-right-curve-down-hook.svg')
+                img.svg.is-hidden(src='assets/img/04-tap-right-curve-down-u-turn.svg')
+                img.svg.is-hidden(src='assets/img/05-tap-right-curve-up.svg')
+                img.svg.is-hidden(src='assets/img/06-tap-right-curve-up-hook.svg')
+                img.svg.is-hidden(src='assets/img/07-tap-right-curve-up-u-turn.svg')
+                img.svg.is-hidden(src='assets/img/08-tap-right-snake-up.svg')
+                img.svg.is-hidden(src='assets/img/09-tap-right-snake-up-hook.svg')
+                img.svg.is-hidden(src='assets/img/10-tap-right-snake-down.svg')
+                img.svg.is-hidden(src='assets/img/11-tap-right-snake-down-hook.svg')
+
+            .fk-cycle-control-container
+              .fk-cycle-controls
+                ul
+                  li: a.fk-cycle-prev
+                      span Previous
+                      img.svg(src='assets/img/arrow.svg')
+                  li: a.fk-cycle-next
+                      span Next
+                      img.svg(src='assets/img/arrow.svg')
+            .fk-bottom-controls
+              div
+                ul.fk-controls-type
+                  li: a.is-active(data-type='tap') Tap
+                  li: a(data-type='flow') Flow
+              div
+                ul.fk-controls-direction
+                  li: a.is-active(data-direction='right') →
+                  li: a(data-direction='down') ↓
+                  li: a(data-direction='left') ←
+                  li: a(data-direction='up') ↑
+              div
+                ul.fk-controls-style
+                  li: a.is-active(data-style='default') Default
+                  li: a(data-style='alt') Alt
+
+        .fk-container-content
+          h2
+            strong The ultimate component library
+            |  for user flows, content maps, annotations, and more.
+        .fk-section-lines
+          .fk-section-line-1-1
+            img(src='assets/img/section-path-1-1.svg', alt='decorative line', width='204px', height='490px')
+          .fk-section-line-1-2
+            img.svg(src='assets/img/section-path-1-2.svg', alt='decorative line', width='214px', height='328px')
+
+      section.fk-video
+        .fk-video-thumb
+          span.wistia_embed.wistia_async_tofi9zegwu(class='popover=true popoverContent=html popoverPreventScroll=true')
+            a.fk-play-btn(href='#')
+              img.fk-play-icon(src='assets/img/play-icon.svg', alt='play icon')
+          //- <img class="fk-thumbnail" src="assets/img/video-thumb.jpg" alt="mds at desk" />
+        .fk-montage-small
+          img.svg(alt='flow montage', src='assets/img/flow-montage-small.svg')
+        .fk-montage-medium
+          img.svg(alt='flow montage', src='assets/img/flow-montage-medium.svg')
+        .fk-montage-large
+          img.svg(alt='flow montage', src='assets/img/flow-montage-large-2.svg')
+      section.fk-flows
+        .fk-container-content
+          h2
+            strong Quickly build
+            |  out high-level flows to tell the story of your designs—perfect for presentations and documentation.
+        //- i know i shouldn't load both sets of images always, but I'm in a hurry and not that good of a developer
+        .fk-flow-example.fk-flow-example-small
+          .fk-flow-example-flows
+            img.svg(alt='flows', src='assets/img/flow-devices-flows-small.svg')
+          .fk-flow-example-devices
+            img(alt='devices', src='assets/img/flow-devices-small.png')
+        .fk-flow-example.fk-flow-example-large
+          .fk-flow-example-flows
+            img.svg(alt='flows', src='assets/img/flow-devices-flows-large.svg')
+          .fk-flow-example-devices
+            img(alt='devices', src='assets/img/flow-devices-large.png')
+        .fk-colorblock.fk-colorblock--red
+        .fk-section-lines
+          //- section paths 2
+          .fk-section-line-2-1
+            img(src='assets/img/section-path-2-1.svg', alt='decorative line', width='4px', height='502px')
+          .fk-section-line-2-2
+            img(src='assets/img/section-path-2-2.svg', alt='decorative line', width='156px', height='442px')
+          //- section paths 3
+          .fk-section-line-3-1
+            img(src='assets/img/section-path-3-1.svg', alt='decorative line', width='127px', height='452px')
+          .fk-section-line-3-2
+            img(src='assets/img/section-path-3-2.svg', alt='decorative line', width='4px', height='897px')
+      section.fk-endpoints
+        .fk-container-content
+          h2
+            strong You have full control
+            |  over intelligently-named symbols and overrides, making custom flows a walk in the park.
+        .fk-flow-demo
+          //- i know i shouldn't load both sets of images always, but I'm in a hurry and not that good of a developer
+          .fk-flow-demo-container.fk-flow-demo-container-large
+            .fk-flow-demo-modal.fk-flow-demo-modal-pos1
+              ul
+                li
+                  | ↪︎ A
+                  span.fk-value.fk-value1 Circle
+                li
+                  | ↪︎ B
+                  span.fk-value.fk-value2 None
+            .fk-flow-demo-piece.fk-flow-demo-device
+              img(alt='flow demo device', src='assets/img/flow-device.svg')
+            .fk-flow-demo-piece1.fk-flow-demo-flow.fk-flow-demo-flow1
+              a.fk-flow-demo-hit.fk-flow-demo-hit1.fk-flow-demo-hit--is-active
+              .fk-flow-piece-container
+                img(alt='flow demo 1', src='assets/img/flow1-large.svg')
+            .fk-flow-demo-piece2.fk-flow-demo-flow.fk-faded.fk-flow-demo-flow2
+              a.fk-flow-demo-hit.fk-flow-demo-hit2.fk-is-pulsing
+              .fk-flow-piece-container
+                img(alt='flow demo 2', src='assets/img/flow2-large.svg')
+            .fk-flow-demo-piece3.fk-flow-demo-flow.fk-faded.fk-flow-demo-flow3
+              a.fk-flow-demo-hit.fk-flow-demo-hit3.fk-is-pulsing
+              .fk-flow-piece-container
+                img(alt='flow demo 3', src='assets/img/flow3-large.svg')
+          //- /fk-flow-demo-container-small
+          .fk-flow-demo-container.fk-flow-demo-container-small
+            .fk-flow-demo-modal.fk-flow-demo-modal-pos1
+              ul
+                li
+                  | A
+                  span.fk-value.fk-value1 Circle
+                li
+                  | B
+                  span.fk-value.fk-value2 None
+            .fk-flow-demo-piece.fk-flow-demo-device
+              img(alt='flow demo device', src='assets/img/flow-device.svg')
+            .fk-flow-demo-piece1.fk-flow-demo-flow.fk-flow-demo-flow1
+              a.fk-flow-demo-hit.fk-flow-demo-hit1.fk-flow-demo-hit--is-active
+              .fk-flow-piece-container
+                img(alt='flow demo 1', src='assets/img/flow1-small.svg')
+            .fk-flow-demo-piece2.fk-flow-demo-flow.fk-faded.fk-flow-demo-flow2
+              a.fk-flow-demo-hit.fk-flow-demo-hit2.fk-is-pulsing
+              .fk-flow-piece-container
+                img(alt='flow demo 2', src='assets/img/flow2-small.svg')
+            .fk-flow-demo-piece3.fk-flow-demo-flow.fk-faded.fk-flow-demo-flow3
+              a.fk-flow-demo-hit.fk-flow-demo-hit3.fk-is-pulsing
+              .fk-flow-piece-container
+                img(alt='flow demo 3', src='assets/img/flow3-small.svg')
+          //- /fk-flow-demo-container-small
+        .fk-colorblock.fk-colorblock--mustard
+          .fk-section-lines
+            .fk-section-line-3-3
+              img.svg(src='assets/img/section-path-3-3.svg', alt='decorative line', width='150px', height='397px')
+            .fk-section-line-4-1
+              img(src='assets/img/section-path-4-1.svg', alt='decorative line', width='137px', height='704px')
+            .fk-section-line-4-2
+              img(src='assets/img/section-path-4-2.svg', alt='decorative line', width='4px', height='677px')
+      section#buy.fk-decision
+        .fk-container-content
+          h2
+            strong Over 200 finely-tuned symbols
+            |  inside of Flowkit to supercharge your designs.
+            a(href='https://sketch.cloud/s/7yK5L') Preview with Sketch Cloud
+            | .
+          .fk-tiers
+            .fk-price-block.fk-price-block--solo
+              h3
+                strong Solo
+              .fk-price-sub
+                img.fk-icon-check.svg(src='assets/img/icon-check.svg', alt='check icon')
+                h4 $29 for 1 user
+              p Unlimited personal and commercial projects for one user.
+              a.fk-price-cta(href='https://transactions.sendowl.com/products/77680374/F5D10D7B/purchase', rel='nofollow') Buy $29
+            .fk-price-block.fk-price-block--team
+              h3
+                strong Team
+              .fk-price-sub
+                img.fk-icon-check.svg(src='assets/img/icon-check.svg', alt='check icon')
+                h4 $199 for up to 10 users
+              p Unlimited projects for up to 10 users in one organization.
+              a.fk-price-cta(href='https://transactions.sendowl.com/products/77819369/5D65B594/purchase', rel='nofollow') Buy $199
+            .fk-price-block.fk-price-block--enterprise
+              h3
+                strong Enterprise
+              .fk-price-sub
+                img.fk-icon-check.svg(src='assets/img/icon-check.svg', alt='check icon')
+                h4 $999 for unlimited users
+              p
+                | Unlimited projects
+                em and
+                |  users within one organization.
+              a.fk-price-cta(href='https://transactions.sendowl.com/products/77730842/628CEFFE/purchase', rel='nofollow') Buy $999
+        //- container content
+        .fk-colorblock.fk-colorblock--purple
+          .fk-section-lines
+            .fk-section-line-4-3
+              img(src='assets/img/section-path-4-3.svg', alt='decorative line', width='353px', height='404px')
+            .fk-section-line-5-1
+              img(src='assets/img/section-path-5-1.svg', alt='decorative line', width='177px', height='501px')
+            .fk-section-line-5-2
+              //- reusing a different section svg on purpose
+              img(src='assets/img/section-path-3-2.svg', alt='decorative line', width='4px', height='817px')
+            .fk-section-line-pricing-1
+              img(src='assets/img/section-path-pricing.svg', alt='decorative line', width='4px', height='717px')
+            .fk-section-line-pricing-2
+              img(src='assets/img/section-path-pricing.svg', alt='decorative line', width='4px', height='717px')
+            .fk-section-line-pricing-3
+              img(src='assets/img/section-path-pricing-2.svg', alt='decorative line', width='4px', height='717px')
+          //- /section lines
+          //- /colorblock
+      section.fk-mds
+        .fk-container-content
+          h2
+            strong
+              | Made by
+              a(href='http://twitter.com/mds') @mds
+            |  —approximately 3,987,389 pixels, 48 cups of coffee, and 62 bathroom breaks.
+            .fk-follow-btn
+              a.twitter-follow-button(href='https://twitter.com/mds?ref_src=twsrc%5Etfw', data-show-count='true') Follow @mds
+              script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
+        .fk-colorblock.fk-colorblock--mds
+          .fk-section-lines
+            .fk-section-line-5-3
+              img(src='assets/img/section-path-5-3.svg', alt='decorative line', width='150px', height='559px')
+            .fk-section-line-6-1
+              img(src='assets/img/section-path-6-1.svg', alt='decorative line', width='137px', height='621px')
+            .fk-section-line-6-2
+              img(src='assets/img/section-path-6-2.svg', alt='decorative line', width='4px', height='607px')
+      section.fk-proof
+        h2
+          strong Used and loved
+          |  by top design teams and a whooooole bunch of designers.
+        ul.fk-logos
+          li.fk-logo--dribbble
+            img(alt='dribbble', src='assets/img/logo-dribbble.svg')
+          li.fk-logo--facebook
+            img(alt='facebook', src='assets/img/logo-facebook.svg')
+          li.fk-logo--gopro
+            img(alt='gopro', src='assets/img/logo-gopro.svg')
+          li.fk-logo--microsoft
+            img(alt='microsoft', src='assets/img/logo-microsoft.svg')
+          li.fk-logo--salesforce
+            img(alt='salesforce', src='assets/img/logo-salesforce.svg')
+          li.fk-logo--shopify
+            img(alt='shopify', src='assets/img/logo-shopify.svg')
+          li.fk-logo--stripe
+            img(alt='stripe', src='assets/img/logo-stripe.svg')
+          li.fk-logo--ueno
+            img(alt='ueno', src='assets/img/logo-ueno.svg')
+          li.fk-logo--nike
+            img(alt='nike', src='assets/img/logo-nike.svg')
+          li.fk-logo--palantir
+            img(alt='palantir', src='assets/img/logo-palantir.svg')
+          li.fk-logo--intuit
+            img(alt='intuit', src='assets/img/logo-intuit.svg')
+          li.fk-logo--metalab
+            img(alt='metalab', src='assets/img/logo-metalab.svg')
+          li.fk-logo--uber
+            img(alt='uber', src='assets/img/logo-uber.svg')
+          li.fk-logo--nbc
+            img(alt='nbc', src='assets/img/logo-nbc.svg')
+          li.fk-logo--sapientrazorfish
+            img(alt='sapientrazorfish', src='assets/img/logo-sapientrazorfish.svg')
+          li.fk-logo--automattic
+            img(alt='automattic', src='assets/img/logo-automattic.svg')
+        //
+          <h2><strong>On a team?</strong> Snag an <a href="https://transactions.sendowl.com/products/77730842/628CEFFE/purchase">unlimited license</a>.</h2>
+        ul.tweets
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Flowkit - new
+                a(href='https://twitter.com/sketchapp?ref_src=twsrc%5Etfw') @sketchapp
+                |  library for user flows, content maps, screen annotations, and more - made by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/0DClzruVBs') https://t.co/0DClzruVBs
+              | — Dropbox Design (@DropboxDesign)
+              a(href='https://twitter.com/DropboxDesign/status/931945129107214337?ref_src=twsrc%5Etfw') November 18, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Just purchased Flowkit from
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                | . Go do the same. Never have to draw those snake lines and arrows for user flows again. 🙌👍
+                a(href='https://t.co/3D8frZpM1r') https://t.co/3D8frZpM1r
+              | — Jad Limcaco (@jadlimcaco)
+              a(href='https://twitter.com/jadlimcaco/status/931248845085843456?ref_src=twsrc%5Etfw') November 16, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | This is super dope for anyone that designs UI flows in
+                a(href='https://twitter.com/sketchapp?ref_src=twsrc%5Etfw') @sketchapp
+                | ! Discuss on
+                a(href='https://twitter.com/ProductHunt?ref_src=twsrc%5Etfw') @ProductHunt
+                | :
+                a(href='https://t.co/nHQGci8JBh') https://t.co/nHQGci8JBh
+                a(href='https://t.co/4tNAm6SHt9') https://t.co/4tNAm6SHt9
+              | — Chris Messina (@chrismessina)
+              a(href='https://twitter.com/chrismessina/status/931606268510220289?ref_src=twsrc%5Etfw') November 17, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | 🔥 I just bought this kiiiiiilller Sketch Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/haqGcq5uq7') https://t.co/haqGcq5uq7
+              | — Sonali Agrawal (@sonaliagrawal)
+              a(href='https://twitter.com/sonaliagrawal/status/935553851717029888?ref_src=twsrc%5Etfw') November 28, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Flowkit is a completely reusable Sketch library with over 200 symbols that you can summon for every new project, and feel confident that every variation of tap, flow, and UX blurb is covered. Watch the video to see it in action.
+                a(href='https://t.co/wjebA0NylF') https://t.co/wjebA0NylF
+              | — Veerle Pieters (@vpieters)
+              a(href='https://twitter.com/vpieters/status/946738649340743680?ref_src=twsrc%5Etfw') December 29, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | I can’t stop clicking.
+                br
+                br
+                | Also, go purchase Flowkit & follow
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                | …you prob already do.
+                a(href='https://t.co/0L1Vrar6Au') https://t.co/0L1Vrar6Au
+                a(href='https://t.co/t4c7Ylf8qE') pic.twitter.com/t4c7Ylf8qE
+              | — Joel Beukelman 🤘🏻 (@_bklmn)
+              a(href='https://twitter.com/_bklmn/status/936011437289324545?ref_src=twsrc%5Etfw') November 29, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Picking up this little gem for
+                a(href='https://twitter.com/eBay?ref_src=twsrc%5Etfw') @eBay
+                |  Design today.
+                a(href='https://t.co/hj6qHB9D0a') https://t.co/hj6qHB9D0a
+                |  Go get it...Matt is a beast.
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+              | — Greg Becker (@gregbecker)
+              a(href='https://twitter.com/gregbecker/status/964608959251230720?ref_src=twsrc%5Etfw') February 16, 2018
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  (
+                a(href='https://t.co/N8DU3KR5IT') https://t.co/N8DU3KR5IT
+                | ) is the arrows functionality Sketch should've shipped with. Brilliant stuff.
+              | — Erik D. Kennedy (@erikdkennedy)
+              a(href='https://twitter.com/erikdkennedy/status/948671139873619968?ref_src=twsrc%5Etfw') January 3, 2018
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Forgot to send a shoutout to
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  and
+                a(href='https://t.co/Nhx9IRTgcY') https://t.co/Nhx9IRTgcY
+                br
+                br
+                | Saved me on a deadline right before Thanksgiving...would've taken me triple the time without it. AND it's incredibly extendable as you can see.
+                a(href='https://t.co/P92SUVM2m8') pic.twitter.com/P92SUVM2m8
+              | — Jeff H (@IsThatJeff)
+              a(href='https://twitter.com/IsThatJeff/status/934850756192227328?ref_src=twsrc%5Etfw') November 26, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | An order of things:
+                br
+                br
+                | 1.
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  releases a new thing.
+                br
+                | 2. Everyone at
+                a(href='https://twitter.com/SalesforceUX?ref_src=twsrc%5Etfw') @SalesforceUX
+                |  talks about it in Slack.
+                br
+                | 3. I talk about how much I ❤️
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                | .
+                br
+                br
+                | Today’s step #1:
+                a(href='https://t.co/hwvLGzP4e5') https://t.co/hwvLGzP4e5
+              | — Cliff Seal (@cliffseal)
+              a(href='https://twitter.com/cliffseal/status/931625845650870273?ref_src=twsrc%5Etfw') November 17, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Been using Sketch FlowKit for a day now and it's doubled my UX flow production speed. How nerdy can a tweet get! Go buy it and be just as nerdy!
+                a(href='https://t.co/bRpdWPqLQT') https://t.co/bRpdWPqLQT
+                a(href='https://twitter.com/hashtag/sketch?src=hash&ref_src=twsrc%5Etfw') #sketch
+                a(href='https://twitter.com/hashtag/ux?src=hash&ref_src=twsrc%5Etfw') #ux
+                a(href='https://twitter.com/hashtag/designer?src=hash&ref_src=twsrc%5Etfw') #designer
+              | — Nick Reynolds (@Nick__Reynolds)
+              a(href='https://twitter.com/Nick__Reynolds/status/969592980574269440?ref_src=twsrc%5Etfw') March 2, 2018
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Flowkit for
+                a(href='https://twitter.com/sketchapp?ref_src=twsrc%5Etfw') @Sketchapp
+                | , by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                | , has GOT TO BE in your Sketch toolbox for designing User Flows. Get it here
+                a(href='https://t.co/mhw9CT6lOb') https://t.co/mhw9CT6lOb
+                a(href='https://twitter.com/hashtag/ui?src=hash&ref_src=twsrc%5Etfw') #ui
+                a(href='https://twitter.com/hashtag/ux?src=hash&ref_src=twsrc%5Etfw') #ux
+                a(href='https://twitter.com/hashtag/appdesign?src=hash&ref_src=twsrc%5Etfw') #appdesign
+                a(href='https://t.co/xVW1X6Ky6x') pic.twitter.com/xVW1X6Ky6x
+              | — SWCHS (@SWCharleston)
+              a(href='https://twitter.com/SWCharleston/status/931256845666258945?ref_src=twsrc%5Etfw') November 16, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | 🔥 I just bought this kiiiiiilller Sketch Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/Fg0t9OoBn1') https://t.co/Fg0t9OoBn1
+              | — Joshwin Greene (@Josh_w_G)
+              a(href='https://twitter.com/Josh_w_G/status/934081519991234561?ref_src=twsrc%5Etfw') November 24, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Loving this: Sketch Flow kit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  -
+                a(href='https://t.co/NJajkCzmt6') https://t.co/NJajkCzmt6
+              | — ☀️ Ugur Kaner (@ugurkaner)
+              a(href='https://twitter.com/ugurkaner/status/939975393490038790?ref_src=twsrc%5Etfw') December 10, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='ja', dir='ltr')
+                | フローチャートつくるのに便利そう！
+                a(href='https://t.co/5xWhWSiAXa') https://t.co/5xWhWSiAXa
+              | — オロ (@oronain)
+              a(href='https://twitter.com/oronain/status/938389719561338880?ref_src=twsrc%5Etfw') December 6, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | 🔥All of the excitement for buying and using Sketch Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/hmW3FAEG1B') https://t.co/hmW3FAEG1B
+              | — Kris Puckett (@krispuckett)
+              a(href='https://twitter.com/krispuckett/status/935191583611326464?ref_src=twsrc%5Etfw') November 27, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Sketch Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |   is a must have kit for user-flow/ prototyping projects ... snag yours at
+                a(href='https://t.co/FQl1fIz85j') https://t.co/FQl1fIz85j
+              | — Ali Al-Janabi (@aligfx)
+              a(href='https://twitter.com/aligfx/status/935019035485442048?ref_src=twsrc%5Etfw') November 27, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Just bought this great Sketch Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/8DDRljwaVM') https://t.co/8DDRljwaVM
+                |  -- look forward to the time-savings!
+              | — Jason (@fnkick)
+              a(href='https://twitter.com/fnkick/status/934088272426536961?ref_src=twsrc%5Etfw') November 24, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | I was looking for this for a while --> Flowkit for Sketch
+                a(href='https://t.co/Mpyepy0b7w') https://t.co/Mpyepy0b7w
+                a(href='https://t.co/K6WwLtgHaY') pic.twitter.com/K6WwLtgHaY
+              | — Alex Sagrado (@AlexSagrado)
+              a(href='https://twitter.com/AlexSagrado/status/933654149807464448?ref_src=twsrc%5Etfw') November 23, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Sketch Flowkit is a nice time saver for UX flows in sketch
+                a(href='https://t.co/2lJJAPkJr5') https://t.co/2lJJAPkJr5
+              | — German Bauer (@design4use)
+              a(href='https://twitter.com/design4use/status/933401425903697920?ref_src=twsrc%5Etfw') November 22, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Just bought this sweet Sketch Flowkit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/opjJpl8vT0') https://t.co/opjJpl8vT0
+                |  Excited to save some serious time creating logic flows. 🔥
+              | — Nate Shevlin (@NateShevlin)
+              a(href='https://twitter.com/NateShevlin/status/932519375558422533?ref_src=twsrc%5Etfw') November 20, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                a(href='https://t.co/JktJnJcmFo') https://t.co/JktJnJcmFo
+                |  by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  is a great way to quickly mock up user flows in Sketch. Make sure to check out the video!
+                a(href='https://t.co/zoCYpMzrFP') pic.twitter.com/zoCYpMzrFP
+              | — Kevin Clark (@vernalkick)
+              a(href='https://twitter.com/vernalkick/status/931600894700937216?ref_src=twsrc%5Etfw') November 17, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='es', dir='ltr')
+                | Flowkit for Sketch!! Bonito y rápido! ;)
+                a(href='https://t.co/fJsGsfdpSg') https://t.co/fJsGsfdpSg
+                a(href='https://twitter.com/hashtag/design?src=hash&ref_src=twsrc%5Etfw') #design
+                a(href='https://twitter.com/hashtag/process?src=hash&ref_src=twsrc%5Etfw') #process
+                a(href='https://twitter.com/hashtag/flow?src=hash&ref_src=twsrc%5Etfw') #flow
+                a(href='https://twitter.com/hashtag/life?src=hash&ref_src=twsrc%5Etfw') #life
+                a(href='https://twitter.com/hashtag/megalike?src=hash&ref_src=twsrc%5Etfw') #megalike
+                a(href='https://twitter.com/hashtag/good?src=hash&ref_src=twsrc%5Etfw') #good
+                |  Gracias
+                a(href='https://twitter.com/angelcreative?ref_src=twsrc%5Etfw') @angelcreative
+                | !!
+                a(href='https://t.co/Kv3bng3bav') pic.twitter.com/Kv3bng3bav
+              | — Arantxa Vizcarro (@ArantxaVizcarro)
+              a(href='https://twitter.com/ArantxaVizcarro/status/931501374877130752?ref_src=twsrc%5Etfw') November 17, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | This is so good
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                a(href='https://t.co/8301SLfeGb') https://t.co/8301SLfeGb
+                |  —> 👍🏼
+                a(href='https://twitter.com/hashtag/tinybeerscheers?src=hash&ref_src=twsrc%5Etfw') #tinybeerscheers
+              | — Charlie Waite (@charliecwaite)
+              a(href='https://twitter.com/charliecwaite/status/931304078801453057?ref_src=twsrc%5Etfw') November 16, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | Awesome work by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  on this Kit, super useful ✨⚡️
+                br
+                a(href='https://t.co/QynToLqxcK') https://t.co/QynToLqxcK
+              | — Dominic (@domenico_loia)
+              a(href='https://twitter.com/domenico_loia/status/931290676595015680?ref_src=twsrc%5Etfw') November 16, 2017
+          li
+            blockquote.twitter-tweet(data-cards='hidden', data-lang='en')
+              p(lang='en', dir='ltr')
+                | 🔥💎🔥 Sketch flow kit by
+                a(href='https://twitter.com/mds?ref_src=twsrc%5Etfw') @mds
+                |  this is super useful.
+                a(href='https://t.co/Ta6JA3hbj8') https://t.co/Ta6JA3hbj8
+                a(href='https://twitter.com/hashtag/design?src=hash&ref_src=twsrc%5Etfw') #design
+                a(href='https://twitter.com/hashtag/sketch?src=hash&ref_src=twsrc%5Etfw') #sketch
+                a(href='https://twitter.com/hashtag/flow?src=hash&ref_src=twsrc%5Etfw') #flow
+              | — ᴅᴀɴ (@Betraydan)
+              a(href='https://twitter.com/Betraydan/status/931266586689851392?ref_src=twsrc%5Etfw') November 16, 2017
+          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
+        h2
+          strong Pretty sure
+          |  you're going to love it too.
+      footer
+        .fk-legal
+          p.fk-small
+            span.copyright ©
+            a(href='http://mds.is') MDS
+            | .
+        .fk-logo
+          h1 Flowkit
+        .fk-cta-group
+          .fk-cta-group-container
+            a.fk-cta.fk-cta-primary(href='#buy') Buy
+        .fk-section-lines
+          .fk-section-line-6-3
+            img(src='assets/img/section-path-6-3.svg', alt='decorative line', width='614px', height='298px')
+      p.fk-team
+        a(href='http://twitter.com/mds') Questions?
+        a(href='/affiliate') Affilates
+        a(href='/eula') EULA
+
+    script(type='text/javascript', src='assets/js/MorphSVGPlugin.min.js')
+    script(type='text/javascript', src='assets/js/TweenMax.min.js')
+    script(type='text/javascript', src='assets/js/mousetrap.min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(type='text/javascript', src='assets/js/jquery.touchSwipe.min.js')
+    script(type='text/javascript', src='assets/js/flowkit.js')
+    script(type='text/javascript', src='assets/js/svgReplace.js')
+    script(type='text/javascript', src='https://transactions.sendowl.com/assets/sendowl.js')
+    script(src='//fast.wistia.com/embed/medias/tofi9zegwu.jsonp', async='')
+    script(src='//fast.wistia.com/assets/external/E-v1.js', async='')
+
+  block foot
+

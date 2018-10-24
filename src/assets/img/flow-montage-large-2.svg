@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1360px" height="448px" viewBox="0 0 1360 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>flow-montage</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="10 0 20 10 10 20 0 10"></polygon>
+        <polygon id="path-2" points="10 0 20 10 10 20 0 10"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-17" transform="translate(-40.000000, -857.000000)">
+            <g id="video" transform="translate(80.000000, 897.000000)">
+                <g id="flow-montage">
+                    <g id="Group-16">
+                        <g id="Flow-/-Right-/-Arrow-ALT" transform="translate(1120.000000, 94.000000)">
+                            <path class="fk-path-alt" d="M0,90 L160,90" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12"></path>
+                            <g id="Assets-/-Cap-/-Arrow-/-ALT" transform="translate(150.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
+                                <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                            </g>
+                            <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(-10.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Up-/-Curve-/-Right-/-Default" transform="translate(1120.000000, 92.000000)">
+                            <path d="M3.82188838e-14,90 L3.27760092e-14,40 L2.84217094e-14,40 C2.57162944e-14,17.90861 17.90861,1.82689772e-14 40,1.42108547e-14 L160,2.84217094e-14" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                            <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(150.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                            </g>
+                            <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(0.000000, 90.000000) rotate(90.000000) translate(-0.000000, -90.000000) translate(-10.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Right-/-Curve-/-Up-/-Default-ALT" transform="translate(400.000000, 184.000000)">
+                            <g id="Flow-/-Right-/-Curve-/-Up-/-Default-ALT">
+                                <path class="fk-path-alt" d="M240,0 L240,144 L240,144 C240,166.09139 222.09139,184 200,184 L0,184" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12"></path>
+                                <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(0.000000, 184.000000) scale(1, -1) translate(-0.000000, -184.000000) translate(-10.000000, 174.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Up-/-Curve-/-Right-/-Default-ALT" transform="translate(640.000000, 0.000000)">
+                            <path class="fk-path-alt" d="M4.8985872e-15,184 L1.06491026e-15,40 L7.10542736e-15,40 C4.40001235e-15,17.90861 17.90861,4.05812251e-15 40,0 L80,0" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12"></path>
+                            <g id="Assets-/-Cap-/-Circle-/-ALT-2" transform="translate(70.000000, -10.000000)" stroke="#252525" fill-rule="evenodd" stroke-width="4" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                            <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(0.000000, 184.000000) rotate(90.000000) translate(-0.000000, -184.000000) translate(-10.000000, 174.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Up-/-Curve-/-Right-/-Default" transform="translate(800.000000, 0.000000)">
+                            <g id="Assets-/-Tap-/-Default" transform="translate(-40.000000, 144.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
+                                <circle id="Oval" cx="40" cy="40" r="40"></circle>
+                            </g>
+                            <g id="Flow-/-Up-/-Curve-/-Right-/-Default">
+                                <path d="M4.3117471e-14,184 L3.16164402e-14,40 L2.84217094e-14,40 C2.57162944e-14,17.90861 17.90861,2.53744046e-14 40,2.13162821e-14 L240,2.84217094e-14" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                                <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(230.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                                <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(0.000000, 184.000000) rotate(90.000000) translate(-0.000000, -184.000000) translate(-10.000000, 174.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Up-/-Curve-/-Left-/-U-turn" transform="translate(1120.000000, 276.000000)">
+                            <g id="Assets-/-Tap-/-Default" transform="translate(120.000000, 52.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
+                                <circle id="Oval" cx="40" cy="40" r="40"></circle>
+                            </g>
+                            <g id="Flow-/-Up-/-Curve-/-Left-/-U-turn">
+                                <path d="M0,92 L5.53753335e-15,40 L7.10542736e-15,40 C4.40001235e-15,17.90861 17.90861,1.11635499e-14 40,7.10542736e-15 L120,0 L120,-7.10542736e-15 C142.09139,8.45754599e-15 160,17.90861 160,40 L160,92" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                                <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(0.000000, 92.000000) rotate(-270.000000) translate(-0.000000, -92.000000) translate(-10.000000, 82.000000)" fill-rule="evenodd" fill="#252525">
+                                    <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                                </g>
+                                <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(160.000000, 92.000000) rotate(90.000000) translate(-160.000000, -92.000000) translate(150.000000, 82.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Up-/-Curve-/-Left-/-Default" transform="translate(0.000000, 92.000000)">
+                            <g id="Assets-/-Tap-/-ALT" transform="translate(280.000000, 53.000000)" fill-rule="evenodd" fill="#EF0055" fill-opacity="0.4">
+                                <circle id="Oval" cx="40" cy="40" r="40"></circle>
+                            </g>
+                            <g id="Flow-/-Up-/-Curve-/-Left-/-Default">
+                                <path d="M2.84217094e-14,2.84217094e-14 L280,3.34044911e-14 L280,2.84217094e-14 C302.09139,2.43635869e-14 320,17.90861 320,40 L320,93" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                                <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(0.000000, 0.000000) rotate(-180.000000) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                    <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                                </g>
+                                <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(320.000000, 93.000000) scale(-1, -1) rotate(90.000000) translate(-320.000000, -93.000000) translate(310.000000, 83.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Right-/-Curve-/-Down-/-Default-ALT" transform="translate(0.000000, 184.000000)">
+                            <path class="fk-path-alt" d="M0,120 L0,40 L0,40 C-2.705415e-15,17.90861 17.90861,-1.01527322e-14 40,-1.42108547e-14 L160,0" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12" transform="translate(80.000000, 60.000000) scale(-1, 1) translate(-80.000000, -60.000000) "></path>
+                            <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(0.000000, 0.000000) scale(1, -1) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Down-/-Arrow" transform="translate(160.000000, 184.000000)">
+                            <path d="M80,92 L80,1.42108547e-14 L80,92 Z" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                            <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(80.000000, 92.000000) rotate(-270.000000) translate(-80.000000, -92.000000) translate(70.000000, 82.000000)" fill-rule="evenodd" fill="#252525">
+                                <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                            </g>
+                            <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(80.000000, 0.000000) rotate(-90.000000) translate(-80.000000, -0.000000) translate(70.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Down-/-Curve-/-Left-/-U-turn" transform="translate(320.000000, 144.000000)" stroke="#252525" stroke-width="4" stroke-linecap="round">
+                            <path d="M0,132 L6.82833367e-15,40 L7.10542736e-15,40 C4.40001235e-15,17.90861 17.90861,-1.01527322e-14 40,-1.42108547e-14 L120,0 L120,0 C142.09139,1.55629733e-14 160,17.90861 160,40 L160,132" id="path" transform="translate(80.000000, 66.000000) scale(1, -1) translate(-80.000000, -66.000000) "></path>
+                        </g>
+                        <g id="Tap-/-Right-/-Curve-/-Down-/-Default-ALT">
+                            <g id="Assets-/-Tap-/-Default" transform="translate(-40.000000, -40.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
+                                <circle id="Oval" cx="40" cy="40" r="40"></circle>
+                            </g>
+                            <g id="Flow-/-Right-/-Curve-/-Down-/-Default-ALT">
+                                <path class="fk-path-alt" d="M0,144 L0,40 L0,40 C-2.705415e-15,17.90861 17.90861,4.05812251e-15 40,0 L480,0" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12" transform="translate(240.000000, 72.000000) scale(-1, 1) translate(-240.000000, -72.000000) "></path>
+                                <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(480.000000, 144.000000) scale(1, -1) rotate(-90.000000) translate(-480.000000, -144.000000) translate(470.000000, 134.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                                <g id="Assets-/-Cap-/-Circle-/-ALT-2" transform="translate(0.000000, 0.000000) scale(1, -1) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)" stroke="#252525" fill-rule="evenodd" stroke-width="4" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Right-/-Snake-/-Up-/-Default" transform="translate(800.000000, 92.000000)">
+                            <g id="Flow-/-Right-/-Snake-/-Up-/-Default">
+                                <path d="M0,184 L40,184 L40,184 C62.09139,184 80,166.09139 80,144 L80,40 L80,40 C80,17.90861 97.90861,1.11635499e-14 120,7.10542736e-15 L160,4.73316543e-30" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                                <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(-10.000000, 174.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Up-/-Arrow" transform="translate(960.000000, 276.000000)">
+                            <path d="M80,92 L80,1.42108547e-14 L80,92 Z" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                            <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(80.000000, 0.000000) rotate(-90.000000) translate(-80.000000, -0.000000) translate(70.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                            </g>
+                            <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(70.000000, 82.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Down-/-Arrow" transform="translate(560.000000, 93.000000) scale(1, -1) translate(-560.000000, -93.000000) translate(480.000000, 0.000000)">
+                            <path d="M80,186 L80,1.42108547e-14 L80,186 Z" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                            <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(80.000000, 186.000000) rotate(-270.000000) translate(-80.000000, -186.000000) translate(70.000000, 176.000000)" fill-rule="evenodd" fill="#252525">
+                                <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                            </g>
+                            <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(80.000000, 0.000000) rotate(-90.000000) translate(-80.000000, -0.000000) translate(70.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Right-/-Arrow" transform="translate(960.000000, 2.000000)">
+                            <path d="M0,90 L80,90" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                            <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(70.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
+                                <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Left-/-Curve-/-Down-/-Default" transform="translate(0.000000, 276.000000)">
+                            <g id="Flow-/-Left-/-Curve-/-Down-/-Default">
+                                <path d="M5.68434189e-14,92 L5.68434189e-14,40 L5.68434189e-14,40 C5.41380039e-14,17.90861 17.90861,-3.04730485e-15 40,-7.10542736e-15 L160,0" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
+                                <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(0.000000, 92.000000) scale(-1, -1) rotate(-90.000000) translate(-0.000000, -92.000000) translate(-10.000000, 82.000000)" fill-rule="evenodd" fill="#252525">
+                                    <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Tap-/-Right-/-Snake-/-Up-/-Default-ALT" transform="translate(800.000000, 184.000000)">
+                            <g id="Assets-/-Tap-/-ALT" transform="translate(-40.000000, 144.000000)" fill-rule="evenodd" fill="#EF0055" fill-opacity="0.4">
+                                <circle id="Oval" cx="40" cy="40" r="40"></circle>
+                            </g>
+                            <g id="Flow-/-Right-/-Snake-/-Up-/-Default-ALT">
+                                <path class="fk-path-alt" d="M0,184 L120,184 L120,184 C142.09139,184 160,166.09139 160,144 L160,40 L160,40 C160,17.90861 177.90861,1.11635499e-14 200,7.10542736e-15 L320,4.73316543e-30" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12"></path>
+                                <g id="Assets-/-Cap-/-Decision" transform="translate(310.000000, -10.000000)">
+                                    <g id="Rectangle">
+                                        <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <path stroke="#252525" stroke-width="4" d="M10,2.82842712 L2.82842712,10 L10,17.1715729 L17.1715729,10 L10,2.82842712 Z"></path>
+                                    </g>
+                                </g>
+                                <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(-10.000000, 174.000000)" fill-rule="evenodd" fill="#252525">
+                                    <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Down-/-Curve-/-Right-/-Default" transform="translate(160.000000, 276.000000)">
+                            <path d="M1.46957616e-14,92 L6.38946156e-15,40 L0,40 C-2.705415e-15,17.90861 17.90861,4.05812251e-15 40,0 L240,0" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" transform="translate(120.000000, 46.000000) scale(1, -1) translate(-120.000000, -46.000000) "></path>
+                            <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(240.000000, 92.000000) scale(1, -1) translate(-240.000000, -92.000000) translate(230.000000, 82.000000)" fill-rule="evenodd" fill="#252525">
+                                <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
+                            </g>
+                            <g id="Assets-/-Cap-/-Decision" transform="translate(0.000000, 0.000000) scale(1, -1) rotate(90.000000) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)">
+                                <g id="Rectangle">
+                                    <use fill="#F7F7F7" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    <path stroke="#252525" stroke-width="4" d="M10,2.82842712 L2.82842712,10 L10,17.1715729 L17.1715729,10 L10,2.82842712 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Flow-/-Right-/-Snake-/-Down-/-Default" transform="translate(640.000000, 184.000000)" stroke="#252525" stroke-width="4" stroke-linecap="round">
+                            <path d="M0,184 L40,184 L40,184 C62.09139,184 80,166.09139 80,144 L80,40 L80,40 C80,17.90861 97.90861,1.11635499e-14 120,7.10542736e-15 L160,4.73316543e-30" id="path" transform="translate(80.000000, 92.000000) scale(1, -1) translate(-80.000000, -92.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

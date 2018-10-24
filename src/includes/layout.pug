@@ -1,0 +1,69 @@
+//- layout.pug
+
+html
+  head
+    block head
+      title Flowkit by MDS
+
+    block meta
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+      meta(name="description" content="Prototype")
+      meta(name="HandheldFriendly" content="True")
+      meta(name="MobileOptimized" content="320")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no")
+      meta(name='description', content="The ultimate component library for user flows, content maps, screen annotations, and more.")
+
+      //- Schema.org markup for Google+
+      meta(itemprop='name', content='Flowkit')
+      meta(itemprop='description', content="The ultimate component library for user flows, content maps, screen annotations, and more.")
+      meta(itemprop='image', content='https://mds-assets.s3.amazonaws.com/switchtostudio/switchtostudio-card.jpg?=cachebuster1')
+
+      //- Twitter Card data
+      meta(name='twitter:card', content='summary_large_image')
+      meta(name='twitter:site', content='@mds')
+      meta(name='twitter:title', content='Flowkit')
+      meta(name='twitter:description', content="The ultimate component library for user flows, content maps, screen annotations, and more.")
+      meta(name='twitter:creator', content='@mds')
+
+      //- Twitter summary card with large image must be at least 280x150px
+      meta(name='twitter:image:src', content='https://mds-assets.s3.amazonaws.com/switchtostudio/switchtostudio-card.jpg?=cachebuster1')
+
+      //- Open Graph data
+      meta(property='og:title', content='Flowkit')
+      meta(property='og:type', content='article')
+      meta(property='og:url', content='http://switchtostudio.com')
+      meta(property='og:image', content='https://mds-assets.s3.amazonaws.com/switchtostudio/switchtostudio-card.jpg?=cachebuster1')
+      meta(property='og:description', content="The ultimate component library for user flows, content maps, screen annotations, and more.")
+      meta(property='og:site_name', content='Flowkit')
+
+    block stylesandscripts
+      link(rel="stylesheet" type="text/css" href="/assets/css/screen.css")
+      link(id="favicon" rel="shortcut icon" type="image/png" href="/favicon.ico")
+
+
+  block content
+
+
+  block foot
+    //- Drip
+    script(type='text/javascript').
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '7684207';
+      (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript'; dc.async = true;
+      dc.src = '//tag.getdrip.com/7684207.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+      })();
+
+    //- Go Squared
+    script.
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+      _gs('GSN-965741-P');
+

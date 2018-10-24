@@ -1,0 +1,33 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit – User Flow Library for Figma and Sketch
+
+block content
+  body#fk-thanks
+    .fk-container
+
+      header
+        .fk-sketch
+          img(alt='sketch icon', src='../assets/img/sketch.svg')
+          p.fk-small
+            | A Sketch Library
+            span by
+            a(href='http://twitter.com/mds') @mds
+        .fk-logo
+          h1 Flowkit
+
+      section.fk-main
+        .fk-container-content
+          h2
+            strong Thanks for purchasing Flowkit.
+            |  Check your email for the download link. 🤘😎
+            br
+            br
+            | Share your excitement
+            a(href='https://twitter.com/intent/tweet?text=🔥+I+just+bought+this+kiiiiiilller+Sketch+Flowkit+by+@mds+http://sketchflowkit.com') with a tweet.
+
+      p.fk-team
+        a(href='http://twitter.com/mds') Questions?
+        a(href='/affiliate') Affilates
+        a(href='/eula') EULA
