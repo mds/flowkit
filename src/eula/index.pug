@@ -6,15 +6,10 @@ block head
 block content
   body#fk-eula
     .fk-container
-      header
-        .fk-sketch
-          a(href='/')
-            img(alt='sketch icon', src='../assets/img/sketch.svg')
-          p.fk-small A Sketch Library
-        .fk-logo
-          h1 Flowkit
+      include ../includes/header-interior.pug
+
       section.fk-main
-        .fk-container-content
+        .fk-container-content.fk-container-content--body
           h2
             strong End User License Agreement
             | .
@@ -62,7 +57,4 @@ block content
           p
             | The headings contained in this License are inserted only as a matter of convenience and reference and in no way define, limit, or describe the scope or intent of this License and do not in any way effect its provisions.
 
-      p.fk-team
-        a(href='http://twitter.com/mds') Questions?
-        a(href='/affiliate') Affilates
-        a(href='/eula') EULA
+      include ../includes/foot.pug

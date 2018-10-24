@@ -15,18 +15,10 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
-	"/src/_archive/index-orig.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/_archive/index-orig.html",
-		"oF": 0
-		},
-	"/src/_archive/index-team-update.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/_archive/index-team-update.html",
+	"/src/_archive": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/_archive",
 		"oF": 0
 		},
 	"/src/affiliate/index.pug": {
@@ -661,6 +653,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/img/logo-figma.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/logo-figma.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/img/logo-flowkit.png": {
 		"ft": 32768,
 		"iS": 2449,
@@ -1151,6 +1153,42 @@
 		"oAP": "/build/favicon.ico",
 		"oF": 0
 		},
+	"/src/includes/bottomnav.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/includes/bottomnav.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/includes/foot.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/includes/foot.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/includes/header-interior.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/includes/header-interior.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/includes/header.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/includes/header.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/includes/layout.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -1206,7 +1244,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/img/logo-flowkit.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562018461.31907594
+	"lastBuiltDate": 562098982.147295
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -18,7 +18,7 @@ $( document ).ready(function() {
 
   // style 1 (for the arrow) there are 11 total
   function updateFkArrowNameStyle1(){
-    window.mod1  = "arrow";
+    window.mod1  = "";
     window.dir2  = "";
     window.mod2  = "";
     setFkArrowName();
@@ -366,7 +366,7 @@ $( document ).ready(function() {
   // setup arrow name variables (set default)
   window.type  = "tap";
   window.dir1  = "right";
-  window.mod1  = "arrow";
+  window.mod1  = "";
   window.dir2  = "";
   window.mod2  = "";
   window.style = "";

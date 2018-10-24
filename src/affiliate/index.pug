@@ -6,26 +6,17 @@ block head
 block content
   body#fk-affiliate
     .fk-container
-      header
-        .fk-sketch
-          img(alt='sketch icon', src='../assets/img/sketch.svg')
-          p.fk-small A Sketch Library
-        .fk-logo
-          h1 Flowkit
-        .fk-cta-group
-          .fk-cta-group-container
-            a.fk-cta.fk-cta-primary(href='https://www.sendowl.com/programs/12274/join/780a1e487f', rel='nofollow') Join
+      include ../includes/header-interior.pug
+
       section.fk-affiliate
-        h2
-          | Let's make some money,
-          strong shall we?
+        h2: strong Affiliates
         .fk-container-content.fk-container-content--body
           p
             | Besides becoming super awesome upon sign up, you'll enjoy a 30% commission on every single sale that your link refers. That means if you send us 12 sales at $29, you'll earn just over $100 bucks. Joining the program takes less than 30 seconds. 👌
           h3 Process
           p
             | The process is really simple. You literally
-            a(href='https://www.sendowl.com/programs/12274/join/780a1e487f') click this link
+            a(href='https://www.sendowl.com/programs/12274/join/780a1e487f') &nbsp;click this link
             | , enter your info, and you're in. But some like to read more before joining. 🤓
           ol
             li
@@ -54,19 +45,5 @@ block content
             li Abuse, gaming, or shady behavior will get your account banned. Just be cool.
             li We reserve the right to change the terms at anytime.
 
-      footer
-        .fk-legal
-          p.fk-small
-            span.copyright ©1982
-            a(href='http://mds.is') MDS
-        .fk-logo
-          h1  
-        .fk-cta-group
-          .fk-cta-group-container
-            a.fk-cta.fk-cta-primary(href='https://www.sendowl.com/programs/12274/join/780a1e487f', rel='nofollow') Join
-
-      p.fk-team
-        a(href='http://twitter.com/mds') Questions?
-        a(href='/affiliate') Affilates
-        a(href='/eula') EULA
+      include ../includes/foot.pug
 
