@@ -5,26 +5,30 @@
     <body id="fk-eula">
       <div class="fk-container">
         <header class="header-interior">
-          <div class="fk-top-left"><a href="/"><img alt="flowkit icon" src="/assets/img/logo-flowkit.png"/>
-              <h1>Flowkit</h1></a></div>
-          <div class="fk-logo">
-            <p>&nbsp;</p>
-          </div>
-          <div class="fk-cta-group">
-            <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="#buy">Buy</a></div>
+          <div class="fk-header-wrapper">
+            <div class="fk-top-left"><a href="/"><img alt="flowkit icon" src="/assets/img/logo-flowkit.png"/>
+                <h1>Flowkit</h1></a></div>
+            <div class="fk-logo">
+              <p>&nbsp;</p>
+            </div>
+            <div class="fk-cta-group">
+              <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="/#buy">Buy</a></div>
+            </div>
           </div>
         </header>
         <section class="fk-main">
           <div class="fk-container-content fk-container-content--body">
             <h2><strong>Updates</strong></h2>
             <h3>Version 2.0</h3>
-            <p>Flowkit has been redesigned from scratch for both Figma and Sketch. Both design tool libraries have the same content, but each file format was designed natively to leverage the unique features of each tool. Please note, the use of the word <strong>“component”</strong> below applies to both Figma Components and Sketch Symbols.</p>
-            <h3>New Grid</h3>
+            <p class="fk-intro">Flowkit has been redesigned from scratch for both Figma and Sketch. Both design tool libraries have the same content, but each file format was designed natively to leverage the unique features of each tool. Please note, the use of the word <strong>“component”</strong> below applies to both Figma Components and Sketch Symbols.</p>
+            <h4>New Grid</h4>
             <p>Each component has been redesigned at 360x360 pixels with padding included. This means that all flows, blocks, annotations, etc. can now be aligned side by side, with zero margin, and have a consistent spacing throughout the entire document. This eliminates the need to guess how tall or wide any specific component should be.</p>
-            <h3>Master Components</h3>
+            <h4>Master Components</h4>
             <p>The Master Components are the foundational pieces that create all of the component instances. The total number of Master components for the flow lines has been reduced from 22 components in Flowkit 1.0 to now only 12 Master components in Flowkit 2.0.</p>
             <p>Each variation of the Master components all scale correctly while manually scaling the bounding box of a component or by using keyboard shortcuts like <code>⌘ nudge</code> and <code>⌘ shift nudge</code>. Any edits made to these components will affect all instances in the library. It is not recommended to modify these.</p>
-            <h3>Naming Conventions</h3>
+            <h4>Master Variants</h4>
+            <p>There are several master variants for quickly changing the core style of the Flow instance. These include <code>Dashed</code>, <code>Red</code>, <code>Green</code>, and <code>Blue</code>.</p>
+            <h4>Naming Conventions</h4>
             <p>Each directional component uses the following naming convention. It begins with the point of origin and ends with the destination.</p><span class="code-callout">
               <p><code>Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2</code></p></span>
             <ul>
@@ -34,7 +38,7 @@
               <li><em>Direction 2</em> comes immediately after the Initial Modifier. <code>Right</code> and <code>Left</code> components can be either <code>Up</code>, or <code>Down</code>, whereas <code>Up</code> and <code>Down</code> components will have Secondary Modifiers as <code>Left</code>, or <code>Right</code>.</li>
               <li><em>Modifier 2</em> is the final section of the Flow component and determines the direction of the arrow. This can be <code>Straight</code>, <code>U-turn</code>, or <code>Hook</code>.</li>
             </ul>
-            <h3>Flows</h3>
+            <h4>Flows</h4>
             <p>These are the primary components in the system. There are 11 options (listed below) for each direction. All Flow components can be scaled without skewing or stretching. Each Flow component also contains nested endpoints that can be hidden or overridden with different end points.</p>
             <p>There are 11 variants in total for each direction. For example:</p>
             <ol>
@@ -50,18 +54,21 @@
               <li><code>Flow / Right / Snake / Up / Straight</code></li>
               <li><code>Flow / Right / Snake / Up / Hook</code></li>
             </ol>
-            <h3>Taps</h3>
+            <h4>Taps</h4>
             <p>Taps are intended for use on top of UI screen designs when laying out flow documents. They are named exactly the same as Flow components, whereas Tap is the Type Indicator instead of Flow. Each endpoint has been pre-overridden with the Tap endpoint and can additionally be changed to other interactions, such as Swipe, Long Press, and Double Tap.</p>
-            <h3>End Points</h3>
+            <h4>End Points</h4>
             <p>In Flowkit 2.0 every single <code>End Point</code> is the same dimension and can be interchanged with any other end point instance for full customization. These include <code>circles</code>, <code>arrows</code>, <code>taps</code>, <code>swipes</code>, and more.</p>
-            <h3>Splits</h3>
+            <h4>Splits</h4>
             <p>There are 4 directional Split components for indicating a fork in a user flow. These are created with nested Flow components, but can also be extended or modified for more complex flows.</p>
-            <h3>Blocks</h3>
+            <h4>Blocks</h4>
             <p>Blocks are used as main sections of user flows. Just like every other component, it's built on a 360x360 grid. There are multiple Block options such as <code>Default</code>, <code>Dashed </code>, <code>Emphasis</code>, and <code>Solid</code>. There are also Device blocks for <code>iOS</code>,<code>Android</code>, and <code>Browser</code> for more options.</p>
-            <h3>Labels</h3>
+            <h4>Labels</h4>
             <p>There are multiple label styles including <code>solid</code> and <code>outline</code> versions of <code>default</code>, <code>red</code>, <code>blue</code>, and <code>green</code>. Labels are intended for use with Flow or Tap lines to provide more context about a specific user path.</p>
-            <h3>Annotations</h3>
+            <h4>Annotations</h4>
             <p>There are two types of annotation components. The general Annotation Labels can be used anywhere within your flow to provide more situational context, whereas the Annotation Points are intended to callout specific areas of your screen designs.</p>
+            <h3>Version 1.0</h3>
+            <p class="fk-intro">The first version of Flowkit was for Sketch only, and released on November 16, 2017. I wasn't planning on making a big website for it so there isn't a lot of documentation for it.</p>
+            <p>The file itself did have installation and usage instructions baked into it, but there's not a good reason for me to duplicate all of that content. <a href="https://sketch.cloud/s/7yK5L">Here's a preview</a> of the original document in Sketch Cloud.</p>
           </div>
         </section>
         <footer>
@@ -115,6 +122,16 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
     <link id="favicon" rel="shortcut icon" type="image/png" href="/favicon.ico"/>
   </head>
+  <script type="text/javascript" src="/assets/js/MorphSVGPlugin.min.js"></script>
+  <script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="/assets/js/mousetrap.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="/assets/js/flowkit.js"></script>
+  <script type="text/javascript" src="/assets/js/svgReplace.js"></script>
+  <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+  <script src="//fast.wistia.com/embed/medias/tofi9zegwu.jsonp" async=""></script>
+  <script src="//fast.wistia.com/assets/external/E-v1.js" async=""></script>
   <script type="text/javascript">
     var _dcq = _dcq || [];
     var _dcs = _dcs || {};

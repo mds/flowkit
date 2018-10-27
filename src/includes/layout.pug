@@ -1,5 +1,4 @@
 //- layout.pug
-
 html
   head
     block head
@@ -46,6 +45,17 @@ html
 
 
   block foot
+    script(type='text/javascript', src='/assets/js/MorphSVGPlugin.min.js')
+    script(type='text/javascript', src='/assets/js/TweenMax.min.js')
+    script(type='text/javascript', src='/assets/js/mousetrap.min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(type='text/javascript', src='/assets/js/jquery.touchSwipe.min.js')
+    script(type='text/javascript', src='/assets/js/flowkit.js')
+    script(type='text/javascript', src='/assets/js/svgReplace.js')
+    script(type='text/javascript', src='https://transactions.sendowl.com/assets/sendowl.js')
+    script(src='//fast.wistia.com/embed/medias/tofi9zegwu.jsonp', async='')
+    script(src='//fast.wistia.com/assets/external/E-v1.js', async='')
+
     //- Drip
     script(type='text/javascript').
       var _dcq = _dcq || [];

@@ -1,5 +1,17 @@
 $( document ).ready(function() {
 
+  // show / hide header bg on scroll
+  var h = $("header");
+  var pos = h.position();
+  $(window).scroll(function() {
+    var windowpos = $(window).scrollTop();
+    if (windowpos >= pos.top & windowpos >=20) {
+      h.addClass("fk-header-scrolled");
+    } else {
+      h.removeClass("fk-header-scrolled");
+    }
+  });
+
   //firefox detect
   var browser=navigator.userAgent.toLowerCase();
   if(browser.indexOf('firefox') > -1) {
