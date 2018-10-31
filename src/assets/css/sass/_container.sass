@@ -14,8 +14,31 @@
   max-width: 80rem
   margin: auto
 
+  img
+    padding: 2rem 0 1rem
+
+  img.fk-big-img
+    +easeall
+
+    +large
+      width: 140%
+      margin-left: -20%
+      +easeall
+
+  h2
+    padding-left: 0
+    margin: auto
+    a
+      line-height: 2em
+      font-size: .75em
+      font-weight: 500
+
   &--body
+    margin-top: 8rem
     max-width: 48rem !important
+
+    .fk-no-title &
+      margin-top: 0rem
 
   p
     font-size: 1.25rem
@@ -23,15 +46,13 @@
     &.fk-intro
       font-size: 1.5rem
 
-  h4
-    // background: yellow
-    // display:
-
   li
     font-size: .75em
     margin-bottom: .5rem
-    list-style-type: disc
-    margin-left: 1.25rem
+    list-style-type: 1
+    margin-left: 1.5rem
 
     +large
       width: 80%
+
+

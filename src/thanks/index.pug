@@ -4,20 +4,23 @@ block head
   title Thanks for buying Flowkit!
 
 block content
-  body#fk-thanks
+  body
     .fk-container
 
-      //- include ../includes/header-interior.pug
+      - var headerTitle = "Thanks!";
+      <style> .fk-cta-group { display: none; !important }</style>
+      include ../includes/header-interior.pug
 
       section.fk-main
         .fk-container-content.fk-container-content--body
-          h2
-            strong Thanks! <br/>
-            | Check your email for the link. 🤘😎
 
-          p.centered.small <strong>Please note:</strong> The file download link is sent automatically via Sendowl once payment is processed. PayPal payments tend to take a little longer than credit cards. If you have any issues please don't hesitate to email me &rarr; matt at mds dot is
+          p.centered.fk-intro <strong>Check your email for the link. </strong>Please note, the file download link is sent automatically via Sendowl, once payment is processed. PayPal payments tend to take a little longer than credit cards.
+
+          p.centered.small  If you have any issues please don't hesitate to email me &rarr; matt at mds dot is. The charge will appear on your statement from Studio MDS, LLC.
+
 
           p.centered
-            a(href='https://twitter.com/intent/tweet?text=🔥+I+just+bought+this+kiiiiiilller+Sketch+Flowkit+by+@mds+http://useflowkit.com') Share your excitement with a tweet
+            a(href='https://twitter.com/intent/tweet?text=I+just+bought+Flowkit+for+Figma+and+Sketch+by+@mds.+Gonna+save+me+so+much+time+creating+user+flows.+👌https://useflowkit.com') Share your excitement with a tweet
 
-      include ../includes/foot.pug
+
+    include ../includes/foot.pug

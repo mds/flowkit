@@ -1,5 +1,5 @@
 header
-  padding: 2.5rem 1rem
+  padding: 1rem
   position: fixed
   top: 0
   left: 0
@@ -42,11 +42,12 @@ header
     padding-top: 0
 
   img
-    width: 24px
-    height: 24px
-    margin: .25rem .5rem .4rem .5rem
+    width: 22px
+    height: 22px
+    margin: .25rem .325rem .4rem .5rem
     display: inline-block
     float: left
+    +easeall
 
 p.fk-small
   font-size: .75em
@@ -72,7 +73,8 @@ p.fk-small
 
 .header-interior
   align-items: center
-  padding: 0
+  padding: 0 1rem 0 0
+
   a
     &:hover img
       transform: scale(-1.1, 1.1) translateX(.25rem)
@@ -86,24 +88,36 @@ p.fk-small
 
   img
     margin: 2px 8px 0
-    width: 43px
-    height: 43px
+    width: 63px
+    height: 63px
     transform: scale(-1, 1)
     +easeall
 
 
 .fk-header-scrolled
-  padding: 1rem 2rem !important
+  padding: 1rem !important
   background: $color-white
-  // box-shadow: 0 20px 40px 0 rgba($color-black, .075)
   +easeall
+
+  +medium
+    padding: 1rem 2rem !important
+
+  .fk-top-left img
+    transform: scale(.9)
+    margin-right: 0
+    +easeall
+
   h1
-    font-size: 1.25rem
+    transform: scale(.8)
     +easeall
 
   &.header-interior
-    padding: 0 2rem !important
+    padding: 0 1rem 0 0 !important
 
-    img
-      width: 43px
-      height: 43px
+    .fk-top-left img
+      transform: scale(-.9, .9) !important
+      +easeall
+
+  a.fk-cta
+    font-size: .675em !important
+    font-weight: bold

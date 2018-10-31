@@ -1046,6 +1046,181 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/img/update-img/01-main.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/update-img/01-main.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/01-main.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/01-main.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/02-grid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/02-grid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/03-master.gif": {
+		"ft": 4194304,
+		"iS": 1614016,
+		"oA": 0,
+		"oAP": "/build/assets/img/updates/03-master.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/updates/03-master.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/assets/img/updates/03-master.mp4",
+		"oF": 0
+		},
+	"/src/assets/img/updates/04-variants.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/04-variants.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/05-naming.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/05-naming.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/06-flow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/06-flow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/07-tap.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/07-tap.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/08-endpoints.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/08-endpoints.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/08-split.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/08-split.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/09-block.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/09-block.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/09-split.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/09-split.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/10-block.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/10-block.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/10-devices.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/10-devices.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/11-devices.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/11-devices.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/12-labels.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/12-labels.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/updates/13-annotations.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/13-annotations.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/img/video-thumb.jpg?ref=cachebuster.jpg": {
 		"ft": 16384,
 		"iS": 70233,
@@ -1137,15 +1312,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/src/eula/index.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "/build/eula/index.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"/src/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -1204,6 +1370,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "/build/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/license/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/license/index.html",
 		"oF": 0,
 		"oS": 0
 		},

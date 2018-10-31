@@ -6,14 +6,14 @@ block head
 block content
   body#fk-affiliate
     .fk-container
+      - var headerTitle = "Affiliate";
       include ../includes/header-interior.pug
 
       section.fk-main
-        h2: strong Affiliates
         .fk-container-content.fk-container-content--body
-          p
-            | Besides becoming super awesome upon sign up, you'll enjoy a 30% commission on every single sale that your link refers. That means if you send us 12 sales at $29, you'll earn just over $100 bucks. Joining the program takes less than 30 seconds. 👌
-          h3 Process
+          p.fk-intro
+            | Besides becoming super awesome upon sign up, you'll enjoy a 30% commission on every single sale that your link refers. That means if you send us 12 sales at $29, you'll earn just over $100 bucks. Joining the program takes less than 30 seconds.
+          h4 Process
           p
             | The process is really simple. You literally
             a(href='https://www.sendowl.com/programs/12274/join/780a1e487f') &nbsp;click this link
@@ -24,7 +24,7 @@ block content
               |  and create your SendOwl affiliate account. That's the 3rd party vendor that delivers the digital goods. You'll be provided with your affiliate link immediately.
             li
               | Start promoting! You can keep an eye on your analytics in the SendOwl affiliate dashboard.
-          h3 Promotion Ideas
+          h4 Promotion Ideas
           p
             | You're creative and I know you've totally got this, but here are a few ideas to get the juices flowing. 💪
           ol
@@ -35,7 +35,7 @@ block content
               | Add your affiliate link to projects or case studies you write about that made use of Flowkit.
             li Share how your UX process is faster and more efficient by using Flowkit.
             li Add Flowkit to a resources page on your blog or website as your tool of choice.
-          h3 Terms
+          h4 Terms
           p The rules are simple and mutually beneficial. 🤜💥🤛
           ul
             li

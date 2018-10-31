@@ -1,5 +1,23 @@
 $( document ).ready(function() {
 
+  startAnimations();
+
+  // cycle through animations
+  function startAnimations (){
+    setTimeout(function(){ fkUpdatePosition(); }, 1000);
+    setTimeout(function(){ fkUpdatePosition(); }, 1500);
+    setTimeout(function(){ fkUpdatePosition(); }, 2000);
+    setTimeout(function(){ fkUpdatePosition(); }, 2500);
+    setTimeout(function(){ fkUpdatePosition(); }, 3000);
+    setTimeout(function(){ fkUpdatePosition(); }, 3500);
+    setTimeout(function(){ fkUpdatePosition(); }, 4000);
+    setTimeout(function(){ fkUpdatePosition(); }, 4500);
+    setTimeout(function(){ fkUpdatePosition(); }, 5000);
+    setTimeout(function(){ fkUpdatePosition(); }, 5500);
+    setTimeout(function(){ fkUpdatePosition(); }, 6000);
+    setTimeout(function(){ fkYesPulse(); }, 6500);
+  }
+
   // show / hide header bg on scroll
   var h = $("header");
   var pos = h.position();
@@ -18,12 +36,13 @@ $( document ).ready(function() {
       alert("The arrow in the carousel below doesn't animate correctly in Firefox 😱. I'll fix this real soon, pinky promise. In the meantime you can view the rest of the site with no problem. And if you're super curious about the cool arrow animations, pop open Chrome or Safari. Cheers! —MDS");
   }
 
-  // scroll to buy section
-  $(".fk-cta-primary").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".fk-decision").offset().top},
-        'slow');
-  });
+  // I'm doing this with CSS now
+  // // scroll to buy section
+  // $(".fk-cta-primary").click(function() {
+  //   $('html,body').animate({
+  //       scrollTop: $(".fk-decision").offset().top},
+  //       'slow');
+  // });
 
   // for removing the grey box around pressed things in mobile safari
   document.addEventListener("touchstart", function(){}, true);
@@ -279,6 +298,11 @@ $( document ).ready(function() {
     $(".fk-arrow-container").removeClass("fk-arrow-is-pulsing");
   }
 
+  // adds initial pulse animation to arrow
+  function fkYesPulse(){
+    $(".fk-arrow-container").addClass("fk-arrow-is-pulsing");
+  }
+
   // for transforming all of the arrows FORWARD, used with fkUpdatePosition();
   var positions = {
     pos1: function (event) { fkAnimate1to2(); updateFkArrowNameStyle2(); },
@@ -305,7 +329,8 @@ $( document ).ready(function() {
     var link = $(".fk-arrow[data-pos]"),
         position = link.data("pos");
 
-    event.preventDefault();
+    // this prevents there being a default position. no need, so it's commented out.
+    // event.preventDefault();
 
     // If there's a position with the given name, call it
     if( typeof positions[position] === "function" ) {

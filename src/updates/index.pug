@@ -3,30 +3,39 @@ extends ../includes/layout.pug
 block head
   title Flowkit Updates
 
-  body#fk-eula
+  body.fk-no-title
     .fk-container
+      - var headerTitle = "Updates";
       include ../includes/header-interior.pug
 
       section.fk-main
         .fk-container-content.fk-container-content--body
-          h2: strong Updates
+
+          img.fk-big-img(src="../assets/img/updates/01-main.svg")
 
           h3 Version 2.0
-
           p.fk-intro Flowkit has been redesigned from scratch for both Figma and Sketch. Both design tool libraries have the same content, but each file format was designed natively to leverage the unique features of each tool. Please note, the use of the word <strong>“component”</strong> below applies to both Figma Components and Sketch Symbols.
 
           h4 New Grid
-          p Each component has been redesigned at 360x360 pixels with padding included. This means that all flows, blocks, annotations, etc. can now be aligned side by side, with zero margin, and have a consistent spacing throughout the entire document. This eliminates the need to guess how tall or wide any specific component should be.
+          img(src="../assets/img/updates/02-grid.svg")
+          p Each component has been redesigned at 360x360 pixels with padding included. This means that all flows, blocks, annotations, etc. can now be aligned side by side, with zero margin, and have a consistent spacing throughout the entire document. This eliminates the need to guess the dimensions and proper spacing for any specific component used in your flow.
 
           h4 Master Components
+          img(src="../assets/img/updates/03-master.gif")
           p The Master Components are the foundational pieces that create all of the component instances. The total number of Master components for the flow lines has been reduced from 22 components in Flowkit 1.0 to now only 12 Master components in Flowkit 2.0.
-          p Each variation of the Master components all scale correctly while manually scaling the bounding box of a component or by using keyboard shortcuts like <code>⌘ nudge</code> and <code>⌘ shift nudge</code>. Any edits made to these components will affect all instances in the library. It is not recommended to modify these.
+          p Each variation of the Master components all scale correctly while manually scaling the bounding box of a component or by using keyboard shortcuts like <code>⌘ nudge</code> and <code>⌘ shift nudge</code>. Any edits made to these components will affect all instances in the library. It is not recommended to modify Master Components.
 
           h4 Master Variants
-          p There are several master variants for quickly changing the core style of the Flow instance. These include <code>Dashed</code>, <code>Red</code>, <code>Green</code>, and <code>Blue</code>.
+          img(src="../assets/img/updates/04-variants.svg")
+          p There are several master variants for quickly changing the core style of the Flow instance. These include <code>Dashed</code>, <code>Red</code>, <code>Green</code>, <code>Blue</code>, and <code>Light</code>.
+
+          h4 Native Styles
+          p Insert image of both Figma and Sketch style overrides here.
+          p Pre-built styles are available for all components in Flowkit. There are multiple options for stroke styles, fill colors, and more built right into both Figma and Sketch using their respective techniques.
 
 
           h4 Naming Conventions
+          img(src="../assets/img/updates/05-naming.svg")
           p Each directional component uses the following naming convention. It begins with the point of origin and ends with the destination.
           span.code-callout
             p
@@ -49,9 +58,10 @@ block head
               |  is the final section of the Flow component and determines the direction of the arrow. This can be <code>Straight</code>, <code>U-turn</code>, or <code>Hook</code>.
 
           h4 Flows
+          img(src="../assets/img/updates/06-flow.svg")
           p These are the primary components in the system. There are 11 options (listed below) for each direction. All Flow components can be scaled without skewing or stretching. Each Flow component also contains nested endpoints that can be hidden or overridden with different end points.
           p There are 11 variants in total for each direction. For example:
-          ol
+          ol(type="1")
             li: code Flow / Right / Straight
             li: code Flow / Right / Curve / Down / Straight
             li: code Flow / Right / Curve / Down / U-turn
@@ -63,29 +73,39 @@ block head
             li: code Flow / Right / Snake / Down / Hook
             li: code Flow / Right / Snake / Up / Straight
             li: code Flow / Right / Snake / Up / Hook
+
           h4 Taps
-          p Taps are intended for use on top of UI screen designs when laying out flow documents. They are named exactly the same as Flow components, whereas Tap is the Type Indicator instead of Flow. Each endpoint has been pre-overridden with the Tap endpoint and can additionally be changed to other interactions, such as Swipe, Long Press, and Double Tap.
+          img(src="../assets/img/updates/07-tap.svg")
+          p Taps are intended for use on top of UI screen designs when laying out flow documents. They follow the same naming pattern as Flow components. Each endpoint has been pre-overridden with the <code>Tap</code> endpoint and can additionally be changed to other interactions, such as <code>Swipe</code>, <code>Long Press</code>, and <code>Double Tap</code>.
 
           h4 End Points
+          img(src="../assets/img/updates/08-endpoints.svg")
           p In Flowkit 2.0 every single <code>End Point</code> is the same dimension and can be interchanged with any other end point instance for full customization. These include <code>circles</code>, <code>arrows</code>, <code>taps</code>, <code>swipes</code>, and more.
 
           h4 Splits
+          img(src="../assets/img/updates/09-split.svg")
           p There are 4 directional Split components for indicating a fork in a user flow. These are created with nested Flow components, but can also be extended or modified for more complex flows.
 
           h4 Blocks
-          p Blocks are used as main sections of user flows. Just like every other component, it's built on a 360x360 grid. There are multiple Block options such as <code>Default</code>, <code>Dashed </code>, <code>Emphasis</code>, and <code>Solid</code>. There are also Device blocks for <code>iOS</code>,<code>Android</code>, and <code>Browser</code> for more options.
+          img(src="../assets/img/updates/10-block.svg")
+          p Blocks are used as main sections of user flows. Just like every other component, they're built on a 360x360 grid. There are multiple Block options such as <code>Default</code>, <code>Dashed </code>, <code>Emphasis</code>, and <code>Solid</code>.
+
+          p There are also <code>Device</code> blocks for <code>iOS</code>,<code>Android</code>, and <code>Browser</code>.
+          img(src="../assets/img/updates/11-devices.svg")
 
           h4 Labels
+          img(src="../assets/img/updates/12-labels.svg")
           p There are multiple label styles including <code>solid</code> and <code>outline</code> versions of <code>default</code>, <code>red</code>, <code>blue</code>, and <code>green</code>. Labels are intended for use with Flow or Tap lines to provide more context about a specific user path.
 
           h4 Annotations
+          img(src="../assets/img/updates/13-annotations.svg")
           p There are two types of annotation components. The general Annotation Labels can be used anywhere within your flow to provide more situational context, whereas the Annotation Points are intended to callout specific areas of your screen designs.
 
           h3 Version 1.0
 
           p.fk-intro The first version of Flowkit was for Sketch only, and released on November 16, 2017. I wasn't planning on making a big website for it so there isn't a lot of documentation for it.
 
-          p The file itself did have installation and usage instructions baked into it, but there's not a good reason for me to duplicate all of that content. <a href="https://sketch.cloud/s/7yK5L">Here's a preview</a> of the original document in Sketch Cloud.
+          p The file itself had installation and usage instructions baked into it, but there's not a good reason for me to duplicate all of that content for posterity. <a href="https://sketch.cloud/s/7yK5L">Here's a preview</a> of the original document in Sketch Cloud.
 
       include ../includes/foot.pug
 

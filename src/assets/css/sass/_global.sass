@@ -44,6 +44,12 @@ h2
   text-align: center
   margin: auto
 
+  span
+    line-height: 4rem
+    font-size: .75rem
+    font-weight: 500
+    letter-spacing: -.03rem
+
   +medium
     font-size: 1.875rem
     max-width: 48rem
@@ -92,9 +98,16 @@ p, ul, ol
 
   &.centered
     text-align: center !important
+    // max-width: 36rem !important
 
   &.small
-    font-size: .875rem
+    font-size: .875rem !important
+    max-width: 32rem !important
+    padding: 2rem 0
+    margin-bottom: 2rem
+
+  &.even-smaller
+    font-size: .675rem !important
     max-width: 34rem
     margin-bottom: 2rem
 

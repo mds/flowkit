@@ -1,0 +1,26 @@
+<svg width="1800" height="360" viewBox="0 0 1800 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1800" height="360" fill="#F7F7F7"/>
+<rect width="80" height="80" transform="translate(86 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M121.029 190.183C119.696 190.982 118 190.022 118 188.468V171.532C118 169.978 119.696 169.018 121.029 169.817L135.142 178.285C136.436 179.062 136.436 180.938 135.142 181.715L121.029 190.183Z" fill="#222222"/>
+<rect width="80" height="80" transform="translate(629 140)" fill="#EE0033" fill-opacity="0.05"/>
+<rect x="667" y="168" width="4" height="24" rx="1" fill="#EE0033"/>
+<rect width="80" height="80" transform="translate(810 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M862 179V181C862 181.552 861.328 182 860.5 182H839.5C838.672 182 838 181.552 838 181V179C838 178.448 838.672 178 839.5 178H860.5C861.328 178 862 178.448 862 179Z" fill="#EE0033"/>
+<rect width="80" height="80" transform="translate(267 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M307 188C311.418 188 315 184.418 315 180C315 175.582 311.418 172 307 172C302.582 172 299 175.582 299 180C299 184.418 302.582 188 307 188Z" fill="#222222"/>
+<rect width="80" height="80" transform="translate(991 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1031 188C1035.42 188 1039 184.418 1039 180C1039 175.582 1035.42 172 1031 172C1026.58 172 1023 175.582 1023 180C1023 184.418 1026.58 188 1031 188Z" fill="white" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect width="80" height="80" transform="translate(448 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path d="M470.828 180L488 162.828L505.172 180L488 197.172L470.828 180Z" fill="white" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect width="80" height="80" transform="translate(1172 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1212 220C1234.09 220 1252 202.091 1252 180C1252 157.909 1234.09 140 1212 140C1189.91 140 1172 157.909 1172 180C1172 202.091 1189.91 220 1212 220Z" fill="#EE0033" fill-opacity="0.05" stroke="#EE0033" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect width="80" height="80" transform="translate(1363 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M1403 220C1425.09 220 1443 202.091 1443 180C1443 157.909 1425.09 140 1403 140C1380.91 140 1363 157.909 1363 180C1363 202.091 1380.91 220 1403 220Z" fill="#EE0033"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1403 188C1407.42 188 1411 184.418 1411 180C1411 175.582 1407.42 172 1403 172C1398.58 172 1395 175.582 1395 180C1395 184.418 1398.58 188 1403 188Z" fill="#222222"/>
+<rect width="80" height="80" transform="translate(1604 140)" fill="#EE0033" fill-opacity="0.05"/>
+<path opacity="0.05" fill-rule="evenodd" clip-rule="evenodd" d="M1554 220C1576.09 220 1594 202.091 1594 180C1594 157.909 1576.09 140 1554 140C1531.91 140 1514 157.909 1514 180C1514 202.091 1531.91 220 1554 220Z" fill="#EE0033"/>
+<path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M1584 220C1606.09 220 1624 202.091 1624 180C1624 157.909 1606.09 140 1584 140C1561.91 140 1544 157.909 1544 180C1544 202.091 1561.91 220 1584 220Z" fill="#EE0033"/>
+<path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M1614 220C1636.09 220 1654 202.091 1654 180C1654 157.909 1636.09 140 1614 140C1591.91 140 1574 157.909 1574 180C1574 202.091 1591.91 220 1614 220Z" fill="#EE0033"/>
+<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M1644 220C1666.09 220 1684 202.091 1684 180C1684 157.909 1666.09 140 1644 140C1621.91 140 1604 157.909 1604 180C1604 202.091 1621.91 220 1644 220Z" fill="#EE0033"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1644 188C1648.42 188 1652 184.418 1652 180C1652 175.582 1648.42 172 1644 172C1639.58 172 1636 175.582 1636 180C1636 184.418 1639.58 188 1644 188Z" fill="#222222"/>
+</svg>
