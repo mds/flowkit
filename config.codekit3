@@ -450,6 +450,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/img/files.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/files.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/img/flow-device.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -623,6 +633,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/img/icon-figma.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/icon-figma.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/icon-sketch.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/icon-sketch.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/img/logo-automattic.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -648,16 +678,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/build/assets/img/logo-facebook.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/src/assets/img/logo-figma.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/build/assets/img/logo-figma.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -810,6 +830,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/build/assets/img/mds-coffee.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/mds-jump.jpg": {
+		"ft": 16384,
+		"iS": 260762,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/mds-jump.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1015,16 +1046,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/img/sketch.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/build/assets/img/sketch.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"/src/assets/img/tiny-flow.png": {
 		"ft": 32768,
 		"iS": 586,
@@ -1041,16 +1062,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/build/assets/img/tiny-flow.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/src/assets/img/update-img/01-main.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/build/assets/img/update-img/01-main.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1220,6 +1231,116 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/src/assets/img/updates/14-darkmode.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/img/updates/14-darkmode.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/img/usage/complex-flow-figma.gif": {
+		"ft": 4194304,
+		"iS": 7121009,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/complex-flow-figma.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/usage/complex-flow-sketch.gif": {
+		"ft": 4194304,
+		"iS": 9554101,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/complex-flow-sketch.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/usage/high-level-off.png": {
+		"ft": 32768,
+		"iS": 28534,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/high-level-off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/usage/high-level-on.png": {
+		"ft": 32768,
+		"iS": 32017,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/high-level-on.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/usage/high-level.gif": {
+		"ft": 4194304,
+		"iS": 62113,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/high-level.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/usage/overview-figma.png": {
+		"ft": 32768,
+		"iS": 384522,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/overview-figma.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/usage/overview-sketch.png": {
+		"ft": 32768,
+		"iS": 977254,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/overview-sketch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/usage/screen-flow-correct.gif": {
+		"ft": 4194304,
+		"iS": 386412,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/screen-flow-correct.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/usage/screen-flow-incorrect.gif": {
+		"ft": 4194304,
+		"iS": 1272898,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/screen-flow-incorrect.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/usage/tap-override-figma.gif": {
+		"ft": 4194304,
+		"iS": 5197389,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/tap-override-figma.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/usage/tap-override-sketch.gif": {
+		"ft": 4194304,
+		"iS": 5623350,
+		"oA": 0,
+		"oAP": "/build/assets/img/usage/tap-override-sketch.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"/src/assets/img/video-thumb.jpg?ref=cachebuster.jpg": {
 		"ft": 16384,
@@ -1407,6 +1528,15 @@
 		"oAP": "/build/updates/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"/src/usage/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/usage/index.html",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [
@@ -1419,7 +1549,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/img/logo-flowkit.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562098982.147295
+	"lastBuiltDate": 562880228.24753201
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

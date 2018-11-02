@@ -61,7 +61,7 @@ block content
                   li: a(data-style='alt') Alt
 
         .fk-container-content
-          h2 <strong>Frighteningly fast</strong> user flows right inside of Sketch &amp; Figma.
+          h2 <strong>Frighteningly fast</strong> user flows and more, right inside Sketch &amp; Figma. <a href="/usage">Learn how to use it</a>.
 
       section.fk-video
         .fk-video-thumb
@@ -79,6 +79,7 @@ block content
           h2
             strong Quickly build
             |  out high-level flows to tell the story of your designs—perfect for presentations and documentation.
+
         //- i know i shouldn't load both sets of images always, but I'm in a hurry and not that good of a developer
         .fk-flow-example.fk-flow-example-small
           .fk-flow-example-flows
@@ -128,14 +129,29 @@ block content
               .fk-flow-piece-container
                 img(alt='flow demo 3', src='assets/img/flow3-small.svg')
         .fk-colorblock.fk-colorblock--mustard
+
+
+      section.fk-mds
+        .fk-container-content
+          h2
+            strong
+              | Made by
+              a(href='http://twitter.com/mds')  @mds
+            |  —approximately 6,987,389 pixels, 96 cups of coffee, and 124 bathroom breaks.
+            .fk-follow-btn
+              a.twitter-follow-button(href='https://twitter.com/mds?ref_src=twsrc%5Etfw', data-show-count='true') Follow @mds
+              script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
+        .fk-colorblock.fk-colorblock--mds
+
+
       section#buy.fk-decision
         .fk-container-content
           h2
             strong Finely-tuned components
             |  to supercharge your flows. Perfect for individuals and teams.
-            //- <br/>
-            //- a(href="/updates") See what's new in 2.0
-          .fk-tiers
+          .fk-body-text
+            p.centered.fk-note Upon purchase you'll receive a link to download a <code>.zip</code> file containing both <code>flowkit-2.0.fig</code> and <code>flowkit-2.0.sketch</code> libraries that you can put to work on your projects immediately. ⚡️
+          .fk-tiers#tiers
             .fk-price-block.fk-price-block--solo
               h3
                 strong Solo
@@ -159,7 +175,7 @@ block content
                 img.fk-icon-check.svg(src='assets/img/icon-check.svg', alt='check icon')
                 h4 $499 for unlimited users
               p Unlimited projects <em>and</em> users within one organization.
-              a.fk-price-cta(href='https://transactions.sendowl.com/products/77730842/628CEFFE/purchase', rel='nofollow') Buy $499
+              a.fk-price-cta(href='https://transactions.sendowl.com/products/77730842/628CEFFE/purchase') Buy $499
         .fk-colorblock.fk-colorblock--purple
 
       section.fk-proof
@@ -479,11 +495,13 @@ block content
 
         //- .fk-colorblock.fk-colorblock--light
         h2
-          strong Pretty sure you'll love
-          |  creating userflows with Flowkit.
+          strong Take a peek under the hood
+          |  and see how Flowkit works.
           <br/>
           <br/>
-          a.fk-cta.fk-cta-secondary(href='#buy') You're right, let's go!
+          a.fk-cta.fk-cta-secondary(href='/usage') How it works
+          //- p.centered.small
+          //-   a(href="#") See how Flowkit was built
 
       include includes/foot.pug
 

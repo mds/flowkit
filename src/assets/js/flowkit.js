@@ -1,17 +1,69 @@
 $( document ).ready(function() {
 
+  startAnimations();
+
+  // cycle through animations
+  function startAnimations (){
+    setTimeout(function(){ fkUpdatePosition(); }, 1000);
+    setTimeout(function(){ fkUpdatePosition(); }, 1500);
+    setTimeout(function(){ fkUpdatePosition(); }, 2000);
+    setTimeout(function(){ fkUpdatePosition(); }, 2500);
+    setTimeout(function(){ fkUpdatePosition(); }, 3000);
+    setTimeout(function(){ fkUpdatePosition(); }, 3500);
+    setTimeout(function(){ fkUpdatePosition(); }, 4000);
+    setTimeout(function(){ fkUpdatePosition(); }, 4500);
+    setTimeout(function(){ fkUpdatePosition(); }, 5000);
+    setTimeout(function(){ fkUpdatePosition(); }, 5500);
+    setTimeout(function(){ fkUpdatePosition(); }, 6000);
+    setTimeout(function(){ fkYesPulse(); }, 6500);
+  }
+
+  // show / hide header bg on scroll
+  var h = $("header");
+  var pos = h.position();
+  $(window).scroll(function() {
+    var windowpos = $(window).scrollTop();
+    if (windowpos >= pos.top & windowpos >=20) {
+      h.addClass("fk-header-scrolled");
+    } else {
+      h.removeClass("fk-header-scrolled");
+    }
+  });
+
   //firefox detect
   var browser=navigator.userAgent.toLowerCase();
   if(browser.indexOf('firefox') > -1) {
       alert("The arrow in the carousel below doesn't animate correctly in Firefox 😱. I'll fix this real soon, pinky promise. In the meantime you can view the rest of the site with no problem. And if you're super curious about the cool arrow animations, pop open Chrome or Safari. Cheers! —MDS");
   }
 
-  // scroll to buy section
-  $(".fk-cta-primary").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".fk-decision").offset().top},
+  // I'm doing this with CSS now
+  // // scroll to buy section
+  // $(".fk-cta-primary").click(function() {
+  //   $('html,body').animate({
+  //       scrollTop: $(".fk-decision").offset().top},
+  //       'slow');
+  // });
+
+  // Parse the URL parameter to scroll to the buy section from an interior page. There's probably an easier way to do this.
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+  // Give the parameter a variable name
+  var dynamicContent = getParameterByName('buy');
+
+  if (dynamicContent == 'true') {
+    setTimeout(function(){
+      $('html,body').animate({
+        scrollTop: $("#buy").offset().top},
         'slow');
-  });
+    }, 0);
+  }
 
   // for removing the grey box around pressed things in mobile safari
   document.addEventListener("touchstart", function(){}, true);
@@ -267,6 +319,11 @@ $( document ).ready(function() {
     $(".fk-arrow-container").removeClass("fk-arrow-is-pulsing");
   }
 
+  // adds initial pulse animation to arrow
+  function fkYesPulse(){
+    $(".fk-arrow-container").addClass("fk-arrow-is-pulsing");
+  }
+
   // for transforming all of the arrows FORWARD, used with fkUpdatePosition();
   var positions = {
     pos1: function (event) { fkAnimate1to2(); updateFkArrowNameStyle2(); },
@@ -293,7 +350,8 @@ $( document ).ready(function() {
     var link = $(".fk-arrow[data-pos]"),
         position = link.data("pos");
 
-    event.preventDefault();
+    // this prevents there being a default position. no need, so it's commented out.
+    // event.preventDefault();
 
     // If there's a position with the given name, call it
     if( typeof positions[position] === "function" ) {

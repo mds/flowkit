@@ -39,11 +39,14 @@
     padding: 2.5rem 3.75rem
 
   &:hover
-    top: -.5rem
+    // top: -.5rem
+    transform: scale(1.025)
+    box-shadow: 0px 20px 80px 0 rgba($color-dark, .25)
     +easeall
 
 
-  h4 // price
+  h4
+    // price
     margin: 0
     padding: 0 0 1rem 0
     font-weight: 600
@@ -52,7 +55,8 @@
     display: inline-block
     margin: auto
 
-  h4 // subtext
+  h4
+    // subtext
     font-size: 1rem
     text-align: left
     display: inline
@@ -66,11 +70,13 @@
     float: left
     display: inline
 
-  p // desc
+  p
+    // desc
     color: $color-medium
     font-size: 1.125rem
     line-height: 1.5rem
     text-align: center
+    letter-spacing: -.03rem
     padding: 2.25rem 1.5rem 2.5rem
 
   .fk-price-cta
@@ -89,7 +95,8 @@
     +easeall
 
     &:hover
-      top: -.2rem
+      // top: -.2rem
+      transform: scale(1.05)
       box-shadow: 4px 4px 12px 0 rgba($color-dark, .04), 8px 8px 24px 0 rgba($color-dark, .08)//, inset 4px 4px 24px rgba($color-white, .1)
       +easeall
 

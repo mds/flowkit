@@ -1,26 +1,38 @@
 
 footer
   display: grid
-  grid-template-columns: 1fr 2fr
-  align-items: center
+  grid-template-columns: auto auto
+  align-items: start
   padding: 8rem 1rem
   position: relative
   max-width: 80rem
   margin: auto
 
+
 .fk-footer
   display: inline-block
   text-align: left
   padding: 0 1rem 6rem
-  margin: auto
+  margin: 0
   width: 100%
   font-size: .75em
   font-weight: 600
   color: $color-medium-small
-  line-height: 1.3
+  line-height: 2.3
+
+
+  +medium
+    display: inline-block
+    line-height: 2
 
 .fk-footer--links
   text-align: right
+  display: inline-grid
+  line-height: 2em
+  +medium
+    display: inline-block
+
 
   a
     margin: 0 1rem
+    // border-bottom: 1px solid $color-blue

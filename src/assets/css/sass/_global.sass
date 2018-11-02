@@ -72,13 +72,38 @@ h3
 h4
   font-size: 1.125rem
 
-h3, h4
+h5
+ font-size: .875rem
+
+h3, h4, h5
   line-height: 1.3
   font-weight: 800
   color: $color-dark
   padding: 4rem 0 0
   text-align: left
   margin: auto
+
+.fk-header-figma,
+.fk-header-sketch
+  margin-left: 1.75em
+  padding: 2rem 0 0
+
+  &:before
+    content: ""
+    width: 1em
+    height: 1em
+    display: block
+    position: relative
+    top: 1.125em
+    left: -1.75em
+
+.fk-header-figma:before
+  background: url(/assets/img/icon-figma.svg) no-repeat
+  background-size: contain
+
+.fk-header-sketch:before
+  background: url(/assets/img/icon-sketch.svg) no-repeat
+  background-size: contain
 
 a
   text-decoration: none
@@ -111,6 +136,11 @@ p, ul, ol
     max-width: 34rem
     margin-bottom: 2rem
 
+h5
+  padding: 1rem 0 .75rem !important
+  ul &
+    margin-left: 1.5rem
+
 code
   font-family: "Input Mono", monospace
   font-size: .75em
@@ -128,4 +158,22 @@ svg
 
 svg
   text-align: center
+
+blockquote
+  font-size: .875rem
+  padding: 0 2rem .5rem
+  margin-top: 1rem
+  margin-left: .5rem
+  background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+  background-position: left;
+  background-size: 2px 8px;
+  background-repeat: repeat-y;
+
+  h5
+    padding: .5rem 0 !important
+    margin: 0 !important
+
+  p
+    font-size: 1em !important
+    padding: .5rem 0 0
 

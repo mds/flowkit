@@ -1,3 +1,8 @@
+.fk-body-text
+  padding: 0 0 1rem
+  max-width: 34rem
+  margin: auto
+
 .fk-container
   width: 100%
   max-width: 120rem
@@ -6,16 +11,13 @@
   +medium
     padding: 0 4em
 
-  // +xlarge
-  //   padding: 0 12rem
-
 .fk-container-content
   padding: 1.25em
   max-width: 80rem
   margin: auto
 
   img
-    padding: 2rem 0 1rem
+    padding: 1rem 0
 
   img.fk-big-img
     +easeall
@@ -28,10 +30,12 @@
   h2
     padding-left: 0
     margin: auto
-    a
-      line-height: 2em
-      font-size: .75em
-      font-weight: 500
+    a:hover
+      background: rgba($color-blue, .1)
+      +easeall
+      // line-height: 2em
+      // font-size: .75em
+      // font-weight: 500
 
   &--body
     margin-top: 8rem
@@ -41,10 +45,15 @@
       margin-top: 0rem
 
   p
-    font-size: 1.25rem
+    font-size: 1rem
+
+    +small
+      font-size: 1.25rem
 
     &.fk-intro
-      font-size: 1.5rem
+      font-size: 1.125rem
+      +medium
+        font-size: 1.5rem
 
   li
     font-size: .75em
@@ -55,4 +64,22 @@
     +large
       width: 80%
 
+.fk-body-text p.centered a
+  font-size: .75em
+  letter-spacing: -.02em
+  padding-bottom: .1em
+  box-shadow: inset 0 -2px $color-blue
+  font-weight: bold
+  +easeall
 
+  &:hover
+    color: $color-dark
+    box-shadow: inset 0 -1.25em yellow
+    +easeall
+
+.fk-note
+  background: lightyellow
+  padding: 2rem
+  // font-size: .875em !important
+  line-height: 1.5em
+  margin-bottom: 2rem

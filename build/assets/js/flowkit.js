@@ -44,6 +44,27 @@ $( document ).ready(function() {
   //       'slow');
   // });
 
+  // Parse the URL parameter to scroll to the buy section from an interior page. There's probably an easier way to do this.
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+  // Give the parameter a variable name
+  var dynamicContent = getParameterByName('buy');
+
+  if (dynamicContent == 'true') {
+    setTimeout(function(){
+      $('html,body').animate({
+        scrollTop: $("#buy").offset().top},
+        'slow');
+    }, 0);
+  }
+
   // for removing the grey box around pressed things in mobile safari
   document.addEventListener("touchstart", function(){}, true);
 

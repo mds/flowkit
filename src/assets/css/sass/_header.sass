@@ -35,6 +35,9 @@ header
       font-size: .675rem
       line-height: 1.5em
 
+      // &:first-of-type
+      //   margin-right: 1rem
+
 .fk-top-left
   padding-top: 0
 
@@ -97,18 +100,23 @@ p.fk-small
 .fk-header-scrolled
   padding: 1rem !important
   background: $color-white
+  box-shadow: 0 10px 20px rgba($color-medium, .1)
   +easeall
 
   +medium
-    padding: 1rem 2rem !important
+    padding: .75rem 2rem !important
 
   .fk-top-left img
     transform: scale(.9)
     margin-right: 0
     +easeall
 
+  .fk-logo a
+    line-height: 1em
+
   h1
     transform: scale(.8)
+    margin: 0
     +easeall
 
   &.header-interior
@@ -121,3 +129,4 @@ p.fk-small
   a.fk-cta
     font-size: .675em !important
     font-weight: bold
+    padding: .4rem .875rem
