@@ -269,8 +269,10 @@ blockquote {
 .fk-note {
   background: lightyellow;
   padding: 2rem;
+  font-size: 1rem !important;
   line-height: 1.5em;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  border-radius: 1rem; }
 
 header {
   padding: 1rem;
@@ -441,6 +443,10 @@ p.fk-small {
 .fk-cta-primary {
   background: #FF8600; }
 
+.fk-cta-secondary {
+  padding: 1rem 2rem;
+  font-size: 1rem; }
+
 @media (color-gamut: p3) {
   .fk-cta-secondary {
     background: color(display-p3 0.2 0.6 1); }
@@ -453,7 +459,7 @@ p.fk-small {
   z-index: -20; }
   @media (min-width: 900px) {
     .fk-colorblock {
-      border-radius: 2rem; } }
+      border-radius: 3rem; } }
 
 .fk-colorblock--red {
   background: #FF5E4F;
@@ -530,7 +536,7 @@ p.fk-small {
   transition: all .2s ease-out; }
   @media (min-width: 900px) {
     .fk-carousel {
-      border-radius: 2rem;
+      border-radius: 3rem;
       height: 30rem;
       margin: 6.5rem auto 2rem; } }
   @media (min-width: 1280px) {
@@ -1298,15 +1304,15 @@ section.fk-affiliate h2 {
   margin: 8rem auto 0; }
   @media (min-width: 900px) {
     .fk-tiers {
-      margin: 8rem auto 4rem;
+      margin: 1rem auto 4rem;
       max-width: 100%;
       grid-template-columns: repeat(3, 30%); } }
   @media (min-width: 1280px) {
     .fk-tiers {
-      margin: 8rem auto; } }
+      margin: 1rem auto; } }
   .fk-tiers h3,
   .fk-tiers h3 strong {
-    color: #111133;
+    color: white;
     font-weight: 800;
     font-size: 1.75rem;
     padding: 1rem 0;
@@ -1314,8 +1320,8 @@ section.fk-affiliate h2 {
     text-align: center; }
 
 .fk-price-block {
-  background: white;
-  border-radius: 20px;
+  background: #111133;
+  border-radius: 2rem;
   width: 100%;
   padding: 2.5rem 1.5rem;
   display: grid;
@@ -1325,7 +1331,7 @@ section.fk-affiliate h2 {
   transition: all .2s ease-out; }
   @media (min-width: 1280px) {
     .fk-price-block {
-      padding: 2.5rem 3.75rem; } }
+      padding: 2.5rem 3.75rem 3rem; } }
   .fk-price-block:hover {
     -webkit-transform: scale(1.025);
             transform: scale(1.025);
@@ -1342,6 +1348,7 @@ section.fk-affiliate h2 {
     font-size: 1rem;
     text-align: left;
     display: inline;
+    color: white;
     margin: 0;
     padding: 0; }
   .fk-price-block .fk-icon-check {
@@ -1356,7 +1363,7 @@ section.fk-affiliate h2 {
     line-height: 1.5rem;
     text-align: center;
     letter-spacing: -.03rem;
-    padding: 2.25rem 1.5rem 2.5rem; }
+    padding: 1.5rem 1.5rem 2.5rem; }
   .fk-price-block .fk-price-cta {
     font-size: 1rem;
     color: white;
@@ -1394,6 +1401,31 @@ section.fk-affiliate h2 {
 
 .fk-price-block--enterprise .fk-price-cta {
   background: #FF5E4F; }
+
+.fk-callout {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 10rem;
+  margin: auto;
+  top: 1rem; }
+  @media (min-width: 900px) {
+    .fk-callout {
+      top: -.75rem; } }
+  .fk-callout h6 {
+    margin: auto;
+    background: #111133;
+    color: white;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: .5rem 0;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    width: 100%;
+    box-shadow: 4px 4px 12px 0 rgba(17, 17, 51, 0.04), 8px 8px 24px 0 rgba(17, 17, 51, 0.08), inset 4px 4px 24px rgba(255, 255, 255, 0.1); }
 
 .fk-flow-example {
   position: relative; }
@@ -1983,29 +2015,25 @@ ul.tweets {
       text-align: left; } }
 
 ul.fk-logos {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: .5rem;
+  padding: 0 0 6rem;
   margin: auto;
-  max-width: 100rem;
+  max-width: 72rem;
   list-style-type: none; }
   ul.fk-logos li {
-    flex: 0 0 25%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0;
     transition: all .2s ease-out; }
     ul.fk-logos li img, ul.fk-logos li svg {
-      width: 40px;
-      height: 40px;
+      width: 100%;
       text-align: center;
       margin: auto; }
-      @media (min-width: 640px) {
-        ul.fk-logos li img, ul.fk-logos li svg {
-          width: 120px;
-          height: 120px; } }
     ul.fk-logos li:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
       transition: all .2s ease-out; }
 
 footer {

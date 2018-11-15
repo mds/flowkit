@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="651px" height="235px" viewBox="0 0 651 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+<svg width="271px" height="145px" viewBox="0 0 271 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
     <title>logo-nike</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Desktop-HD-Copy-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-541.000000, -5281.000000)">
-        <g id="logo-nike" transform="translate(541.000000, 5281.000000)" fill="#1A1919">
-            <path d="M83.3110101,11.3193591 C25.0640101,79.7193591 -29.8789899,170.731359 18.6520101,212.644359 C65.6770101,253.257359 124.45801,229.210359 164.53601,213.179359 C204.61401,197.147359 647.60901,4.77335909 647.60901,4.77335909 C651.88501,2.63635909 651.08301,-0.0356409087 645.73901,1.30035909 C643.58201,1.83935909 163.46701,131.954359 163.46701,131.954359 C102.54801,149.054359 33.0800101,111.781359 83.3110101,11.3193591" id="swoosh"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-nike">
+            <rect id="Rectangle" fill="#F9F9F9" fill-rule="nonzero" x="0" y="0" width="271" height="145" rx="72.5"></rect>
+            <g transform="translate(101.000000, 60.000000)" fill="#111133" id="swoosh">
+                <path d="M8.95817313,1.21713539 C2.69505485,8.5719741 -3.21279461,18.3582106 2.00559249,22.8649848 C7.0620441,27.2319741 13.3825817,24.6462752 17.6920441,22.9225117 C22.0015065,21.1986408 69.6353774,0.513264418 69.6353774,0.513264418 C70.0951624,0.283479472 70.0089258,-0.00383235577 69.4343022,0.139823558 C69.2023667,0.197780547 17.5770979,14.1886408 17.5770979,14.1886408 C11.0266677,16.0273504 3.55699034,12.019501 8.95817313,1.21713539"></path>
+            </g>
         </g>
     </g>
 </svg>
