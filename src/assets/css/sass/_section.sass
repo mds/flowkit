@@ -2,16 +2,33 @@ section
   position: relative
 
 section.fk-main
-  margin-top: 4rem
   margin-bottom: 0rem
+  padding: 4rem 0 2rem
   +large
-    margin-bottom: 4rem
+    margin-top: 0
+    margin-bottom: 1rem
+    padding-top: 7rem
 
   h2
-    padding: 2rem 0
+    padding: 1rem 0 2rem
+    max-width: 18rem
     +medium
-      padding: 2rem 0
+      font-size: 4rem
+      padding: 1rem 0
       max-width: 46rem
+
+  svg
+    width: 100%
+    height: auto
+
+section.fk-tiny
+  padding-bottom: 4rem
+  h2
+    padding-top: 2rem
+    padding-bottom: 2rem
+    max-width: 58rem
+  img
+    width: 100%
 
 section.fk-video
   margin-bottom: 0rem
@@ -20,33 +37,41 @@ section.fk-video
 
 section.fk-flows
   margin-bottom: 7rem
+  padding-top: 3rem
   +large
+    padding-top: 9rem
     margin-bottom: 10rem
 
   h2
     padding: 4rem 0 2rem
     +medium
-      max-width: 60rem
+      max-width: 50rem
     +large
       padding: 6rem 0 8rem
 
 section.fk-endpoints
-  margin-bottom: 4rem
+  padding: 6rem 0 
   +large
-    margin-bottom: 8rem
+    padding: 5rem 0
 
   h2
     padding: 6rem 0 4rem
     +large
-      padding: 12rem 0 8rem
+      padding: 8rem 0 3rem
+      max-width: 48rem
 
 section.fk-decision
-  margin-bottom: 2rem
+  background: $color-white
+  // margin-bottom: 2rem
+  position: relative
+  z-index: 2000
+  // box-shadow: 0 20px 40px 0 $color-white, 0 -20px 40px 0 $color-white
   +large
-    // margin-bottom: 8rem
+    margin-bottom: 2rem
 
   h2
-    padding: 4rem 0 2rem
+    padding: 0
+    max-width: 42rem
     +small
       padding: 4rem 0 2rem
     +medium
@@ -62,19 +87,16 @@ section.fk-decision
     +medium
       bottom: 4rem
 
-
 section.fk-mds
-  margin-bottom: 2rem
-
-  +large
-    margin-bottom: 6rem
+  margin: 0 auto 2rem
+  max-width: 20rem
+  padding: 8rem 0
 
   h2
-    padding: 4rem 0 3rem
+    padding: .125rem 0
+    font-size: 1rem
     +medium
-      padding: 0srem 0 3rem
-    +large
-      padding: 12rem 0 8rem
+      text-align: left
 
     a
       font-size: 1em !important
@@ -87,24 +109,18 @@ section.fk-mds
     left: 0
     right: 0
 
-section.fk-proof
+section.fk-logos
   padding: 1rem 0 0
 
   +large
     padding: 0rem 0 2rem
-    // box-shadow: inset -4px 0 0 0 $color-dark
     margin-right: -2px
 
   h2
-    max-width: 30rem
-    padding: 4rem 2rem
-
+    padding: 2rem 2rem
+    max-width: 50rem
     +medium
       padding: 4rem 2rem
-      max-width: 40rem
-
-////////////////////////////////////////////////////////////////////////
-
 
 section img
   text-align: center
@@ -126,8 +142,11 @@ section img
 
 .fk-video
   position: relative
-  overflow-x: hidden
-  overflow: initial
+  overflow: hidden
+  box-shadow: 0 20px 40px 0 rgba($color-black, .1)
+  border-radius: 8px
+  max-width: 78rem
+  margin: auto
 
 .fk-video .fk-play-btn
   text-align: center
@@ -216,135 +235,9 @@ section img
   +large
     display: block
 
-
-////////////////////////////////////////////////////////////////////////
-// Section Lines
-
-.fk-section-lines
-  display: none
-
-  & > div
-    position: absolute
-
-  +large
-    display: block
-
-.fk-section-line-1-1
-  top: -4px
-  right: -4px
-
-.fk-section-line-1-2
-  bottom: -120px
-  right: -1px
-
-.fk-section-line-2-1
-  top: -82px
-  right: -3px
-
-.fk-section-line-2-2
-  bottom: -8px
-  right: -3px
-
-.fk-section-line-3-1
-  top: 8.2rem
-  left: -2px
-
-.fk-section-line-3-2
-  top: 36.4rem
-  left: -2px
-
-.fk-section-line-3-3
-  bottom: -8px
-  left: -5px
-
-.fk-section-line-4-1
-  top: -14.5rem
-  right: -4px
-
-.fk-section-line-4-2
-  top: 29rem
-  right: -4px
-
-.fk-section-line-4-3
-  bottom: -223px
-  right: -4px
-
-.fk-section-line-4-4
-  bottom: -4px
-  right: 18.875rem
-
-.fk-section-line-5-1
-  top: -14.4rem
-  left: -2px
-
-.fk-section-line-5-2
-  bottom: -44.2rem
-  left: -2px
-  height: 817px
-
-  img
-    height: 100%
-
-.fk-section-line-5-3
-  top: -5px
-  left: -5px
-
-.fk-section-line-6-1
-  top: -16rem
-  right: -2px
-
-.fk-section-line-6-2
-  bottom: -10rem
-  right: -2px
-
-.fk-section-line-6-3
-  top: -20rem
-  right: -2px
-
-.fk-section-lines--pricing
-  bottom: -32rem
-  margin: auto
-  position: relative
-
-.fk-section-line-pricing-1
-  bottom: -32rem
-  left: 14.25rem
-
-.fk-section-line-pricing-2
-  bottom: -32rem
-  left: 37.125rem
-
-.fk-section-line-pricing-3
-  bottom: -32rem
-  right: 4rem
-
-///////////////////////////////////////////////////////////////
-section.fk-affiliate
-
-  ol, ul
-    margin-left: 1.25rem
-
-  li
-    font-size: 1rem
-    max-width: 80%
-    font-weight: 400
-    list-style-type: none
-    padding: 0 0
-    margin-left: 2rem
-
-    &:before
-      content: url('../img/tiny-flow.svg')
-      display: block
-      width: 16px
-      height: 16px
-      position: relative
-      top: .875rem
-      left: -3rem
-
+.fk-fast-fun
   h2
-    max-width: 48rem
-    padding: 3rem 1rem
-    margin-bottom: 0rem
-
+    padding: 4rem
     +small
-      padding: 3rem 1rem
+      padding: 1rem 0 4rem
+

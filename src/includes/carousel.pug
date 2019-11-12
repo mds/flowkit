@@ -1,0 +1,44 @@
+
+.fk-carousel.fk-colorblock--carousel.unselectable
+  .fk-carousel-container
+    .fk-arrow-desc-container
+      div
+        p.fk-arrow-desc tap right
+      div
+        p.fk-label.fk-label--right
+          span.fk-current 1
+          |  of 11
+    .fk-arrow-container.fk-arrow-is-pulsing
+      .fk-arrow.fk-arrow--tap.fk-arrow--default(data-pos='pos1')
+        img.svg(src='assets/img/arrows-new/01-tap-right.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/02-tap-right-curve-down.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/03-tap-right-curve-down-hook.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/04-tap-right-curve-down-u-turn.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/05-tap-right-curve-up.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/06-tap-right-curve-up-hook.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/07-tap-right-curve-up-u-turn.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/08-tap-right-snake-up.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/09-tap-right-snake-up-hook.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/10-tap-right-snake-down.svg')
+        img.svg.is-hidden(src='assets/img/arrows-new/11-tap-right-snake-down-hook.svg')
+
+    .fk-cycle-control-container
+      ul.fk-cycle-controls
+        li: a.fk-cycle-prev
+            span Previous
+            img.svg(src='assets/img/arrow.svg')
+        li: a.fk-cycle-next
+            span Next
+            img.svg(src='assets/img/arrow.svg')
+    .fk-bottom-controls
+      ul.fk-controls-type
+        li: a.is-active(data-type='tap') Tap
+        li: a(data-type='flow') Flow
+      ul.fk-controls-direction
+        li: a.is-active(data-direction='right') →
+        li: a(data-direction='down') ↓
+        li: a(data-direction='left') ←
+        li: a(data-direction='up') ↑
+      ul.fk-controls-style
+        li: a.is-active(data-style='default') —
+        li: a(data-style='alt') -&nbsp;-&nbsp;-

@@ -1,14 +1,7 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="48" height="48" rx="12" fill="url(#paint0_linear)"/>
-<path d="M15 15.5C15 13.0147 17.0147 11 19.5 11H24V20H19.5C17.0147 20 15 17.9853 15 15.5Z" fill="#E05A32"/>
-<path d="M24 11H28.5C30.9853 11 33 13.0147 33 15.5C33 17.9853 30.9853 20 28.5 20H24V11Z" fill="#EF7A69"/>
-<path d="M15 24.5C15 22.0147 17.0147 20 19.5 20H24V29H19.5C17.0147 29 15 26.9853 15 24.5Z" fill="#9762F6"/>
-<rect x="24" y="20" width="9" height="9" rx="4.5" fill="#54BBF8"/>
-<path d="M15 33.5C15 31.0147 17.0147 29 19.5 29H24V33.5C24 35.9853 21.9853 38 19.5 38C17.0147 38 15 35.9853 15 33.5Z" fill="#5ECB89"/>
-<defs>
-<linearGradient id="paint0_linear" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
-<stop stop-color="#30333B"/>
-<stop offset="1" stop-color="#2B2C34"/>
-</linearGradient>
-</defs>
+<path d="M10 10C10 6.13398 13.1339 3 17 3H24V17H17C13.1339 17 10 13.866 10 10Z" fill="#7B61FF" fill-opacity="0.9"/>
+<path d="M24 3H31C34.866 3 38 6.13398 38 10C38 13.866 34.866 17 31 17H24V3Z" fill="#7B61FF" fill-opacity="0.7"/>
+<path d="M10 24C10 20.1339 13.1339 17 17 17H24V31H17C13.1339 31 10 27.8661 10 24Z" fill="#7B61FF"/>
+<path d="M38 24C38 20.134 34.866 17 31 17C27.134 17 24 20.134 24 24C24 27.866 27.134 31 31 31C34.866 31 38 27.866 38 24Z" fill="#7B61FF" fill-opacity="0.7"/>
+<path d="M10 38C10 34.134 13.1339 31 17 31H24V38C24 41.866 20.8661 45 17 45C13.1339 45 10 41.866 10 38Z" fill="#7B61FF" fill-opacity="0.7"/>
 </svg>

@@ -1,63 +1,41 @@
 .fk-carousel
-  height: 27rem
+  height: 24rem
   position: relative
   transition: background .25s ease-out
-  // background: $color-blue
-  // background: linear-gradient($color-blue, $color-flow-default)
-  margin-top: 2rem
+  padding: 1rem
+  // margin-top: 2rem
+  width: 100%
   +easeall
 
   +medium
     border-radius: 3rem
-    height: 30rem
-    margin: 6.5rem auto 2rem
+    height: 40rem
+    margin: 0 auto
+    padding: 4rem
 
   +large
-    height: 34rem
-
-  +xlarge
-    margin-top: 8rem
-    margin: 6.5rem auto
-    height: 40rem
+    padding: 3rem 5rem 5rem
 
 .fk-carousel-container
-  max-width: 100rem
-  margin: auto
   position: relative
   height: 100%
 
 .fk-carousel--alt
-  background: $color-orange
   transition: background .25s ease-out
 
   .fk-cycle-controls svg
-    color: $color-orange
     transition: color .25s ease-out
 
-// @media (color-gamut:p3)
-
-//   .fk-carousel
-//     background: $color-blue-p3
-//     +easeall
-
-//   .fk-carousel--alt
-//     background: $color-orange-p3
-//     +easeall
-
-//     .fk-cycle-controls svg
-//       color: $color-orange-p3
-//       +easeall
-
-///////////////////////////////////////////////////////////////////
-// fk arrow description
-
 .fk-arrow-container
-  width: 100%
-  height: 100%
-  top: 0
+  height: auto
+  width: 50%
+  top: 40%
+  left: 20%
   position: absolute
-  z-index: 20
-  //background: rgba($color-red, .3)
+  z-index: 100
+
+  +small
+    left: 25%
 
 .fk-arrow
   cursor: pointer
@@ -72,8 +50,7 @@
   margin: auto
 
   +small
-    top: 46%
-    transform: translateY(-50%) translateX(0)
+    transform: translateY(-44%) translateX(0) scale(1.25)
 
 .fk-arrow img,
 .fk-arrow svg
@@ -99,7 +76,6 @@
 
 
 ///////////////////////////////////////////////////////////////////
-// fk arrow description
 
 .fk-arrow-desc-container
   margin: auto
@@ -107,42 +83,40 @@
   grid-template-columns: 1fr 1fr
   position: absolute
   width: 100%
-  padding: 2.5rem 1.5rem
-
-  +medium
-    padding: 2.5rem 4rem
+  padding: 0 1rem
 
 .fk-arrow-desc
-  color: $color-white//rgba($color-dark, .4)
+  color: $color-purple
   text-align: left
-  font-weight: 600
+  font-weight: 700
   font-size: .75rem
-  line-height: 1.2
-  // padding: 2rem 2rem 0
+  line-height: 1
+  display: inline-block
+  background: rgba($color-purple, .1)
+  padding: .5rem 1rem
+  border-radius: .5rem
   +easeall
 
   +medium
-    font-size: .875rem
+    font-size: 1rem
     +easeall
 
 .fk-label
-  color: rgba($color-dark, .3)
+  color: $color-purple
   text-align: right
-  font-weight: 800
+  font-weight: 700
   font-size: .75rem
   line-height: 1.1
   +easeall
 
   +large
-    font-size: .875rem
+    font-size: 1rem
     line-height: 1.1
     +easeall
 
 .fk-label--right
   text-align: right
 
-///////////////////////////////////////////////////////
-// mouse down/up styles
 .fk-arrow-bounce--down
   transform: scale(.8)
   transition: transform .25s ease-out
@@ -171,14 +145,11 @@
   transform-origin: right top
   transition: transform .25s ease-out
 
-
-///////////////////////////////////////////////////////
-// directional styles
 .fk-arrow--direction-right
   transition: transform .25s ease-out
 
   +small
-    translateY(-50%) translateX(0)
+    transform: translateY(-50%) translateX(0)
 
 .fk-arrow--direction-down
   transform: rotate(90deg) translateX(-75px)
@@ -186,7 +157,7 @@
   transition: transform .25s ease-out
 
   +small
-    transform: rotate(90deg) translateX(-105px)
+    transform: rotate(90deg) translateX(-105px) 
 
 .fk-arrow--direction-left
   transform: rotate(180deg) translateY(85px)
@@ -204,15 +175,12 @@
   +small
     transform: rotate(270deg) translateX(135px)
 
-///////////////////////////////////////////////////////
-// toggles between default/ALT styles
 .fk-arrow--default svg path.fk-path
   stroke-dasharray: 0
   stroke-dashoffset: 48
   transition: stroke-dasharray .25s
 
 .fk-arrow--alt svg path.fk-tap
-  fill: rgba($color-flow-alt, 1)
   +easeall
 
 .fk-arrow--tap-fadeOut svg path.fk-tap
@@ -232,12 +200,13 @@
   stroke-dashoffset: 24
   transition: stroke-dasharray .25s
 
-///////////////////////////////////////////////////////
-// cycle controls
 .fk-cycle-control-container
   position: relative
   height: 100%
   top: 0
+  // display: none
+  +small
+    display: block
 
 .fk-cycle-prev img,
 .fk-cycle-prev svg
@@ -245,70 +214,66 @@
   left: 11px !important
 
   +large
-    left: 19px !important
+    left: 21px !important
 
 .fk-cycle-controls img,
 .fk-cycle-controls svg
-    width: 8px
-    height: 10px
+    width: 10px
+    height: 16px
     position: absolute
     top: 11px
     left: 13px
 
     +large
-      top: 19px
-      left: 21px
+      top: 21px
+      left: 24px
 
 .fk-cycle-controls
   position: absolute
   width: 100%
   left: 0
   right: 0
-  top: 46%
+  top: 40%
   transform: translateY(-50%)
-  z-index: 500
-  pointer-events: none // make the control bg ignore clicks
+  z-index: 40
 
   +medium
-    top: 48%
+    top: 45%
 
-.fk-cycle-controls ul
+.fk-cycle-controls
   display: grid
-  width: 100%
   grid-template-columns: 1fr 1fr
 
 .fk-cycle-controls li
-  display: inline-block
+  display: inline
 
   &:last-child
     text-align: right
 
 .fk-cycle-controls li a
   font-size: .75rem
-  font-weight: 600
-  color: $color-blue
+  font-weight: 700
+  color: $color-purple
   text-decoration: none
   width: 2rem
   height: 2rem
-  margin: 0 1.5rem
+  // margin: 0 2rem
   border-radius: 50%
   display: inline-block
-  background: rgba($color-white, .9)
-  box-shadow: 0 1px 2px 0 rgba($color-dark, .2), inset 0 1px 0 0 $color-white
-  pointer-events: auto !important // gives the links back their ability to be clicked
   cursor: pointer
   position: relative
+  z-index: 60
   +easeall
 
   +large
-    margin: 0 4rem
-    width: 3rem
-    height: 3rem
+    // margin: 0 6.5rem
+    width: 3.5rem
+    height: 3.5rem
 
   &:hover
-    //background: rgba($color-white, .9)
     top: -1px
-    box-shadow: 4px 8px 16px 0 rgba($color-dark, .1), inset 0 2px 4px 0 $color-white
+    background: rgba($color-purple, .1)
+    // box-shadow: 0 20px 40px 0 rgba($color-black, .5)
     +easeall
 
   &:active
@@ -322,9 +287,8 @@
 .fk-controls-style li a
   +large
     font-size: .875rem
+    line-height: 1.2
 
-///////////////////////////////////////////////////////
-// bottom controls
 .fk-bottom-controls
   cursor: pointer
   position: absolute
@@ -332,20 +296,21 @@
   left: 0
   right: 0
   display: grid
-  grid-template-columns: 1fr 3fr 1fr
   z-index: 200
-  padding: 1rem 1rem
+  grid-template-columns: 1fr 1fr 1fr
+  justify-items: center
+  align-items: center
 
   +small
-    padding: 2rem 1rem
+    display: grid
+    grid-template-columns: 1fr 3fr 1fr
 
   +medium
-    padding: 3rem 3.5rem
-
-  +medium
+    margin: auto
     grid-template-columns: 2fr 3fr 2fr
 
-  & > div
+  & > ul
+    diplay: grid
     margin: auto
 
     &:first-child
@@ -354,10 +319,30 @@
     &:last-child
       margin-right: 0
 
+  .fk-controls-type,
+  .fk-controls-style,
+    display: grid
+    grid-template-columns: 1fr
+    +small
+      grid-template-columns: 1fr 1fr
+
+
+  .fk-controls-direction 
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin: auto
+    +small
+      grid-template-columns: 1fr 1fr 1fr 1fr
+
+    li
+      margin: .25rem .25rem
+
+  
+
 .fk-bottom-controls a
   font-size: .75rem
-  font-weight: 600
-  color: $color-white
+  font-weight: 700
+  color: $color-purple
   text-decoration: none
   background: rgba($color-dark, 0)
   border-radius: 4em
@@ -376,115 +361,23 @@
     padding: .375em 1em
 
   &:hover
-    background: rgba($color-white, .1)
+    background: rgba($color-purple, .1)
     +easeall
 
-.fk-bottom-controls ul
-  text-align: center
-  max-width: 5rem
-  margin-left: auto
-  margin-right: auto
-
-  // &:first-child
-  //   text-align: left
-  //   margin-left: 1rem
-
-  //   +medium
-  //     margin-left: 4.25rem
-
-  // &:last-child
-  //   text-align: right
-  //   margin-right: 1rem
-
-  //   +medium
-  //     margin-right: 4.25rem
-
-
-.fk-bottom-controls ul,
 .fk-bottom-controls li
-  display: inline-block
-  margin: auto
-
-  +small
-    max-width: 100%
-
-.fk-bottom-controls li
-  margin: .75rem .1rem
-
-  +small
-    margin: .75rem 0 0 -.15rem
+  list-style: none
 
   &.is-active
     margin: 0
 
+  a
+    border: 3px solid rgba($color-light, 0)
+
 .fk-bottom-controls a.is-active
-  background: rgba($color-dark, .1)
+  color: $color-purple
+  border: 3px solid $color-purple
   cursor: default
-  font-weight: 600
-  box-shadow: 0 1px 0 0 rgba($color-white, .05), inset 0 1px 1px 0 rgba($color-dark, .05)
+  font-weight: 700
   +easeall
-
-// end bottom controls
-///////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////
-// fullscreen styles
-// .fk-carousel--fullscreen
-//   top: 0
-//   left: 0
-//   right: 0
-//   bottom: 0
-//   position: fixed
-//   width: 100%
-//   height: 100%
-//   max-width: 100%
-//   max-height: 100%
-//   z-index: 1000
-//   border-radius: 0
-//   +easeall
-
-//   .fk-arrow-desc-container
-//     padding: 0
-
-//     +medium
-//       padding: 2rem 7rem
-
-//       p
-//         font-size: 1.25em
-
-//   .fk-cycle-controls
-//     padding: 0
-
-//     +medium
-//       padding: 0 4rem
-
-//       a
-//         width: 32px
-//         height: 32px
-
-//   .fk-bottom-controls
-//     bottom: .5rem
-
-//     +medium
-//       padding: 4rem 0
-
-//       a
-//         font-size: 1em
-
-//   .fk-arrow
-//     +medium
-//       max-width: 320px
-
-//       svg
-//         width: 320px
-//         height: 290px
-//         +easeall
-///////////////////////////////////////////////////////
+  &:hover
+    background: none

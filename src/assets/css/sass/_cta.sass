@@ -19,7 +19,7 @@
   font-size: .675rem
   font-weight: 600
   color: $color-white
-  background: $color-blue
+  background: $color-dark
   border: none
   border-radius: 4rem
   margin-left: .25rem
@@ -33,36 +33,27 @@
   +easeall
 
   +medium
-    padding: .375rem 1.25rem
+    padding: .375rem 1rem
     font-size: .75rem
 
   +large
     font-size: .875rem
 
-
   &:hover
-    top: -.2rem
-    box-shadow: 4px 4px 12px 0 rgba($color-dark, .04), 8px 8px 24px 0 rgba($color-dark, .08)//, inset 4px 4px 24px rgba($color-white, .1)
+    transform: translate(0, -2px) scale(1)
     +easeall
 
   &:focus
     outline: none
 
   &:active
-    top: 1px
+    top: 0
 
 .fk-cta-primary
-  background: $color-orange
+  background: $color-dark
 
 .fk-cta-secondary
-  padding: 1rem 2rem
-  font-size: 1rem
-
-@media (color-gamut:p3)
-
-  .fk-cta-secondary
-    background: color(display-p3 .2 .6 1.0)
-
-  .fk-cta-primary
-    background: color(display-p3 1.0 .5 .1)
+  background: $color-purple
+  padding: .75rem 1.75rem
+  font-size: 1.5rem
 

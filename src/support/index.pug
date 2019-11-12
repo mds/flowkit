@@ -1,0 +1,23 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit – User Flow Library for Figma and Sketch
+
+block content
+  body#fk-eula
+    .fk-container
+      - var headerTitle = " ";
+      <style> .fk-cta-group { display: none; !important }</style>
+      include ../includes/header-interior.pug
+
+      section.fk-main
+        .fk-container-content.fk-container-content--body
+          h1 Support
+
+          h4 Lost your license or access to your files?
+          p Send an email to <code>matt@mds.is</code> with your <code>ORDER #</code> or the email you used to purchase and I can hook you up!
+
+          h4 Need help with something else?
+          p Use the little smiley face chatbox in the lower right corner to ask a question. =)
+
+      include ../includes/foot.pug

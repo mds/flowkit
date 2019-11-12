@@ -1,0 +1,94 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit – Volume Licensing
+
+block content
+  body
+    .fk-container
+
+      - var headerTitle = " ";
+      <style> .fk-cta-group { display: none; !important }</style>
+      include ../includes/header-interior.pug
+
+      section.fk-main
+        .fk-container-content.fk-container-content--body
+
+          h1 Big team?
+          p No problem. Licenses are based of number of users and the more you need the <strong>bigger</strong> the discount. Each plan also comes with unique Figma plugin license keys that you'll be responsible for distributing amongst your team.
+
+          .fk-pricing-table
+
+            .fk-product-row.fk-product-row-header
+              .fk-product-name 
+                h3 Package
+              .fk-license-count
+                h3 Licenses
+              .fk-price-per-unit
+                h3 Per Unit
+              .fk-package-price
+                h3 Price
+
+            .fk-product-row
+              .fk-product-name 
+                p Team (5)
+              .fk-license-count
+                p 5
+              .fk-price-per-unit
+                p $39.80
+              .fk-package-price
+                p $199 
+                  a(href="https://transactions.sendowl.com/products/78142269/33D443C0/purchase") Buy
+
+            .fk-product-row
+              .fk-product-name 
+                p Team (15)
+              .fk-license-count
+                p 15
+              .fk-price-per-unit
+                p $26.60
+              .fk-package-price
+                p $399 
+                  a(href="https://transactions.sendowl.com/products/78145495/D3DC55E4/purchase") Buy
+
+            .fk-product-row
+              .fk-product-name 
+                p Team (30)
+              .fk-license-count
+                p 30
+              .fk-price-per-unit
+                p $23.30
+              .fk-package-price
+                p $699 
+                  a(href="https://transactions.sendowl.com/products/78145497/0A3EE60D/purchase") Buy
+              
+            .fk-product-row
+              .fk-product-name 
+                p Enterprise (50)
+              .fk-license-count
+                p 50
+              .fk-price-per-unit
+                p $19.98
+              .fk-package-price
+                p $999     
+                  a(href="https://transactions.sendowl.com/products/78145498/11FA7EFB/purchase") Buy 
+
+            .fk-product-row
+              .fk-product-name 
+                p Enterprise (100)
+              .fk-license-count
+                p 100
+              .fk-price-per-unit
+                p $16.99
+              .fk-package-price
+                p $1,699 
+                  a(href="https://transactions.sendowl.com/products/78145499/ED04B3DA/purchase") Buy
+
+          p If you have specific needs that are not available here, send an email to <code>matt@mds.is</code> for any questions or requests.
+
+          p To learn more about how the licensing works, read <a href="/license">here</a>.
+
+
+    include ../includes/foot.pug
+
+

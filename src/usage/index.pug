@@ -3,17 +3,21 @@ extends ../includes/layout.pug
 block head
   title Flowkit Usage
 
+block content
   body.fk-no-title
     .fk-container
-      - var headerTitle = "Usage";
+      - var headerTitle = " ";
       include ../includes/header-interior.pug
 
       section.fk-main
         .fk-container-content.fk-container-content--body
 
+          h1 Usage
+          p.fk-intro <strong>3.0</strong> documentation is coming soon. Now that there are 3 different pieces of software—<code>.fig</code> <code>.sketch</code> <code>.xd</code>—supported and a brand new Figma plugin, there are a lot of different ways to use Flowkit. If you have any specific questions I will be happy to answer them for you. In the meantime, I'l be cranking away on new documentation.
 
-          h3 Installation
-          p.fk-intro Flowkit is available in both Sketch and Figma formats. Each format was created natively, leveraging unique features from each platform. Because of this, installing the library is quite simple and no additional software is required.
+
+          h4 2.0 Installation
+          p Flowkit is available in both Sketch and Figma formats. Each format was created natively, leveraging unique features from each platform. Because of this, installing the library is quite simple and no additional software is required.
 
           img(src="../assets/img/usage/files.svg" alt="figma and sketch file format icons")
 
@@ -29,13 +33,13 @@ block head
             li Create a Team project called Flowkit and click <code>Move</code>.
             li Flowkit will now be available as a library across all Team projects.
             li For more info on Figma libraries, <a href="https://help.figma.com/editor/team-library">read Figma's documentation</a>.
-            li Please make sure you have the appropriate Flowkit Team license to share the library with your design team. Have a personal license and need to upgrade? <a href="http://twitter.com/mds">Let me know</a> and I'll hook you up with an upgrade coupon code.
+            li Please make sure you have the appropriate Flowkit Team license to share the library with your design team. Have a personal license and need to upgrade? Email <code>matt@mds.is</code> and I'll hook you up with an upgrade coupon code.
 
           blockquote
             h5 Free Figma Accounts
             p If you have a free Figma account, it is recommended that you create userflows as additional pages  inside of the Flowkit file in order to leverage the assets as components.
 
-          h4.fk-header-sketch#installing-in-figma Installing in Sketch
+          h4.fk-header-sketch#installing-in-sketch Installing in Sketch
           p Installing the Flowkit Library will make it available for use with all of your Sketch files.
 
           img(src="../assets/img/usage/overview-sketch.png" alt="bird's eye view of flowkit components in sketch")
@@ -44,7 +48,7 @@ block head
             li Open Sketch preferences, navigate to the <code>Libraries</code> tab.
             li Choose <code>Add Library...</code> in the bottom left.
             li Select <code>flowkit-v2.sketch</code> and click <code>Open</code>
-            li Now you're ready to use Flowkit 2.0 in any Sketch 52+ document.
+            li Now you're ready to use Flowkit 2.0 in any Sketch 55+ document.
 
           blockquote
             h5 Sketch Runner + Flowkit
@@ -53,7 +57,7 @@ block head
             p <a href="https://github.com/mds/sketch-shortcuts">Download this free shortcut plugin</a> to use Flowkit even faster.
 
           h3 Creating High-level Flows
-          p.fk-intro Every main component inside of Flowkit is based on a 360x360 grid. Each one was designed to have 0px of margin on all sides when linking blocks and flows.
+          p.fk-intro Every main component inside of Flowkit is based on a <code>180x180</code> grid. Each one was designed to have 0px of margin on all sides when linking blocks and flows.
 
           img(src="../assets/img/usage/high-level.gif" alt="360 pixel grid with blocks and flows fitting together nicely")
 
@@ -130,17 +134,17 @@ block head
 
           h4 Linking flow components
           p There are times when linking multiple flow components together is necessary to give you just the crazy line you want in your document. You can achieve the appearance of a continuous line by simply hiding the nested endcaps.
-          h5.fk-header-figma Figma
+          h4.fk-header-figma Figma
           img(src="../assets/img/usage/complex-flow-figma.gif" alt="linking multiple flow components together to create one large crazy line in figma")
-          h5.fk-header-sketch Sketch
+          h4.fk-header-sketch Sketch
           img(src="../assets/img/usage/complex-flow-sketch.gif" alt="linking multiple flow components together to create one large crazy line in sketch")
 
 
           h4 Changing tap interactions
-          p The default interaction for screen flows is tap, but it can easily be overriden with <code>double tap</code>, <code>swipe (up, down, left, right)</code>, and <code>long press</code>.
-          h5.fk-header-figma Figma
+          p Screen flows can be created with <code>tap</code>, <code>swipe</code>, and <code>long press</code>.
+          h4.fk-header-figma Figma
           img(src="../assets/img/usage/tap-override-figma.gif" alt="creating a screenflow in figma")
-          h5.fk-header-sketch Sketch
+          h4.fk-header-sketch Sketch
           img(src="../assets/img/usage/tap-override-sketch.gif" alt="creating a screenflow in sketch")
 
 

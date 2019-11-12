@@ -20,6 +20,7 @@
 .fk-flow-demo-container
   & > div
     position: absolute
+    z-index: 20
 
 .fk-flow-demo-container-large
   display: none
@@ -81,7 +82,7 @@
   position: absolute
 
   &:hover:after
-    background: rgba($color-flow-alt, .75)
+    background: rgba($color-purple, .3)
     +easeall
 
   &:before
@@ -91,7 +92,7 @@
     height: 1rem
     top: 1.5rem
     left: 1.5rem
-    background: $color-white
+    background: $color-purple
     border-radius: 50%
     box-shadow: 1px 2px 4px 0 rgba($color-dark, .2)
     position: absolute
@@ -102,7 +103,7 @@
     display: block
     width: 4rem
     height: 4rem
-    background: rgba($color-flow-alt, .5)
+    background: rgba($color-purple, .2)
     border-radius: 50%
     position: absolute
     z-index: 10
@@ -119,7 +120,7 @@
       background: $color-dark
 
     &:after
-      background: rgba($color-flow-alt, 0)
+      background: rgba($color-purple, 0)
       +easeall
 
 @keyframes pulse-large

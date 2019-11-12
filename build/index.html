@@ -1,372 +1,563 @@
 
 <html>
-  <head>
-    <title>Flowkit – User Flow Library for Figma and Sketch</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="Prototype"/>
-    <meta name="HandheldFriendly" content="True"/>
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta itemprop="name" content="Flowkit"/>
-    <meta itemprop="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta itemprop="image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@mds"/>
-    <meta name="twitter:title" content="Flowkit"/>
-    <meta name="twitter:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta name="twitter:creator" content="@mds"/>
-    <meta name="twitter:image:src" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
-    <meta property="og:title" content="Flowkit"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="http://useflowkit.com"/>
-    <meta property="og:image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
-    <meta property="og:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta property="og:site_name" content="Flowkit"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
-    <link id="favicon" rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-  </head>
-  <body>
-    <div class="fk-container">
-      <header>
-        <div class="fk-header-wrapper">
-          <div class="fk-top-left"><img alt="sketch icon" src="/assets/img/icon-sketch.svg"/><img alt="figma icon" src="/assets/img/icon-figma.svg"/>
-            <p class="fk-small"><span class="is-hidden">Built for Sketch &amp; Figma</span></p>
-          </div>
-          <div class="fk-logo">
-            <h1>Flowkit 2.0</h1><a href="/updates">What's New?</a>
-          </div>
-          <div class="fk-cta-group">
-            <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="#buy">Buy</a></div>
-          </div>
-        </div>
-      </header>
-      <section class="fk-main">
-        <div class="fk-carousel fk-colorblock--blue unselectable">
-          <div class="fk-carousel-container">
-            <div class="fk-arrow-desc-container">
-              <div>
-                <p class="fk-arrow-desc">tap right</p>
-              </div>
-              <div>
-                <p class="fk-label fk-label--right"><span class="fk-current">1</span> of 11</p>
-              </div>
-            </div>
-            <div class="fk-arrow-container fk-arrow-is-pulsing">
-              <div class="fk-arrow fk-arrow--tap fk-arrow--default" data-pos="pos1"><img class="svg" src="assets/img/01-tap-right.svg"/><img class="svg is-hidden" src="assets/img/02-tap-right-curve-down.svg"/><img class="svg is-hidden" src="assets/img/03-tap-right-curve-down-hook.svg"/><img class="svg is-hidden" src="assets/img/04-tap-right-curve-down-u-turn.svg"/><img class="svg is-hidden" src="assets/img/05-tap-right-curve-up.svg"/><img class="svg is-hidden" src="assets/img/06-tap-right-curve-up-hook.svg"/><img class="svg is-hidden" src="assets/img/07-tap-right-curve-up-u-turn.svg"/><img class="svg is-hidden" src="assets/img/08-tap-right-snake-up.svg"/><img class="svg is-hidden" src="assets/img/09-tap-right-snake-up-hook.svg"/><img class="svg is-hidden" src="assets/img/10-tap-right-snake-down.svg"/><img class="svg is-hidden" src="assets/img/11-tap-right-snake-down-hook.svg"/></div>
-            </div>
-            <div class="fk-cycle-control-container">
-              <div class="fk-cycle-controls">
-                <ul>
-                  <li><a class="fk-cycle-prev"><span>Previous</span><img class="svg" src="assets/img/arrow.svg"/></a></li>
-                  <li><a class="fk-cycle-next"><span>Next</span><img class="svg" src="assets/img/arrow.svg"/></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="fk-bottom-controls">
-              <div>
-                <ul class="fk-controls-type">
-                  <li><a class="is-active" data-type="tap">Tap</a></li>
-                  <li><a data-type="flow">Flow</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class="fk-controls-direction">
-                  <li><a class="is-active" data-direction="right">→</a></li>
-                  <li><a data-direction="down">↓</a></li>
-                  <li><a data-direction="left">←</a></li>
-                  <li><a data-direction="up">↑</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class="fk-controls-style">
-                  <li><a class="is-active" data-style="default">Default</a></li>
-                  <li><a data-style="alt">Alt</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="fk-container-content">
-          <h2><strong>Frighteningly fast</strong> user flows and more, right inside Sketch &amp; Figma. <a href="/usage">Learn how to use it</a>.</h2>
-        </div>
-      </section>
-      <section class="fk-video"><script src="https://fast.wistia.com/embed/medias/jrx2ohfnrj.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_jrx2ohfnrj videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/jrx2ohfnrj/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div></section>
-      <section class="fk-flows">
-        <div class="fk-container-content">
-          <h2><strong>Quickly build</strong> out high-level flows to tell the story of your designs—perfect for presentations and documentation.</h2>
-        </div>
-        <div class="fk-flow-example fk-flow-example-small">
-          <div class="fk-flow-example-flows"><img class="svg" alt="flows" src="assets/img/flow-devices-flows-small.svg"/></div>
-          <div class="fk-flow-example-devices"><img alt="devices" src="assets/img/flow-devices-small.png"/></div>
-        </div>
-        <div class="fk-flow-example fk-flow-example-large">
-          <div class="fk-flow-example-flows"><img class="svg" alt="flows" src="assets/img/flow-devices-flows-large.svg"/></div>
-          <div class="fk-flow-example-devices"><img alt="devices" src="assets/img/flow-devices-large.png"/></div>
-        </div>
-        <div class="fk-colorblock fk-colorblock--red"></div>
-      </section>
-      <section class="fk-endpoints">
-        <div class="fk-container-content">
-          <h2><strong>You have full control</strong> over intelligently-named symbols and overrides, making custom flows easy.</h2>
-        </div>
-        <div class="fk-flow-demo">
-          <div class="fk-flow-demo-container fk-flow-demo-container-large">
-            <div class="fk-flow-demo-piece fk-flow-demo-device"><img alt="flow demo device" src="assets/img/flow-device.svg"/></div>
-            <div class="fk-flow-demo-piece1 fk-flow-demo-flow fk-flow-demo-flow1"><a class="fk-flow-demo-hit fk-flow-demo-hit1 fk-flow-demo-hit--is-active"></a>
-              <div class="fk-flow-piece-container"><img alt="flow demo 1" src="assets/img/flow1-large.svg"/></div>
-            </div>
-            <div class="fk-flow-demo-piece2 fk-flow-demo-flow fk-faded fk-flow-demo-flow2"><a class="fk-flow-demo-hit fk-flow-demo-hit2 fk-is-pulsing"></a>
-              <div class="fk-flow-piece-container"><img alt="flow demo 2" src="assets/img/flow2-large.svg"/></div>
-            </div>
-            <div class="fk-flow-demo-piece3 fk-flow-demo-flow fk-faded fk-flow-demo-flow3"><a class="fk-flow-demo-hit fk-flow-demo-hit3 fk-is-pulsing"></a>
-              <div class="fk-flow-piece-container"><img alt="flow demo 3" src="assets/img/flow3-large.svg"/></div>
-            </div>
-          </div>
-          <div class="fk-flow-demo-container fk-flow-demo-container-small">
-            <div class="fk-flow-demo-piece fk-flow-demo-device"><img alt="flow demo device" src="assets/img/flow-device.svg"/></div>
-            <div class="fk-flow-demo-piece1 fk-flow-demo-flow fk-flow-demo-flow1"><a class="fk-flow-demo-hit fk-flow-demo-hit1 fk-flow-demo-hit--is-active"></a>
-              <div class="fk-flow-piece-container"><img alt="flow demo 1" src="assets/img/flow1-small.svg"/></div>
-            </div>
-            <div class="fk-flow-demo-piece2 fk-flow-demo-flow fk-faded fk-flow-demo-flow2"><a class="fk-flow-demo-hit fk-flow-demo-hit2 fk-is-pulsing"></a>
-              <div class="fk-flow-piece-container"><img alt="flow demo 2" src="assets/img/flow2-small.svg"/></div>
-            </div>
-            <div class="fk-flow-demo-piece3 fk-flow-demo-flow fk-faded fk-flow-demo-flow3"><a class="fk-flow-demo-hit fk-flow-demo-hit3 fk-is-pulsing"></a>
-              <div class="fk-flow-piece-container"><img alt="flow demo 3" src="assets/img/flow3-small.svg"/></div>
-            </div>
-          </div>
-        </div>
-        <div class="fk-colorblock fk-colorblock--mustard"></div>
-      </section>
-      <section class="fk-mds">
-        <div class="fk-container-content">
-          <h2><strong>Made by<a href="http://twitter.com/mds"> @mds</a></strong> —approximately 6,987,389 pixels, 96 cups of coffee, and 124 bathroom breaks.
-            <div class="fk-follow-btn"><a class="twitter-follow-button" href="https://twitter.com/mds?ref_src=twsrc%5Etfw" data-show-count="true">Follow @mds</a>
-              <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-          </h2>
-        </div>
-        <div class="fk-colorblock fk-colorblock--mds"></div>
-      </section>
-      <section class="fk-decision" id="buy">
-        <div class="fk-container-content">
-          <h2><strong>Finely-tuned components</strong> to supercharge your flows. Perfect for individuals and teams.</h2>
-          <div class="fk-body-text">
-            <p class="centered fk-note">Upon purchase you'll receive a link to download a <code>.zip</code> file containing both <code>flowkit-2.0.fig</code> and <code>flowkit-2.0.sketch</code> libraries that you can put to work on your projects immediately. ⚡️</p>
-          </div>
-          <div class="fk-tiers" id="tiers">
-            <div class="fk-price-block fk-price-block--solo">
-              <h3><strong>Solo</strong></h3>
-              <div class="fk-price-sub"><img class="fk-icon-check svg" src="assets/img/icon-check.svg" alt="check icon"/>
-                <h4>$29 for 1 user</h4>
-              </div>
-              <p>Unlimited personal and commercial projects for one user.</p><a class="fk-price-cta" href="https://transactions.sendowl.com/products/77680374/F5D10D7B/purchase" rel="nofollow">Buy $29</a>
-            </div>
-            <div class="fk-price-block fk-price-block--team">
-              <h3><strong>Team</strong></h3>
-              <div class="fk-price-sub"><img class="fk-icon-check svg" src="assets/img/icon-check.svg" alt="check icon"/>
-                <h4>$99 for up to 10 users</h4>
-              </div>
-              <p>Unlimited projects for up to 10 users in one organization.</p><a class="fk-price-cta" href="https://transactions.sendowl.com/products/77819369/5D65B594/purchase" rel="nofollow">Buy $99</a>
-            </div>
-            <div class="fk-price-block fk-price-block--enterprise">
-              <h3><strong>Enterprise</strong></h3>
-              <div class="fk-price-sub"><img class="fk-icon-check svg" src="assets/img/icon-check.svg" alt="check icon"/>
-                <h4>$199 for unlimited users</h4>
-              </div>
-              <p>Unlimited projects <em>and</em> users within one organization.</p><a class="fk-price-cta" href="https://transactions.sendowl.com/products/77730842/628CEFFE/purchase">Buy $199</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="fk-proof">
-        <h2><strong>Used and loved</strong> by top design teams and a whole lot of designers.</h2>
-        <ul class="fk-logos">
-          <li><img alt="apple" src="assets/img/logo-apple.svg"/></li>
-          <li><img alt="nike" src="assets/img/logo-nike.svg"/></li>
-          <li><img alt="stripe" src="assets/img/logo-stripe.svg"/></li>
-          <li><img alt="dribbble" src="assets/img/logo-dribbble.svg"/></li>
-          <li><img alt="facebook" src="assets/img/logo-facebook.svg"/></li>
-          <li><img alt="lyft" src="assets/img/logo-lyft.svg"/></li>
-          <li><img alt="uber" src="assets/img/logo-uber.svg"/></li>
-          <li><img alt="gopro" src="assets/img/logo-gopro.svg"/></li>
-          <li><img alt="nbc" src="assets/img/logo-nbc.svg"/></li>
-          <li><img alt="ueno" src="assets/img/logo-ueno.svg"/></li>
-          <li><img alt="instacart" src="assets/img/logo-instacart.svg"/></li>
-          <li><img alt="microsoft" src="assets/img/logo-microsoft.svg"/></li>
-          <li><img alt="dropbox" src="assets/img/logo-dropbox.svg"/></li>
-          <li><img alt="shopify" src="assets/img/logo-shopify.svg"/></li>
-          <li><img alt="metalab" src="assets/img/logo-metalab.svg"/></li>
-          <li><img alt="intuit" src="assets/img/logo-intuit.svg"/></li>
-        </ul>
-        <ul class="tweets">
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Flowkit - new<a href="https://twitter.com/sketchapp?ref_src=twsrc%5Etfw">@sketchapp</a> library for user flows, content maps, screen annotations, and more - made by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/0DClzruVBs">https://t.co/0DClzruVBs</a></p>— Dropbox Design (@DropboxDesign)<a href="https://twitter.com/DropboxDesign/status/931945129107214337?ref_src=twsrc%5Etfw">November 18, 2017</a>
-            </blockquote>
-          </li>
-          <li><blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">The <a href="https://twitter.com/dribbble?ref_src=twsrc%5Etfw">@Dribbble</a> team just all got set up with the new <a href="https://t.co/I16U6Maonw">https://t.co/I16U6Maonw</a> for <a href="https://twitter.com/figmadesign?ref_src=twsrc%5Etfw">@figmadesign</a>. Such a rad library!</p>&mdash; Zack Onisko (@zack415) <a href="https://twitter.com/zack415/status/1059520215686438912?ref_src=twsrc%5Etfw">November 5, 2018</a></blockquote></li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Just purchased Flowkit from<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a>. Go do the same. Never have to draw those snake lines and arrows for user flows again. 🙌👍<a href="https://t.co/3D8frZpM1r">https://t.co/3D8frZpM1r</a></p>— Jad Limcaco (@jadlimcaco)<a href="https://twitter.com/jadlimcaco/status/931248845085843456?ref_src=twsrc%5Etfw">November 16, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">🔥 I just bought this kiiiiiilller Sketch Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/haqGcq5uq7">https://t.co/haqGcq5uq7</a></p>— Sonali Agrawal (@sonaliagrawal)<a href="https://twitter.com/sonaliagrawal/status/935553851717029888?ref_src=twsrc%5Etfw">November 28, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Flowkit is a completely reusable Sketch library with over 200 symbols that you can summon for every new project, and feel confident that every variation of tap, flow, and UX blurb is covered. Watch the video to see it in action.<a href="https://t.co/wjebA0NylF">https://t.co/wjebA0NylF</a></p>— Veerle Pieters (@vpieters)<a href="https://twitter.com/vpieters/status/946738649340743680?ref_src=twsrc%5Etfw">December 29, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">I can’t stop clicking.<br/><br/>Also, go purchase Flowkit & follow<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a>…you prob already do.<a href="https://t.co/0L1Vrar6Au">https://t.co/0L1Vrar6Au</a><a href="https://t.co/t4c7Ylf8qE">pic.twitter.com/t4c7Ylf8qE</a></p>— Joel Beukelman 🤘🏻 (@_bklmn)<a href="https://twitter.com/_bklmn/status/936011437289324545?ref_src=twsrc%5Etfw">November 29, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Picking up this little gem for<a href="https://twitter.com/eBay?ref_src=twsrc%5Etfw">@eBay</a> Design today.<a href="https://t.co/hj6qHB9D0a">https://t.co/hj6qHB9D0a</a> Go get it...Matt is a beast.<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a></p>— Greg Becker (@gregbecker)<a href="https://twitter.com/gregbecker/status/964608959251230720?ref_src=twsrc%5Etfw">February 16, 2018</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> (<a href="https://t.co/N8DU3KR5IT">https://t.co/N8DU3KR5IT</a>) is the arrows functionality Sketch should've shipped with. Brilliant stuff.</p>— Erik D. Kennedy (@erikdkennedy)<a href="https://twitter.com/erikdkennedy/status/948671139873619968?ref_src=twsrc%5Etfw">January 3, 2018</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Forgot to send a shoutout to<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> and<a href="https://t.co/Nhx9IRTgcY">https://t.co/Nhx9IRTgcY</a><br/><br/>Saved me on a deadline right before Thanksgiving...would've taken me triple the time without it. AND it's incredibly extendable as you can see.<a href="https://t.co/P92SUVM2m8">pic.twitter.com/P92SUVM2m8</a></p>— Jeff H (@IsThatJeff)<a href="https://twitter.com/IsThatJeff/status/934850756192227328?ref_src=twsrc%5Etfw">November 26, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">An order of things:<br/><br/>1.<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> releases a new thing.<br/>2. Everyone at<a href="https://twitter.com/SalesforceUX?ref_src=twsrc%5Etfw">@SalesforceUX</a> talks about it in Slack.<br/>3. I talk about how much I ❤️<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a>.<br/><br/>Today’s step #1:<a href="https://t.co/hwvLGzP4e5">https://t.co/hwvLGzP4e5</a></p>— Cliff Seal (@cliffseal)<a href="https://twitter.com/cliffseal/status/931625845650870273?ref_src=twsrc%5Etfw">November 17, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Been using Sketch FlowKit for a day now and it's doubled my UX flow production speed. How nerdy can a tweet get! Go buy it and be just as nerdy!<a href="https://t.co/bRpdWPqLQT">https://t.co/bRpdWPqLQT</a><a href="https://twitter.com/hashtag/sketch?src=hash&amp;ref_src=twsrc%5Etfw">#sketch</a><a href="https://twitter.com/hashtag/ux?src=hash&amp;ref_src=twsrc%5Etfw">#ux</a><a href="https://twitter.com/hashtag/designer?src=hash&amp;ref_src=twsrc%5Etfw">#designer</a></p>— Nick Reynolds (@Nick__Reynolds)<a href="https://twitter.com/Nick__Reynolds/status/969592980574269440?ref_src=twsrc%5Etfw">March 2, 2018</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Flowkit for<a href="https://twitter.com/sketchapp?ref_src=twsrc%5Etfw">@Sketchapp</a>, by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a>, has GOT TO BE in your Sketch toolbox for designing User Flows. Get it here<a href="https://t.co/mhw9CT6lOb">https://t.co/mhw9CT6lOb</a><a href="https://twitter.com/hashtag/ui?src=hash&amp;ref_src=twsrc%5Etfw">#ui</a><a href="https://twitter.com/hashtag/ux?src=hash&amp;ref_src=twsrc%5Etfw">#ux</a><a href="https://twitter.com/hashtag/appdesign?src=hash&amp;ref_src=twsrc%5Etfw">#appdesign</a><a href="https://t.co/xVW1X6Ky6x">pic.twitter.com/xVW1X6Ky6x</a></p>— SWCHS (@SWCharleston)<a href="https://twitter.com/SWCharleston/status/931256845666258945?ref_src=twsrc%5Etfw">November 16, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">🔥 I just bought this kiiiiiilller Sketch Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/Fg0t9OoBn1">https://t.co/Fg0t9OoBn1</a></p>— Joshwin Greene (@Josh_w_G)<a href="https://twitter.com/Josh_w_G/status/934081519991234561?ref_src=twsrc%5Etfw">November 24, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Loving this: Sketch Flow kit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> -<a href="https://t.co/NJajkCzmt6">https://t.co/NJajkCzmt6</a></p>— ☀️ Ugur Kaner (@ugurkaner)<a href="https://twitter.com/ugurkaner/status/939975393490038790?ref_src=twsrc%5Etfw">December 10, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">🔥All of the excitement for buying and using Sketch Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/hmW3FAEG1B">https://t.co/hmW3FAEG1B</a></p>— Kris Puckett (@krispuckett)<a href="https://twitter.com/krispuckett/status/935191583611326464?ref_src=twsrc%5Etfw">November 27, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Sketch Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a>  is a must have kit for user-flow/ prototyping projects ... snag yours at<a href="https://t.co/FQl1fIz85j">https://t.co/FQl1fIz85j</a></p>— Ali Al-Janabi (@aligfx)<a href="https://twitter.com/aligfx/status/935019035485442048?ref_src=twsrc%5Etfw">November 27, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Just bought this great Sketch Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/8DDRljwaVM">https://t.co/8DDRljwaVM</a> -- look forward to the time-savings!</p>— Jason (@fnkick)<a href="https://twitter.com/fnkick/status/934088272426536961?ref_src=twsrc%5Etfw">November 24, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">I was looking for this for a while --> Flowkit for Sketch<a href="https://t.co/Mpyepy0b7w">https://t.co/Mpyepy0b7w</a><a href="https://t.co/K6WwLtgHaY">pic.twitter.com/K6WwLtgHaY</a></p>— Alex Sagrado (@AlexSagrado)<a href="https://twitter.com/AlexSagrado/status/933654149807464448?ref_src=twsrc%5Etfw">November 23, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Sketch Flowkit is a nice time saver for UX flows in sketch<a href="https://t.co/2lJJAPkJr5">https://t.co/2lJJAPkJr5</a></p>— German Bauer (@design4use)<a href="https://twitter.com/design4use/status/933401425903697920?ref_src=twsrc%5Etfw">November 22, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Just bought this sweet Sketch Flowkit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/opjJpl8vT0">https://t.co/opjJpl8vT0</a> Excited to save some serious time creating logic flows. 🔥</p>— Nate Shevlin (@NateShevlin)<a href="https://twitter.com/NateShevlin/status/932519375558422533?ref_src=twsrc%5Etfw">November 20, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr"><a href="https://t.co/JktJnJcmFo">https://t.co/JktJnJcmFo</a> by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> is a great way to quickly mock up user flows in Sketch. Make sure to check out the video!<a href="https://t.co/zoCYpMzrFP">pic.twitter.com/zoCYpMzrFP</a></p>— Kevin Clark (@vernalkick)<a href="https://twitter.com/vernalkick/status/931600894700937216?ref_src=twsrc%5Etfw">November 17, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="es" dir="ltr">Flowkit for Sketch!! Bonito y rápido! ;)<a href="https://t.co/fJsGsfdpSg">https://t.co/fJsGsfdpSg</a><a href="https://twitter.com/hashtag/design?src=hash&amp;ref_src=twsrc%5Etfw">#design</a><a href="https://twitter.com/hashtag/process?src=hash&amp;ref_src=twsrc%5Etfw">#process</a><a href="https://twitter.com/hashtag/flow?src=hash&amp;ref_src=twsrc%5Etfw">#flow</a><a href="https://twitter.com/hashtag/life?src=hash&amp;ref_src=twsrc%5Etfw">#life</a><a href="https://twitter.com/hashtag/megalike?src=hash&amp;ref_src=twsrc%5Etfw">#megalike</a><a href="https://twitter.com/hashtag/good?src=hash&amp;ref_src=twsrc%5Etfw">#good</a> Gracias<a href="https://twitter.com/angelcreative?ref_src=twsrc%5Etfw">@angelcreative</a>!!<a href="https://t.co/Kv3bng3bav">pic.twitter.com/Kv3bng3bav</a></p>— Arantxa Vizcarro (@ArantxaVizcarro)<a href="https://twitter.com/ArantxaVizcarro/status/931501374877130752?ref_src=twsrc%5Etfw">November 17, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">This is so good<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a><a href="https://t.co/8301SLfeGb">https://t.co/8301SLfeGb</a> —> 👍🏼<a href="https://twitter.com/hashtag/tinybeerscheers?src=hash&amp;ref_src=twsrc%5Etfw">#tinybeerscheers</a></p>— Charlie Waite (@charliecwaite)<a href="https://twitter.com/charliecwaite/status/931304078801453057?ref_src=twsrc%5Etfw">November 16, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">Awesome work by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> on this Kit, super useful ✨⚡️<br/><a href="https://t.co/QynToLqxcK">https://t.co/QynToLqxcK</a></p>— Dominic (@domenico_loia)<a href="https://twitter.com/domenico_loia/status/931290676595015680?ref_src=twsrc%5Etfw">November 16, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">🔥💎🔥 Sketch flow kit by<a href="https://twitter.com/mds?ref_src=twsrc%5Etfw">@mds</a> this is super useful.<a href="https://t.co/Ta6JA3hbj8">https://t.co/Ta6JA3hbj8</a><a href="https://twitter.com/hashtag/design?src=hash&amp;ref_src=twsrc%5Etfw">#design</a><a href="https://twitter.com/hashtag/sketch?src=hash&amp;ref_src=twsrc%5Etfw">#sketch</a><a href="https://twitter.com/hashtag/flow?src=hash&amp;ref_src=twsrc%5Etfw">#flow</a></p>— ᴅᴀɴ (@Betraydan)<a href="https://twitter.com/Betraydan/status/931266586689851392?ref_src=twsrc%5Etfw">November 16, 2017</a>
-            </blockquote>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-              <p lang="en" dir="ltr">This is super dope for anyone that designs UI flows in<a href="https://twitter.com/sketchapp?ref_src=twsrc%5Etfw">@sketchapp</a>! Discuss on<a href="https://twitter.com/ProductHunt?ref_src=twsrc%5Etfw">@ProductHunt</a>:<a href="https://t.co/nHQGci8JBh">https://t.co/nHQGci8JBh</a><a href="https://t.co/4tNAm6SHt9">https://t.co/4tNAm6SHt9</a></p>— Chris Messina (@chrismessina)<a href="https://twitter.com/chrismessina/status/931606268510220289?ref_src=twsrc%5Etfw">November 17, 2017</a>
-            </blockquote>
-          </li>
-          <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </ul>
-        <h2><strong>Take a peek under the hood</strong> and see how Flowkit works.<br/>
-<br/><a class="fk-cta fk-cta-secondary" href="/usage">How it works</a>
-        </h2>
-      </section>
-      <footer>
-        <p class="fk-footer"><span class="copyright"> ©</span>. Studio MDS, LLC</p>
-        <p class="fk-footer fk-footer--links"><a href="/usage">Usage</a><a href="/updates">Updates</a><a href="/affiliate">Affiliates</a><a href="/license">License</a></p>
-      </footer>
-    </div>
-  </body>
-  <script type="text/javascript" src="/assets/js/MorphSVGPlugin.min.js"></script>
-  <script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
-  <script type="text/javascript" src="/assets/js/mousetrap.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/jquery.touchSwipe.min.js"></script>
-  <script type="text/javascript" src="/assets/js/flowkit.js"></script>
-  <script type="text/javascript" src="/assets/js/svgReplace.js"></script>
-  <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
-  <script src="//fast.wistia.com/embed/medias/tofi9zegwu.jsonp" async=""></script>
-  <script src="//fast.wistia.com/assets/external/E-v1.js" async=""></script>
+  <head></head>
+  <title>Flowkit – User Flow Library for Figma and Sketch</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="description" content="Prototype"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta itemprop="name" content="Flowkit"/>
+  <meta itemprop="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta itemprop="image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@mds"/>
+  <meta name="twitter:title" content="Flowkit"/>
+  <meta name="twitter:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta name="twitter:creator" content="@mds"/>
+  <meta name="twitter:image:src" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
+  <meta property="og:title" content="Flowkit"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://useflowkit.com"/>
+  <meta property="og:image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
+  <meta property="og:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta property="og:site_name" content="Flowkit"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
+  <link id="favicon" rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
   <script type="text/javascript">
-    var _dcq = _dcq || [];
-    var _dcs = _dcs || {};
-    _dcs.account = '7684207';
+    var MTUserId='6dd70d9f-8138-468d-8f7a-9cd561a57f74';
+    var MTFontIds = new Array();
+    MTFontIds.push("5680706"); // TT Rounds Neue W00 Regular
+    MTFontIds.push("5680714"); // TT Rounds Neue W00 Medium
+    MTFontIds.push("5681075"); // TT Rounds Neue W00 DemiBold
+    MTFontIds.push("5681083"); // TT Rounds Neue W00 Bold
+    MTFontIds.push("5681091"); // TT Rounds Neue W00 ExtraBold
+    MTFontIds.push("5681099"); // TT Rounds Neue W00 Black
     (function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript'; dc.async = true;
-    dc.src = '//tag.getdrip.com/7684207.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
+    var mtTracking = document.createElement('script');
+    mtTracking.type='text/javascript';
+    mtTracking.async='true';
+    mtTracking.src='/assets/js/mtiFontTrackingCode.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
     })();
-    
   </script>
+  <div class="fk-container">
+    <header>
+      <div class="fk-header-wrapper">
+        <div class="fk-top-left"><img alt="sketch icon" src="/assets/img/icon-sketch.svg"/><img alt="figma icon" src="/assets/img/icon-figma.svg"/><img alt="xd icon" src="/assets/img/icon-xd.svg"/></div>
+        <div class="fk-logo">
+          <h1><a href="#">Flowkit </a></h1>
+        </div>
+        <div class="fk-cta-group">
+          <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="#buy">Buy</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="fk-main">
+      <div class="fk-container-content">
+        <h2>User flows right inside <strong>your favorite</strong> design tool.</h2>
+        <div class="fk-flow-graphic"><img class="svg" src="assets/img/flow-3-graphic.svg"/></div>
+      </div>
+    </section>
+    <div class="fk-tweet-group fk-tweet-group-snippet"><a class="fk-tweet" href="https://twitter.com/DropboxDesign/status/931945129107214337?ref_src=twsrc%5Etfw">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1130897821970788352/YhptN_9y_bigger.png" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Dropbox Design</h4>
+            <h3>@dropboxdesign</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit - new @sketchapp library for user flows, content maps, screen annotations, and more—made by @mds</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/zack415/status/1059520215686438912?ref_src=twsrc%5Etfw">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/925901986020462594/LbjP-CoQ_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Zack Onisko</h4>
+            <h3>@zack415</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>The @Dribbble team just all got set up with the new Flowkit for @figmadesign. Such a rad library!</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/danmall/status/1115991384408899585">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1037410919696019458/HmEC7sqC_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Dan Mall</h4>
+            <h3>@danmall</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Props to my man @mds for making Flowkit so easy to use to make diagrams...</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/kristirspbrry/status/1130487995986001920">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1133402058151927808/m3Bi2tvW_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Kristie Clementine</h4>
+            <h3>@kristirspbrry</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>I just bought Flowkit 2.0 for Figma and Sketch by @mds. This is gonna save so much time when I need to make user flows.👌 https://useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/rolomathias/status/1059433903721721856">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1167868036289712128/yZp1d4Ei_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Rolando Mathis</h4>
+            <h3>@rolomathias</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Had the privilege of trying Flowkit a few days ago, and it was 🔥. Exceeded expectations. This lowers the barrier to making informative flows.</p>
+          </div>
+        </div></a>
+    </div>
+    <section class="fk-video-demo">
+      <div class="fk-video-group-content">
+        <h2>Works where <strong>you work</strong></h2>
+        <p>Flowkit was uniquely designed for <code>Figma</code>, <code>Sketch</code>, and <code>XD</code> using best practices and workflows for each individual platform.</p>
+        <div class="fk-video-controls">
+          <ul>
+            <li><a class="fk-video-control fk-video-control-figma is-active" href="#figma-video"><img src="assets/img/icon-figma.svg"/></a></li>
+            <li><a class="fk-video-control fk-video-control-sketch" href="#sketch-video"><img src="assets/img/icon-sketch.svg"/></a></li>
+            <li><a class="fk-video-control fk-video-control-xd" href="#xd-video"><img src="assets/img/icon-xd.svg"/></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fk-video-group"><video id="player" crossorigin playsinline>
+<source src="assets/video/video-example-figma.mp4" type="video/mp4" />
+</video>
+      </div>
+    </section>
+    <section class="fk-flows">
+      <div class="fk-container-content"></div>
+      <div class="fk-flow-example fk-flow-example-small">
+        <div class="fk-flow-example-flows"><img class="svg" alt="flows" src="assets/img/flow-devices-flows-small.svg"/></div>
+        <div class="fk-flow-example-devices"><img alt="devices" src="assets/img/flow-devices-small.png"/></div>
+      </div>
+      <div class="fk-flow-example fk-flow-example-large">
+        <div class="fk-flow-example-flows"><img class="svg" alt="flows" src="assets/img/flow-devices-flows-large.svg"/></div>
+        <div class="fk-flow-example-devices"><img alt="devices" src="assets/img/flow-devices-large.png"/></div>
+      </div>
+      <div class="fk-colorblock fk-colorblock--red"></div>
+    </section>
+    <section class="fk-endpoints">
+      <h2><strong>Intelligently-named</strong>	components and file structure.</h2>
+      <div class="fk-carousel fk-colorblock--carousel unselectable">
+        <div class="fk-carousel-container">
+          <div class="fk-arrow-desc-container">
+            <div>
+              <p class="fk-arrow-desc">tap right</p>
+            </div>
+            <div>
+              <p class="fk-label fk-label--right"><span class="fk-current">1</span> of 11</p>
+            </div>
+          </div>
+          <div class="fk-arrow-container fk-arrow-is-pulsing">
+            <div class="fk-arrow fk-arrow--tap fk-arrow--default" data-pos="pos1"><img class="svg" src="assets/img/arrows-new/01-tap-right.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/02-tap-right-curve-down.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/03-tap-right-curve-down-hook.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/04-tap-right-curve-down-u-turn.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/05-tap-right-curve-up.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/06-tap-right-curve-up-hook.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/07-tap-right-curve-up-u-turn.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/08-tap-right-snake-up.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/09-tap-right-snake-up-hook.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/10-tap-right-snake-down.svg"/><img class="svg is-hidden" src="assets/img/arrows-new/11-tap-right-snake-down-hook.svg"/></div>
+          </div>
+          <div class="fk-cycle-control-container">
+            <ul class="fk-cycle-controls">
+              <li><a class="fk-cycle-prev"><span>Previous</span><img class="svg" src="assets/img/arrow.svg"/></a></li>
+              <li><a class="fk-cycle-next"><span>Next</span><img class="svg" src="assets/img/arrow.svg"/></a></li>
+            </ul>
+          </div>
+          <div class="fk-bottom-controls">
+            <ul class="fk-controls-type">
+              <li><a class="is-active" data-type="tap">Tap</a></li>
+              <li><a data-type="flow">Flow</a></li>
+            </ul>
+            <ul class="fk-controls-direction">
+              <li><a class="is-active" data-direction="right">→</a></li>
+              <li><a data-direction="down">↓</a></li>
+              <li><a data-direction="left">←</a></li>
+              <li><a data-direction="up">↑</a></li>
+            </ul>
+            <ul class="fk-controls-style">
+              <li><a class="is-active" data-style="default">—</a></li>
+              <li><a data-style="alt">-&nbsp;-&nbsp;-</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fk-figma-plugin">
+      <div class="fk-figma-plugin-content">
+        <h2>New <strong>Figma</strong> Plugin</h2>
+        <p>Flowkit’s been supercharged inside of Figma. All of the components can now be dynamically placed for an even faster workflow. <a href="#">Install the plugin</a>.</p><img src="assets/img/block-example.svg" alt="component block screenshots"/>
+      </div>
+      <div class="fk-figma-plugin-group"><img src="assets/img/figma-plugin.svg" alt="screenshot of flowkit plugin for figma"/></div>
+    </section>
+    <section class="fk-tiny">
+      <div class="fk-container-content">
+        <h2 id="tiny"><strong>Tiny</strong> flow components now included for annotating subtle details</h2>
+        <div class="fk-tiny-group"><video autoplay loop>
+<source src="assets/img/tiny-loop-4.mp4" type="video/mp4">
+          <Your>browser does not support the video tag.</Your></video>  <img class="fk-tiny-annotation" alt="tiny detail" src="assets/img/tiny-details.svg"/>
+        </div>
+      </div>
+    </section>
+    <section class="fk-logos">
+      <h2><strong>Used</strong> by top design teams and a whole lot of designers.</h2>
+      <ul class="fk-logos">
+        <li><img alt="apple" src="assets/img/logo-apple.svg"/></li>
+        <li><img alt="nike" src="assets/img/logo-nike.svg"/></li>
+        <li><img alt="stripe" src="assets/img/logo-stripe.svg"/></li>
+        <li><img alt="dribbble" src="assets/img/logo-dribbble.svg"/></li>
+        <li><img alt="facebook" src="assets/img/logo-facebook.svg"/></li>
+        <li><img alt="lyft" src="assets/img/logo-lyft.svg"/></li>
+        <li><img alt="uber" src="assets/img/logo-uber.svg"/></li>
+        <li><img alt="gopro" src="assets/img/logo-gopro.svg"/></li>
+        <li><img alt="nbc" src="assets/img/logo-nbc.svg"/></li>
+        <li><img alt="ueno" src="assets/img/logo-ueno.svg"/></li>
+        <li><img alt="instacart" src="assets/img/logo-instacart.svg"/></li>
+        <li><img alt="microsoft" src="assets/img/logo-microsoft.svg"/></li>
+        <li><img alt="dropbox" src="assets/img/logo-dropbox.svg"/></li>
+        <li><img alt="square" src="assets/img/logo-square.svg"/></li>
+        <li><img alt="metalab" src="assets/img/logo-metalab.svg"/></li>
+        <li><img alt="intuit" src="assets/img/logo-intuit.svg"/></li>
+      </ul>
+    </section>
+    <div class="fk-tweet-group fk-tweet-group-snippet"><a class="fk-tweet" href="https://twitter.com/jadlimcaco/status/931248845085843456">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1151395086770458624/pRJtEGYJ_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Jad Limcaco</h4>
+            <h3>@jadlimcaco</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Just purchased Flowkit from @mds. Go do the same. Never have to draw those snake lines and arrows for user flows again. 🙌👍</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/_bklmn/status/936011437289324545">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/639215262370131968/WuKnrHWI_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Joel Beukelman</h4>
+            <h3>@_bklmn</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>I can’t stop clicking. Also, go purchase Flowkit &amp; follow @mds…you prob already do.</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/sonaliagrawal/status/935553851717029888">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/917922465099145216/RFOY5XP7_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Sonali Agrawal</h4>
+            <h3>@sonaliagrawal</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>🔥 I just bought this kiiiiiilller Sketch Flowkit by @mds</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/erikdkennedy/status/948671139873619968">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/821035343629561856/Cq7vNcSN_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Erik D. Kennedy</h4>
+            <h3>@erikdkennedy</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit by @mds is the arrows functionality Sketch should've shipped with. Brilliant stuff.</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/charliecwaite/status/931304078801453057">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/975884305313406977/ycZa8E9-_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Charlie Waite</h4>
+            <h3>@charliecwaite</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>This is so good @mds useflowkit.com 👍 #tinybeerscheers</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/vpieters/status/946738649340743680">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/660859113094561792/eyX7OiI7_bigger.png" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Veerle Pieters</h4>
+            <h3>@vpieters</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit is a completely reusable Sketch library with over 200 symbols that you can summon for every new project, and feel confident that every variation of tap, flow, and UX blurb is covered.</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/IsThatJeff/status/934850756192227328">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1180997106695315457/pOfpoZfc_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Jeff H</h4>
+            <h3>@IsThatJeff</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Forgot to send a shoutout to @mds and Flowkit. Saved me on a deadline right before Thanksgiving...would've taken me triple the time without it. AND it's incredibly extendable as you can see.</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/cliffseal/status/931625845650870273">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/859072601641148416/7XPpoJDQ_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Cliff Seal</h4>
+            <h3>@cliffseal</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>An order of things: 1. @mds releases a new thing. 2. Everyone at @SalesforceUX talks about it in Slack. 3. I talk about how much I ❤️ @mds. Today’s step #1: useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/Nick__Reynolds/status/969592980574269440">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/943530975669125120/S3hjz4Ra_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Nick Reynolds</h4>
+            <h3>@Nick__Reynolds</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Been using Sketch FlowKit for a day now and it's doubled my UX flow production speed. How nerdy can a tweet get! Go buy it and be just as nerdy!</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/SWCharleston/status/931256845666258945">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1188541192130236417/583GgCK9_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Startup Weekend Charleston</h4>
+            <h3>@SWCharleston</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit for @Sketchapp, by @mds, has GOT TO BE in your Sketch toolbox for designing User Flows. Get it here useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/fnkick/status/934088272426536961">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1122233638442143744/62rkxWbv_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Jason</h4>
+            <h3>@fnkick</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Just bought this great Sketch Flowkit by @mds—look forward to the time-savings!</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/gregbecker/status/964608959251230720">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1179144491858444289/CEZdo92m_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Greg Becker</h4>
+            <h3>@gregbecker</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Picking up this little gem for @eBay Design today. Go get it...Matt is a beast. @mds</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/krispuckett/status/935191583611326464">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1034100718368509952/qYkphooz_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Kris Puckett</h4>
+            <h3>@krispuckett</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>🔥 All of the excitement for buying and using Sketch Flowkit by @mds</p>
+          </div>
+        </div></a>
+    </div>
+    <section class="fk-decision">
+      <div class="fk-container-content">
+        <h2 id="buy"><strong>Finely-tuned</strong> for individuals and teams.</h2>
+        <div class="fk-tiers" id="tiers">
+          <div class="fk-price-block fk-price-block--tiny">
+            <h3>Tiny</h3>
+            <div class="fk-price-sub">
+              <h4>$29</h4>
+            </div>
+            <ul>
+              <li>Tiny Flowkit library</li>
+              <li><code>.sketch</code> <code>.fig</code> <code>.xd</code></li>
+              <li>Unlimited projects</li>
+              <li>1 <a href="/license">license</a> <br><br><br></li>
+            </ul><a class="fk-price-cta" href="https://transactions.sendowl.com/products/78145492/C472C075/purchase">Buy</a><a class="fk-cta-text" href="/preview#tiny">Preview file</a>
+          </div>
+          <div class="fk-price-block fk-price-block--pro">
+            <h3>Pro</h3>
+            <div class="fk-price-sub">
+              <h4>$49</h4>
+            </div>
+            <ul>
+              <li>Full Flowkit library</li>
+              <li><code>.sketch</code> <code>.fig</code> <code>.xd</code></li>
+              <li>Figma plugin access</li>
+              <li>1 year of updates</li>
+              <li>Unlimited projects</li>
+              <li>1 <a href="/license">license</a></li>
+            </ul><a class="fk-price-cta" href="https://transactions.sendowl.com/products/78106361/61E63D85/purchase" rel="nofollow">Buy</a><a class="fk-cta-text" href="/preview">Preview file</a>
+          </div>
+          <div class="fk-price-block fk-price-block--team">
+            <h3>Team</h3>
+            <div class="fk-price-sub">
+              <h4>$199</h4>
+            </div>
+            <ul>
+              <li>Full Flowkit library</li>
+              <li><code>.sketch</code> <code>.fig</code> <code>.xd</code></li>
+              <li>Figma plugin access</li>
+              <li>1 year of updates</li>
+              <li>Unlimited projects</li>
+              <li>5 <a href="/license">licenses</a></li>
+            </ul><a class="fk-price-cta" href="https://transactions.sendowl.com/products/78142269/33D443C0/purchase" rel="nofollow">Buy</a><a class="fk-cta-text" href="/volume">Need more than 5?</a>
+          </div>
+        </div>
+        <div class="fk-body-text" id="buy">
+          <p class="centered fk-note">Upon purchase you'll receive a link to download your <code>.zip</code> file containing <code>.sketch</code>, <code>.fig</code>, and <code>.xd</code> files—as well as your Figma plugin license key. <br><br>🏫 Student or Teacher? <a class="fk-cta-text" href="/education">Get an educational discount</a>.      </p>
+        </div>
+      </div>
+    </section>
+    <div class="fk-tweet-group fk-tweet-group-snippet"><a class="fk-tweet" href="https://twitter.com/NateShevlin/status/932519375558422533">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/728457605589303297/WPfI9Yf3_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Nate Shevlin</h4>
+            <h3>@NateShevlin</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Just bought this sweet Sketch Flowkit by @mds http://sketchflowkit.com Excited to save some serious time creating logic flows. 🔥</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/vernalkick/status/931600894700937216">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1190086281818189825/vI3wmE9k_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Kevin Clark</h4>
+            <h3>@vernalkick</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit by @mds is a great way to quickly mock up user flows in Sketch. Make sure to check out the video! </p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/ArantxaVizcarro/status/931501374877130752">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/654352244658339841/g4juANU8_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Arantxa Vizcarro</h4>
+            <h3>@ArantxaVizcarro</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit for Sketch!! Bonito y rápido! ;) #design #process #flow #life #megalike #good Gracias @angelcreative!!</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/tobamese/status/1059557940078829568">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1179403311541358600/ptNLojZ3_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Zen Lara</h4>
+            <h3>@tobamese</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>I just bought Flowkit 2.0 for Figma and Sketch by @mds. This is gonna save so much time when I need to make user flows.👌 https://useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/kns008/status/1148607775322324992">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1106803746942509056/DqKx88dd_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Kamal Nayan</h4>
+            <h3>@kns008</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit by @mds is a delightful utility. How much do I love these thoughtful little things that aren't trying to 'change the world' but do what they are supposed to do.</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/readeyful/status/1136669995398656000">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1041716351541239808/2NZVbE0D_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Abigail Readey</h4>
+            <h3>@readeyful</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Stoked to try out @mds flow and annotation tool. 🤙 If anyone has any favorite processes on how to best communicate designs to developers and clients I'd love to hear them!  https://useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/jamesledford/status/1059465140893110272">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/959238184176668672/PIkTlWqH_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>James Ledford</h4>
+            <h3>@jamesledford</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit 2.0 by @mds just launched. Now in native @figmadesign ! You need this ... get it now—https://useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/JesJiang/status/1138480398936281088">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1003373705874034688/OzTDyaJl_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Jess</h4>
+            <h3>@JesJiang</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Designing flows all day everyday with @mds Flowkit! Best flow tool for designing in sketch. #uxui #design</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/Betraydan/status/931266586689851392">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1090742911430463490/NM_sLAxG_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Dan</h4>
+            <h3>@Betraydan</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>🔥💎🔥 Sketch flow kit by @mds this is super useful. https://sketchflowkit.com/  #design #sketch #flow</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/domenico_loia/status/931290676595015680">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1063167258774642688/Z_y4TMVZ_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Dominic</h4>
+            <h3>@domenico_loia</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Awesome work by @mds on this kit, super useful ✨⚡️ useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/chrismessina/status/931606268510220289">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/1082536180074217473/ewWhmKgi_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Chris Messina</h4>
+            <h3>@chrismessina</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>This is super dope for anyone that designs UI flows in @sketchapp!</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/LukeChen_UX/status/1160308780044828672">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/819688916538327041/e90aYVTj_reasonably_small.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Luke Chen</h4>
+            <h3>@LukeChen_UX</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>Flowkit still rocks. I have created several diagrams using FlowKits. Kudos to the person behind: @mds! https://useflowkit.com</p>
+          </div>
+        </div></a><a class="fk-tweet" href="https://twitter.com/Josh_w_G/status/934081519991234561">
+        <div class="fk-tweet-avatar"><img src="https://pbs.twimg.com/profile_images/856378894240301056/0hasRBqe_bigger.jpg" alt="twitter avatar"/></div>
+        <div class="fk-tweet-content">
+          <div class="fk-tweet-profile">
+            <h4>Joshwin Greene</h4>
+            <h3>@Josh_w_G</h3>
+          </div>
+          <div class="fk-tweet-actual">
+            <p>🔥 I just bought this kiiiiiilller Sketch Flowkit by @mds</p>
+          </div>
+        </div></a>
+    </div>
+    <section class="fk-fast-fun">
+      <h2>
+        Make <strong>your flows</strong> fast and fun with Flowkit.<br/>
+<br/><a class="fk-cta fk-cta-secondary" href="#buy">&uarr;</a>
+      </h2>
+    </section>
+    <footer>
+      <p class="fk-footer"><span class="copyright"> ©</span> • <a href="https://twitter.com/mds">MDS</a></p>
+      <p class="fk-footer fk-footer--links"><a href="/usage">Usage</a>
+<a href="/updates">Updates</a>
+<a href="/affiliate">Affiliates</a>
+<a href="/license">License</a>
+<a href="/education">Education</a>
+<a href="/support">Support</a>
+      </p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="/assets/js/flowkit.js"></script>
+  <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+  <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
   <script>
-    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-    insertBefore(d,q)}(window,document,'script','_gs');
-    _gs('GSN-965741-P');
+    //- const player = new Plyr('#player')
+    const player = new Plyr('#player', {
+      title: 'Example Title',
+      controls: ['play-large', 'play', 'progress', 'current-time', 'fullscreen']
+    });
   </script>
 </html>

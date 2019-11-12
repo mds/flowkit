@@ -1,0 +1,36 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit Preview
+
+block content
+  body
+    .fk-container
+
+      - var headerTitle = " ";
+      include ../includes/header-interior.pug
+
+      section.fk-main
+        .fk-container-content.fk-container-content--body
+
+          h1#full Flowkit Preview
+
+          h3#full Full
+          p The full Flowkit Library contains over <strong>400</strong> components including directional flows, taps, swipes, long presses, blocks, devices, annotations, and labels. The full Flowkit library is great for in-depth user flows, user journeys, content maps, screen flows, and more. The colors, stroke size, and end caps are all easily customizable with well-organized nested components.
+          .fk-preview-panel-group
+            p.fk-header-figma: a(href="https://www.figma.com/file/MsdLwB1n6QhU9LIOkOOV1I/Flowkit-3.0-Preview?node-id=0%3A382") Preview in Figma
+            p.fk-header-sketch: a(href="https://sketch.cloud/s/7EQkE") Preview in Sketch
+            p.fk-header-xd: a(href="https://xd.adobe.com/view/835b4edd-4e7e-4d10-4ec4-eae9123e05d7-f56a/grid?hints=off") Preview in XD
+          img(src="/assets/img/preview-full.png" alt="screenshot of bird's eye view of the flowkit libray")
+
+          h3#tiny Tiny
+          p The Tiny Flowkit library contains 44 directional components in two styles, solid and dashed, for a total of <strong>88</strong> components. They Tiny library is great for annotating screen details on a very granular level. The colors, stroke size, and end caps are all easily customizable with well-organized nested components.
+          .fk-preview-panel-group
+            p.fk-header-figma: a(href="https://www.figma.com/file/SaU5sV4GP0fSzfpXE6pcUk/Flowkit-3.0-Tiny-Preview?node-id=0%3A382") Preview in Figma
+            p.fk-header-sketch: a(href="https://sketch.cloud/s/7EQkE/a/4wGK0z") Preview in Sketch
+            p.fk-header-xd: a(href="https://xd.adobe.com/view/835b4edd-4e7e-4d10-4ec4-eae9123e05d7-f56a/screen/431fde91-b725-4bf8-8a36-aca039cfbbf2/Tiny?hints=off") Preview in XD
+          img(src="/assets/img/preview-tiny.png" alt="screenshot of bird's eye view of the tiny libray")
+            
+
+
+    include ../includes/foot.pug

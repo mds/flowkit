@@ -31,7 +31,7 @@
                         <mask id="mask-4" fill="white">
                             <use xlink:href="#path-3"></use>
                         </mask>
-                        <use id="Mask" fill="#FF5040" xlink:href="#path-3"></use>
+                        <use id="Mask" fill="#BDB0FF" xlink:href="#path-3"></use>
                     </g>
                 </g>
             </g>

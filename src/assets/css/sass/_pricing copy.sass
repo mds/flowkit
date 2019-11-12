@@ -1,0 +1,155 @@
+.fk-tiers
+  display: grid
+  grid-template-columns: repeat(1, 80%)
+  grid-gap: 1rem
+  justify-content: center
+  position: relative
+  max-width: 30rem
+  margin: 8rem auto 0
+
+  +medium
+    margin: 1rem auto 4rem
+    max-width: 100%
+    // grid-template-columns: repeat(2, 30%)
+    grid-template-columns: repeat(3, 32%)
+
+  +large
+    margin: 1rem auto
+
+  h3,
+  h3 strong
+    color: $color-white
+    font-weight: 800
+    font-size: 1.75rem
+    padding: 1rem 0
+    margin: 0
+    text-align: center
+
+.fk-price-block
+  background: $color-dark
+  border-radius: 2rem
+  width: 100%
+  padding: 3rem 1.5rem
+  display: grid
+  position: relative
+  top: 0
+  +fk-shadow
+  +easeall
+
+  +large
+    padding: 2.5rem 3.5rem 3rem
+
+
+  &:hover
+    // top: -.5rem
+    transform: scale(1.025)
+    box-shadow: 0px 20px 80px 0 rgba($color-dark, .25)
+    +easeall
+
+
+  h4
+    // price
+    margin: 0
+    padding: 0 0 1rem 0
+    font-weight: 600
+
+  .fk-price-sub
+    display: inline-flex
+    margin: auto
+
+  h4
+    // subtext
+    font-size: 1rem
+    text-align: left
+    display: inline
+    color: white
+    margin: 0
+    padding: 0
+
+  .fk-icon-check
+    width: inherit
+    padding-right: .5rem
+    margin-top: 1px
+    float: left
+    display: inline
+
+  p
+    // desc
+    color: $color-medium
+    font-size: 1.125rem
+    line-height: 1.5rem
+    text-align: center
+    letter-spacing: -.03rem
+    padding: 1.5rem 1.5rem 2.5rem
+
+  .fk-price-cta
+    font-size: 1rem
+    color: $color-white
+    border-radius: 4rem
+    font-weight: bold
+    padding: 1rem
+    width: 100%
+    display: block
+    text-align: center
+    position: relative
+    max-width: 20rem
+    margin: auto
+    top: 0
+    +easeall
+
+    &:hover
+      // top: -.2rem
+      transform: scale(1.05)
+      box-shadow: 4px 4px 12px 0 rgba($color-dark, .04), 8px 8px 24px 0 rgba($color-dark, .08)//, inset 4px 4px 24px rgba($color-white, .1)
+      +easeall
+
+// Set individual colors for each tier
+.fk-price-block--pro
+  .fk-icon-check
+    fill: $color-blue
+  .fk-price-cta
+    background: $color-blue
+
+.fk-price-block--team
+  .fk-icon-check
+    fill: $color-orange
+  .fk-price-cta
+    background: $color-orange
+
+.fk-price-block--tiny
+  .fk-icon-check
+    fill: $color-red
+  .fk-price-cta
+    background: $color-red
+
+
+.fk-callout
+  position: absolute
+  left: 0
+  right: 0
+  width: 10rem
+  margin: auto
+  top: 1rem
+
+  +medium
+    top: -.75rem
+
+  h6
+    margin: auto
+    background: $color-dark
+    color: white
+    display: block
+    text-align: center
+    font-weight: bold
+    padding: .5rem 0
+    font-size: 0.75rem
+    border-radius: 4px
+    transform: rotate(-3deg)
+    width: 100%
+    +fk-shadow
+
+p.centered
+  color: $color-medium
+  font-size: .875rem
+
+

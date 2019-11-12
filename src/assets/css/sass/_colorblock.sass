@@ -1,90 +1,65 @@
 .fk-colorblock
   width: 100%
-  // min-height: 28rem
+  background: $color-purple//rgba($color-purple, .1)
   position: relative
-  z-index: -20
-
+  z-index: 0
   +medium
     border-radius: 3rem
 
+.fk-colorblock--carousel
+  background: $color-light
+  +medium
+    border-radius: 3rem
+
+
 .fk-colorblock--red
-  background: $color-red
+  background: $color-light
   margin-top: 5.5rem
   min-height: 24rem
-
   +medium
     margin-top: 5rem
     min-height: 25rem
-
   +large
     margin-top: 3.5rem
     min-height: 29rem
-    // border-radius: 0 0 2.5rem 0
 
 .fk-colorblock--mustard
-  background: $color-mustard
-  // background-image: linear-gradient(20deg, darken($color-mustard, 10), $color-mustard)
+  background: $color-light
   min-height: 28rem
-
   +medium
-    min-height: 24rem
-
-  +large
-    // border-radius: 0 0 0 2.5rem
-
-.fk-colorblock--blue
-  background: $color-blue
-  // background-image: linear-gradient(20deg, darken($color-blue, 10), $color-blue)
-  min-height: 10rem
-
-  +small
-    min-height: 18rem
-
-  +medium
-    min-height: 22rem
-
-  +large
     min-height: 24rem
 
 .fk-colorblock--purple
-  background: $color-purple
-  min-height: 62rem
-  position: absolute
-
-  +medium
-    min-height: 32rem
-
-  +large
-    // border-radius: 0
-
-.fk-colorblock--mds
-  background: $color-mds url("../img/mds-jump.jpg") no-repeat
-  background-size: cover
-  background-position: center center
-
+  background: $color-white
+  min-height: 10rem
   +small
-    height: 28rem
-    background-position: center center
-
+    min-height: 18rem
   +medium
-    height: 34rem
-    background-position: center center
-
+    min-height: 22rem
   +large
-    // border-radius: 0 0 0 2.5rem
+    min-height: 24rem
 
-.fk-colorblock--light
-  background: $color-light
-  padding: 4rem 0
-  margin-top: 4rem
+// .fk-colorblock--mds
+  // width: 10rem
+  // height: 10rem
+  // margin: 0 auto 
+  // padding: 0
+  // border-radius: 50%
+  // background: $color-purple
+  // background: url('../img/mds-bust.png')
+  // background-size: cover
+  // background-position: center center
+  // background-color: $color-purple
+  // opacity: .7
+  // background-blend-mode: luminosity
 
-@media (color-gamut:p3)
+.fk-mds-container
+  background: $color-purple
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  float: left
+  margin-right: 2rem
 
-  .fk-colorblock--red
-    background: color(display-p3 1.0 .4 .35)
 
-  .fk-colorblock--mustard
-    background: color(display-p3 1.0 .7 .1)
 
-  .fk-colorblock--blue
-    background: color(display-p3 .2 .6 1.0)

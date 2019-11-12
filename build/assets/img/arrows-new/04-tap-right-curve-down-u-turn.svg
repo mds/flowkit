@@ -1,0 +1,6 @@
+<svg id="04-tap-right-curve-down-u-turn" width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="4-path" d="M38 30L194 30C218.301 30 238 49.9892 238 74.6471L238 123.353C238 148.011 218.301 168 194 168L28 168" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="4-endpoint-b" d="M36 158L25.8437 166.464C24.8842 167.263 24.8842 168.737 25.8437 169.536L36 178" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="4-tap" d="M58 30C58 14.536 45.464 2 30 2C14.536 2 2 14.536 2 30C2 45.464 14.536 58 30 58C45.464 58 58 45.464 58 30Z" fill="#7B61FF" fill-opacity="0.1" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="4-endpoint-a" fill-rule="evenodd" clip-rule="evenodd" d="M30 22C34.4183 22 38 25.5817 38 30C38 34.4183 34.4183 38 30 38C25.5817 38 22 34.4183 22 30C22 25.5817 25.5817 22 30 22Z" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

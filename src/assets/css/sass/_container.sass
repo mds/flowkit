@@ -11,6 +11,11 @@
   +medium
     padding: 0 4em
 
+.fk-flow-graphic
+  svg
+    display: inline-block
+    // background: red
+
 .fk-container-content
   padding: 1.25em
   max-width: 80rem
@@ -25,62 +30,76 @@
     +large
       width: 140%
       margin-left: -20%
-      +easeall
+      +easeall  
 
   h2
     padding-left: 0
     margin: auto
-    a:hover
-      background: rgba($color-blue, .1)
-      +easeall
-      // line-height: 2em
-      // font-size: .75em
-      // font-weight: 500
 
   &--body
-    margin-top: 8rem
+    margin-top: 0rem
+    padding-top: 2rem
     max-width: 48rem !important
 
     .fk-no-title &
       margin-top: 0rem
 
-  p
+    strong
+      padding: 0
+      margin: 0
+      background: none
+      letter-spacing: 0
+
+    h1
+      text-align: left
+      color: $color-dark
+      font-weight: 800
+      font-size: 3rem
+      line-height: .9
+      padding: 0
+
+      +medium
+        padding: 0 0 3rem
+        font-size: 5rem
+
+    a
+      color: $color-purple
+      box-shadow: inset 0 -2px 0 0 rgba($color-purple, 1)
+      padding-top: 1rem
+      font-weight: 500
+      line-height: 1
+      +easeall
+      &:hover
+        box-shadow: inset 0 -1em 0 0 rgba($color-purple, .1)
+        +easeall
+
+  p, ul, ol
     font-size: 1rem
+    line-height: 1.5
+    letter-spacing: 0
 
     +small
       font-size: 1.25rem
 
     &.fk-intro
-      font-size: 1.125rem
+      font-size: 1.25rem
       +medium
         font-size: 1.5rem
 
   li
-    font-size: .75em
+    font-size: 1em
     margin-bottom: .5rem
     list-style-type: 1
     margin-left: 1.5rem
 
-    +large
-      width: 80%
-
-.fk-body-text p.centered a
-  font-size: .75em
-  letter-spacing: -.02em
-  padding-bottom: .1em
-  box-shadow: inset 0 -2px $color-blue
-  font-weight: bold
-  +easeall
-
-  &:hover
-    color: $color-dark
-    box-shadow: inset 0 -1.25em yellow
-    +easeall
+    // +large
+      // width: 80%
 
 .fk-note
-  background: lightyellow
-  padding: 2rem
-  font-size: 1rem !important
+  color: $color-medium !important
+  padding: 1rem !important
+  font-size: .875rem !important
   line-height: 1.5em
-  margin-bottom: 2rem
-  border-radius: 1rem
+  // margin-bottom: 2rem
+  border-radius: .5rem
+

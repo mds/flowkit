@@ -5,8 +5,8 @@
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo-nike">
-            <rect id="Rectangle" fill="#F9F9F9" fill-rule="nonzero" x="0" y="0" width="271" height="145" rx="72.5"></rect>
-            <g transform="translate(101.000000, 60.000000)" fill="#111133" id="swoosh">
+            <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="271" height="145" rx="72.5"></rect>
+            <g transform="translate(101.000000, 60.000000)" fill="#2b2c34" id="swoosh">
                 <path d="M8.95817313,1.21713539 C2.69505485,8.5719741 -3.21279461,18.3582106 2.00559249,22.8649848 C7.0620441,27.2319741 13.3825817,24.6462752 17.6920441,22.9225117 C22.0015065,21.1986408 69.6353774,0.513264418 69.6353774,0.513264418 C70.0951624,0.283479472 70.0089258,-0.00383235577 69.4343022,0.139823558 C69.2023667,0.197780547 17.5770979,14.1886408 17.5770979,14.1886408 C11.0266677,16.0273504 3.55699034,12.019501 8.95817313,1.21713539"></path>
             </g>
         </g>

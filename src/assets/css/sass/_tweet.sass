@@ -1,0 +1,167 @@
+.fk-tweet-group
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 1rem
+  margin: auto
+  padding: 0 1rem 4rem
+
+  +medium
+    padding: 0 1rem
+    grid-template-columns: 1fr 1fr
+
+  +large
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-start: 1
+    grid-column-end: 4
+
+.fk-tweet-group-snippet
+  +small
+    padding: 4rem 1rem
+
+  +medium
+    padding: 4rem 1rem 8rem
+
+  &:first-of-type
+    +medium
+      padding: 0 0 8rem
+
+.fk-tweet
+  background: $color-dark
+  border-radius: 2rem
+  padding: 2rem
+  display: block
+  margin: auto
+  width: 100%
+  transform-origin: center center
+  +easeall
+
+  +medium
+    display: block
+    grid-gap: 1.5rem
+    max-width: 30rem
+    grid-template-columns: 1fr 6.5fr
+    &:nth-child(2)
+      grid-row:    1 / 2
+      grid-column: 1 / 3
+      grid-template-columns: 1fr 15fr
+      .fk-tweet-actual p
+        padding-top: .5rem 
+        font-size: 2rem
+        line-height: 1.25
+
+  +large
+    &:nth-child(2)
+      grid-row:    1 / 2
+      grid-column: 2 / 4
+      grid-template-columns: 1fr 15fr
+      .fk-tweet-actual p
+        padding-top: .5rem 
+        font-size: 2rem
+        line-height: 1.25
+
+    &:nth-child(12)
+      grid-row:    4 / 5
+      grid-column: 1 / 3
+      grid-template-columns: 1fr 15fr
+      .fk-tweet-actual p
+        padding-top: .5rem
+        font-size: 2rem
+        line-height: 1.25
+
+    &:nth-child(25)
+      grid-row:    9 / 8
+      grid-column: 2 / 4
+      grid-template-columns: 1fr 15fr
+      .fk-tweet-actual p
+        padding-top: .5rem
+        font-size: 2rem
+        line-height: 1.25
+
+    &:nth-child(28)
+      grid-row:    11 / 12
+      grid-column: 1 / 3
+      grid-template-columns: 1fr 15fr
+      // background: red !important
+      .fk-tweet-actual p
+        padding-top: .5rem
+        font-size: 2rem
+        line-height: 1.25
+
+  +medium
+    max-width: none
+    margin: initial
+
+  &:hover
+    transform: scale(1.02)
+    background: darken($color-dark, 3%)
+    +easeall
+
+    .fk-tweet-avatar
+      box-shadow: 0 0 0 4px lighten($color-purple, 10%)
+      transform: scale(1.05)
+      +easeall
+
+    .fk-tweet-profile:after
+      opacity: 1
+      transform: scale(.85)
+      +easeall
+
+    .fk-tweet-actual p
+      color: $color-white
+      +easeall
+
+  .fk-tweet-avatar
+    width: 48px
+    height: 48px
+    float: left
+    margin-right: 1rem
+    box-shadow: 0 0 0 0 lighten($color-purple, 10%)
+    border-radius: 50%
+    +easeall
+
+    img
+      width: 100%
+      border-radius: 50%
+
+  .fk-tweet-profile
+    margin-bottom: .5rem
+    position: relative
+
+    &:after 
+      content: " "
+      display: block
+      width: 32px
+      height: 32px
+      background: url("../img/twitter.svg")
+      position: absolute
+      transform: scale(.8)
+      opacity: .3
+      top: 0
+      right: 0
+      +easeall
+    h4
+      color: $color-white
+      font-size: 1.25rem
+      font-weight: 600
+      margin: 0
+      padding: 0
+      
+    h3
+      font-size: 1rem
+      margin: 0
+      padding: 0
+      font-weight: 600
+      color: lighten($color-purple, 10%)
+      
+
+  .fk-tweet-actual
+    p
+      color: $color-rare-grey
+      font-size: 1.25rem
+      font-weight: 400
+      line-height: 1.3
+      padding-top: 1.125rem
+      +easeall
+
+
+

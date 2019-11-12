@@ -1,209 +1,213 @@
 
 <html>
-  <head>
-    <title>Flowkit Usage</title>
-    <body class="fk-no-title">
-      <div class="fk-container">
-        <header class="header-interior">
-          <div class="fk-header-wrapper">
-            <div class="fk-top-left"><a href="/"><img alt="flowkit icon" src="/assets/img/logo-flowkit.png"/></a></div>
-            <div class="fk-logo">
-              <h1>Usage</h1>
-            </div>
-            <div class="fk-cta-group">
-              <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="/?buy=true">Buy</a></div>
-            </div>
-          </div>
-        </header>
-        <section class="fk-main">
-          <div class="fk-container-content fk-container-content--body">
-            <h3>Installation</h3>
-            <p class="fk-intro">Flowkit is available in both Sketch and Figma formats. Each format was created natively, leveraging unique features from each platform. Because of this, installing the library is quite simple and no additional software is required.</p><img src="../assets/img/usage/files.svg" alt="figma and sketch file format icons"/>
-            <h4 class="fk-header-figma" id="installing-in-figma">Installing in Figma</h4>
-            <p>Figma requires users to have a paid Team account to create and access Figma Libraries. Therefore, to use Flowkit as a shared library between users and files, you and your team will need to have a paid Figma Team account.</p><img src="../assets/img/usage/overview-figma.png" alt="bird's eye view of flowkit components in figma"/>
-            <ul>
-              <li>Open <code>flowkit-v2.fig</code> with Figma.</li>
-              <li>Click the book icon in the top right to access <code>Libraries</code>.</li>
-              <li>Navigate to the <code>Flowkit 2.0</code> line item and click <code>Publish</code>.</li>
-              <li>Create a Team project called Flowkit and click <code>Move</code>.</li>
-              <li>Flowkit will now be available as a library across all Team projects.</li>
-              <li>For more info on Figma libraries, <a href="https://help.figma.com/editor/team-library">read Figma's documentation</a>.</li>
-              <li>Please make sure you have the appropriate Flowkit Team license to share the library with your design team. Have a personal license and need to upgrade? <a href="http://twitter.com/mds">Let me know</a> and I'll hook you up with an upgrade coupon code.</li>
-            </ul>
-            <blockquote>
-              <h5>Free Figma Accounts</h5>
-              <p>If you have a free Figma account, it is recommended that you create userflows as additional pages  inside of the Flowkit file in order to leverage the assets as components.</p>
-            </blockquote>
-            <h4 class="fk-header-sketch" id="installing-in-figma">Installing in Sketch</h4>
-            <p>Installing the Flowkit Library will make it available for use with all of your Sketch files.</p><img src="../assets/img/usage/overview-sketch.png" alt="bird's eye view of flowkit components in sketch"/>
-            <ul>
-              <li>Open Sketch preferences, navigate to the <code>Libraries</code> tab.</li>
-              <li>Choose <code>Add Library...</code> in the bottom left.</li>
-              <li>Select <code>flowkit-v2.sketch</code> and click <code>Open</code></li>
-              <li>Now you're ready to use Flowkit 2.0 in any Sketch 52+ document.</li>
-            </ul>
-            <blockquote>
-              <h5>Sketch Runner + Flowkit</h5>
-              <p>Using Flowkit with Sketch Runner is highly recommended. You can download the free Sketch Runner plugin, <a href="http://sketchrunner.com">here</a>. Sketch Runner will allow you to use keyboard commands to insert Flowkit library symbols onto your canvas. Use <code>⌘ "</code> to open Sketch Runner, then type in the easy-to-remember™ Flowkit naming convention <code>Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2</code> to place the symbol you want.</p>
-              <p><a href="https://github.com/mds/sketch-shortcuts">Download this free shortcut plugin</a> to use Flowkit even faster.</p>
-            </blockquote>
-            <h3>Creating High-level Flows</h3>
-            <p class="fk-intro">Every main component inside of Flowkit is based on a 360x360 grid. Each one was designed to have 0px of margin on all sides when linking blocks and flows.</p><img src="../assets/img/usage/high-level.gif" alt="360 pixel grid with blocks and flows fitting together nicely"/>
-            <p>It is recommend to create one high-level flow focused on one particular section or feature of your project, per large artboard that can later be shared or exported.</p>
-            <h4 class="fk-header-figma" id="high-level-flows-in-figma">High-level flows in Figma</h4>
-            <ul>
-              <li>Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.</li>
-              <li>At the top of the Components panel, search for <code>block default</code>, choose a block component and place it on the canvas.</li>
-              <li>Now search for <code>flow right</code>, choose a flow component and place it on the canvas.</li>
-              <li>Continue adding components by searching and navigating the component list, as necessary.</li>
-            </ul>
-            <h4 class="fk-header-sketch" id="high-level-flows-in-sketch">High-level flows in Sketch</h4>
-            <ul>
-              <li>Use <code>⌘ "</code> to open Sketch Runner.</li>
-              <li>Type <code>block default</code> and hit <code>return</code>.</li>
-              <li>Use <code>⌘ "</code> again, and type <code>flow right straight</code>.</li>
-              <li>Continue adding components with Sketch Runner, or by navigating the Flowkit symbol list from the Sketch app toolbar.</li>
-            </ul>
-            <h3>Screen to Screen Flows</h3>
-            <p class="fk-intro"><strong>Do not</strong> place the Flowkit components on top of artboards or frames and try to connect them to other artboards or frames. This will result in clipped components and unhappy Flowkit users. ☹️</p><img src="../assets/img/usage/screen-flow-incorrect.gif" alt="flow components getting clipped by artboards"/>
-            <p><strong>Do</strong> place the Flowkit components on top of artboard instances on one giant artboard. This is the recommended screen flow technique when using Flowkit.</p><img src="../assets/img/usage/screen-flow-correct.gif" alt="flow components not getting clipped by artboards"/>
-            <p>There are two distinct ways to create screen flows in both Figma and Sketch—dynamic screens and exported screens.</p>
-            <h4 class="fk-header-figma" id="screen-flows-in-figma">Screen flows in Figma</h4>
-            <ul>
-              <h5>Dynamic Screens (recommended)</h5>
-              <li>Select a frame and press <code>⌘⌥K</code> to convert to a component</li>
-              <li>Copy and paste an instance of your frame component onto a larger frame to begin building your flow.</li>
-              <li>With your first frame instance in place, navigate to the component panel with <code>⌥2</code> and search for <code>tap right</code>.</li>
-              <li>Rinse and repeat as necessary.</li>
-              <li>Any adjustments made to your master frames will be reflected in your flow frame automatically.</li>
-              <li>Don't forget to reposition your flow components if you refactor your designs.</li>
-            </ul>
-            <ul>
-              <h5>Exported Screens (alternate)</h5>
-              <li>This is a quick way to create a flow when dynamic screens don't matter.</li>
-              <li>Right click any frame and choose <code>Copy as > Copy as PNG</code>.</li>
-              <li>Paste the bitmap onto your large flow frame.</li>
-              <li>Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.</li>
-              <li>Search for <code>tap right straight</code> and place the flow component on your large flow frame.</li>
-              <li>Rinse and repeat as necessary.</li>
-            </ul>
-            <h4 class="fk-header-sketch" id="screen-flows-in-sketch">Screen flows in Sketch</h4>
-            <ul>
-              <h5>Dynamic Screens with Plugins</h5>
-              <li>Install either the free <a href="https://github.com/MengTo/Angle-Sketch-Plugin">Angle</a> or <a href="https://magicsketch.io/mirror/">Magic Mirror</a> plugin.</li>
-              <li>Create a large artboard to contain your screen flows.</li>
-              <li>Draw a rectangle the same size as the first artboard you'd like to use.</li>
-              <li>Apply the Magic Mirror or Angle plugin to the rectangle, to mirror your artboard. Please refer to the plugin documentation for more details on this.</li>
-              <li>Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.</li>
-              <li>Rinse and repeat as necessary.</li>
-            </ul>
-            <ul>
-              <h5>Dynamic Screens with Symbols</h5>
-              <li>Convert your artboards to symbols.</li>
-              <li>Create a large artboard to contain your screen flows.</li>
-              <li>Place the symbol instance of your artboard onto the large artboard.</li>
-              <li>Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.</li>
-              <li>Rinse and repeat as necessary.</li>
-            </ul>
-            <ul>
-              <h5>Exported Static Screens</h5>
-              <li>Select an artboard and choose <code>Make Exportable</code> in the bottom right of the inspector panel</li>
-              <li>Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.</li>
-              <li>Rinse and repeat as necessary.</li>
-            </ul>
-            <h3>Overrides</h3>
-            <p class="fk-intro">Whether you're building complex flows or changing interactions on tap components, Flowkit comes with lots of prebuilt override capabilities.</p>
-            <h4>Linking flow components</h4>
-            <p>There are times when linking multiple flow components together is necessary to give you just the crazy line you want in your document. You can achieve the appearance of a continuous line by simply hiding the nested endcaps.</p>
-            <h5 class="fk-header-figma">Figma</h5><img src="../assets/img/usage/complex-flow-figma.gif" alt="linking multiple flow components together to create one large crazy line in figma"/>
-            <h5 class="fk-header-sketch">Sketch</h5><img src="../assets/img/usage/complex-flow-sketch.gif" alt="linking multiple flow components together to create one large crazy line in sketch"/>
-            <h4>Changing tap interactions</h4>
-            <p>The default interaction for screen flows is tap, but it can easily be overriden with <code>double tap</code>, <code>swipe (up, down, left, right)</code>, and <code>long press</code>.</p>
-            <h5 class="fk-header-figma">Figma</h5><img src="../assets/img/usage/tap-override-figma.gif" alt="creating a screenflow in figma"/>
-            <h5 class="fk-header-sketch">Sketch</h5><img src="../assets/img/usage/tap-override-sketch.gif" alt="creating a screenflow in sketch"/>
-            <h4>Still have questions?</h4>
-            <p>I'd be happy to help you out! <a href="http://twitter.com/mds">Tweet me</a> or shoot an email to <code>matt at mds dot is</code></p>
-          </div>
-        </section>
-        <footer>
-          <p class="fk-footer"><span class="copyright"> ©</span>. Studio MDS, LLC</p>
-          <p class="fk-footer fk-footer--links"><a href="/usage">Usage</a><a href="/updates">Updates</a><a href="/affiliate">Affiliates</a><a href="/license">License</a></p>
-        </footer>
-        <script type="text/javascript">
-          var _dcq = _dcq || [];
-          var _dcs = _dcs || {};
-          _dcs.account = '7684207';
-          (function() {
-          var dc = document.createElement('script');
-          dc.type = 'text/javascript'; dc.async = true;
-          dc.src = '//tag.getdrip.com/7684207.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(dc, s);
-          })();
-          
-        </script>
-        <script>
-          !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-          arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-          d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-          insertBefore(d,q)}(window,document,'script','_gs');
-          _gs('GSN-965741-P');
-        </script>
-      </div>
-    </body>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="Prototype"/>
-    <meta name="HandheldFriendly" content="True"/>
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta itemprop="name" content="Flowkit"/>
-    <meta itemprop="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta itemprop="image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@mds"/>
-    <meta name="twitter:title" content="Flowkit"/>
-    <meta name="twitter:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta name="twitter:creator" content="@mds"/>
-    <meta name="twitter:image:src" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
-    <meta property="og:title" content="Flowkit"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="http://useflowkit.com"/>
-    <meta property="og:image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
-    <meta property="og:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
-    <meta property="og:site_name" content="Flowkit"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
-    <link id="favicon" rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-  </head>
-  <script type="text/javascript" src="/assets/js/MorphSVGPlugin.min.js"></script>
-  <script type="text/javascript" src="/assets/js/TweenMax.min.js"></script>
-  <script type="text/javascript" src="/assets/js/mousetrap.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/jquery.touchSwipe.min.js"></script>
-  <script type="text/javascript" src="/assets/js/flowkit.js"></script>
-  <script type="text/javascript" src="/assets/js/svgReplace.js"></script>
-  <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
-  <script src="//fast.wistia.com/embed/medias/tofi9zegwu.jsonp" async=""></script>
-  <script src="//fast.wistia.com/assets/external/E-v1.js" async=""></script>
+  <head></head>
+  <title>Flowkit Usage</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="description" content="Prototype"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta itemprop="name" content="Flowkit"/>
+  <meta itemprop="description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta itemprop="image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@mds"/>
+  <meta name="twitter:title" content="Flowkit"/>
+  <meta name="twitter:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta name="twitter:creator" content="@mds"/>
+  <meta name="twitter:image:src" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
+  <meta property="og:title" content="Flowkit"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://useflowkit.com"/>
+  <meta property="og:image" content="https://mds-assets.s3.amazonaws.com/flowkit/flowkit-2-card.png"/>
+  <meta property="og:description" content="The ultimate component library for user flows, content maps, screen annotations, and more."/>
+  <meta property="og:site_name" content="Flowkit"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
+  <link id="favicon" rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
   <script type="text/javascript">
-    var _dcq = _dcq || [];
-    var _dcs = _dcs || {};
-    _dcs.account = '7684207';
+    var MTUserId='6dd70d9f-8138-468d-8f7a-9cd561a57f74';
+    var MTFontIds = new Array();
+    MTFontIds.push("5680706"); // TT Rounds Neue W00 Regular
+    MTFontIds.push("5680714"); // TT Rounds Neue W00 Medium
+    MTFontIds.push("5681075"); // TT Rounds Neue W00 DemiBold
+    MTFontIds.push("5681083"); // TT Rounds Neue W00 Bold
+    MTFontIds.push("5681091"); // TT Rounds Neue W00 ExtraBold
+    MTFontIds.push("5681099"); // TT Rounds Neue W00 Black
     (function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript'; dc.async = true;
-    dc.src = '//tag.getdrip.com/7684207.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
+    var mtTracking = document.createElement('script');
+    mtTracking.type='text/javascript';
+    mtTracking.async='true';
+    mtTracking.src='/assets/js/mtiFontTrackingCode.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
     })();
-    
   </script>
+  <body class="fk-no-title">
+    <div class="fk-container">
+      <header class="header-interior">
+        <div class="fk-header-wrapper">
+          <div class="fk-top-left"><a href="/"><img class="fk-flowkit-icon" alt="flowkit icon" src="/assets/img/logo-flowkit.svg"/></a></div>
+          <div class="fk-logo">
+            <h1><a href="#"> </a></h1>
+          </div>
+          <div class="fk-cta-group">
+            <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="/#buy">Buy</a></div>
+          </div>
+        </div>
+      </header>
+      <section class="fk-main">
+        <div class="fk-container-content fk-container-content--body">
+          <h1>Usage</h1>
+          <p class="fk-intro"><strong>3.0</strong> documentation is coming soon. Now that there are 3 different pieces of software—<code>.fig</code> <code>.sketch</code> <code>.xd</code>—supported and a brand new Figma plugin, there are a lot of different ways to use Flowkit. If you have any specific questions I will be happy to answer them for you. In the meantime, I'l be cranking away on new documentation.</p>
+          <h4>2.0 Installation</h4>
+          <p>Flowkit is available in both Sketch and Figma formats. Each format was created natively, leveraging unique features from each platform. Because of this, installing the library is quite simple and no additional software is required.</p><img src="../assets/img/usage/files.svg" alt="figma and sketch file format icons"/>
+          <h4 class="fk-header-figma" id="installing-in-figma">Installing in Figma</h4>
+          <p>Figma requires users to have a paid Team account to create and access Figma Libraries. Therefore, to use Flowkit as a shared library between users and files, you and your team will need to have a paid Figma Team account.</p><img src="../assets/img/usage/overview-figma.png" alt="bird's eye view of flowkit components in figma"/>
+          <ul>
+            <li>Open <code>flowkit-v2.fig</code> with Figma.</li>
+            <li>Click the book icon in the top right to access <code>Libraries</code>.</li>
+            <li>Navigate to the <code>Flowkit 2.0</code> line item and click <code>Publish</code>.</li>
+            <li>Create a Team project called Flowkit and click <code>Move</code>.</li>
+            <li>Flowkit will now be available as a library across all Team projects.</li>
+            <li>For more info on Figma libraries, <a href="https://help.figma.com/editor/team-library">read Figma's documentation</a>.</li>
+            <li>Please make sure you have the appropriate Flowkit Team license to share the library with your design team. Have a personal license and need to upgrade? Email <code>matt@mds.is</code> and I'll hook you up with an upgrade coupon code.</li>
+          </ul>
+          <blockquote>
+            <h5>Free Figma Accounts</h5>
+            <p>If you have a free Figma account, it is recommended that you create userflows as additional pages  inside of the Flowkit file in order to leverage the assets as components.</p>
+          </blockquote>
+          <h4 class="fk-header-sketch" id="installing-in-sketch">Installing in Sketch</h4>
+          <p>Installing the Flowkit Library will make it available for use with all of your Sketch files.</p><img src="../assets/img/usage/overview-sketch.png" alt="bird's eye view of flowkit components in sketch"/>
+          <ul>
+            <li>Open Sketch preferences, navigate to the <code>Libraries</code> tab.</li>
+            <li>Choose <code>Add Library...</code> in the bottom left.</li>
+            <li>Select <code>flowkit-v2.sketch</code> and click <code>Open</code></li>
+            <li>Now you're ready to use Flowkit 2.0 in any Sketch 55+ document.</li>
+          </ul>
+          <blockquote>
+            <h5>Sketch Runner + Flowkit</h5>
+            <p>Using Flowkit with Sketch Runner is highly recommended. You can download the free Sketch Runner plugin, <a href="http://sketchrunner.com">here</a>. Sketch Runner will allow you to use keyboard commands to insert Flowkit library symbols onto your canvas. Use <code>⌘ "</code> to open Sketch Runner, then type in the easy-to-remember™ Flowkit naming convention <code>Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2</code> to place the symbol you want.</p>
+            <p><a href="https://github.com/mds/sketch-shortcuts">Download this free shortcut plugin</a> to use Flowkit even faster.</p>
+          </blockquote>
+          <h3>Creating High-level Flows</h3>
+          <p class="fk-intro">Every main component inside of Flowkit is based on a <code>180x180</code> grid. Each one was designed to have 0px of margin on all sides when linking blocks and flows.</p><img src="../assets/img/usage/high-level.gif" alt="360 pixel grid with blocks and flows fitting together nicely"/>
+          <p>It is recommend to create one high-level flow focused on one particular section or feature of your project, per large artboard that can later be shared or exported.</p>
+          <h4 class="fk-header-figma" id="high-level-flows-in-figma">High-level flows in Figma</h4>
+          <ul>
+            <li>Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.</li>
+            <li>At the top of the Components panel, search for <code>block default</code>, choose a block component and place it on the canvas.</li>
+            <li>Now search for <code>flow right</code>, choose a flow component and place it on the canvas.</li>
+            <li>Continue adding components by searching and navigating the component list, as necessary.</li>
+          </ul>
+          <h4 class="fk-header-sketch" id="high-level-flows-in-sketch">High-level flows in Sketch</h4>
+          <ul>
+            <li>Use <code>⌘ "</code> to open Sketch Runner.</li>
+            <li>Type <code>block default</code> and hit <code>return</code>.</li>
+            <li>Use <code>⌘ "</code> again, and type <code>flow right straight</code>.</li>
+            <li>Continue adding components with Sketch Runner, or by navigating the Flowkit symbol list from the Sketch app toolbar.</li>
+          </ul>
+          <h3>Screen to Screen Flows</h3>
+          <p class="fk-intro"><strong>Do not</strong> place the Flowkit components on top of artboards or frames and try to connect them to other artboards or frames. This will result in clipped components and unhappy Flowkit users. ☹️</p><img src="../assets/img/usage/screen-flow-incorrect.gif" alt="flow components getting clipped by artboards"/>
+          <p><strong>Do</strong> place the Flowkit components on top of artboard instances on one giant artboard. This is the recommended screen flow technique when using Flowkit.</p><img src="../assets/img/usage/screen-flow-correct.gif" alt="flow components not getting clipped by artboards"/>
+          <p>There are two distinct ways to create screen flows in both Figma and Sketch—dynamic screens and exported screens.</p>
+          <h4 class="fk-header-figma" id="screen-flows-in-figma">Screen flows in Figma</h4>
+          <ul>
+            <h5>Dynamic Screens (recommended)</h5>
+            <li>Select a frame and press <code>⌘⌥K</code> to convert to a component</li>
+            <li>Copy and paste an instance of your frame component onto a larger frame to begin building your flow.</li>
+            <li>With your first frame instance in place, navigate to the component panel with <code>⌥2</code> and search for <code>tap right</code>.</li>
+            <li>Rinse and repeat as necessary.</li>
+            <li>Any adjustments made to your master frames will be reflected in your flow frame automatically.</li>
+            <li>Don't forget to reposition your flow components if you refactor your designs.</li>
+          </ul>
+          <ul>
+            <h5>Exported Screens (alternate)</h5>
+            <li>This is a quick way to create a flow when dynamic screens don't matter.</li>
+            <li>Right click any frame and choose <code>Copy as > Copy as PNG</code>.</li>
+            <li>Paste the bitmap onto your large flow frame.</li>
+            <li>Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.</li>
+            <li>Search for <code>tap right straight</code> and place the flow component on your large flow frame.</li>
+            <li>Rinse and repeat as necessary.</li>
+          </ul>
+          <h4 class="fk-header-sketch" id="screen-flows-in-sketch">Screen flows in Sketch</h4>
+          <ul>
+            <h5>Dynamic Screens with Plugins</h5>
+            <li>Install either the free <a href="https://github.com/MengTo/Angle-Sketch-Plugin">Angle</a> or <a href="https://magicsketch.io/mirror/">Magic Mirror</a> plugin.</li>
+            <li>Create a large artboard to contain your screen flows.</li>
+            <li>Draw a rectangle the same size as the first artboard you'd like to use.</li>
+            <li>Apply the Magic Mirror or Angle plugin to the rectangle, to mirror your artboard. Please refer to the plugin documentation for more details on this.</li>
+            <li>Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.</li>
+            <li>Rinse and repeat as necessary.</li>
+          </ul>
+          <ul>
+            <h5>Dynamic Screens with Symbols</h5>
+            <li>Convert your artboards to symbols.</li>
+            <li>Create a large artboard to contain your screen flows.</li>
+            <li>Place the symbol instance of your artboard onto the large artboard.</li>
+            <li>Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.</li>
+            <li>Rinse and repeat as necessary.</li>
+          </ul>
+          <ul>
+            <h5>Exported Static Screens</h5>
+            <li>Select an artboard and choose <code>Make Exportable</code> in the bottom right of the inspector panel</li>
+            <li>Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.</li>
+            <li>Rinse and repeat as necessary.</li>
+          </ul>
+          <h3>Overrides</h3>
+          <p class="fk-intro">Whether you're building complex flows or changing interactions on tap components, Flowkit comes with lots of prebuilt override capabilities.</p>
+          <h4>Linking flow components</h4>
+          <p>There are times when linking multiple flow components together is necessary to give you just the crazy line you want in your document. You can achieve the appearance of a continuous line by simply hiding the nested endcaps.</p>
+          <h4 class="fk-header-figma">Figma</h4><img src="../assets/img/usage/complex-flow-figma.gif" alt="linking multiple flow components together to create one large crazy line in figma"/>
+          <h4 class="fk-header-sketch">Sketch</h4><img src="../assets/img/usage/complex-flow-sketch.gif" alt="linking multiple flow components together to create one large crazy line in sketch"/>
+          <h4>Changing tap interactions</h4>
+          <p>Screen flows can be created with <code>tap</code>, <code>swipe</code>, and <code>long press</code>.</p>
+          <h4 class="fk-header-figma">Figma</h4><img src="../assets/img/usage/tap-override-figma.gif" alt="creating a screenflow in figma"/>
+          <h4 class="fk-header-sketch">Sketch</h4><img src="../assets/img/usage/tap-override-sketch.gif" alt="creating a screenflow in sketch"/>
+          <h4>Still have questions?</h4>
+          <p>I'd be happy to help you out! <a href="http://twitter.com/mds">Tweet me</a> or shoot an email to <code>matt at mds dot is</code></p>
+        </div>
+      </section>
+      <footer>
+        <p class="fk-footer"><span class="copyright"> ©</span> • <a href="https://twitter.com/mds">MDS</a></p>
+        <p class="fk-footer fk-footer--links"><a href="/usage">Usage</a>
+<a href="/updates">Updates</a>
+<a href="/affiliate">Affiliates</a>
+<a href="/license">License</a>
+<a href="/education">Education</a>
+<a href="/support">Support</a>
+        </p>
+      </footer>
+      <script type="text/javascript">
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '7684207';
+        (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/7684207.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+        })();
+        
+      </script>
+      <script>
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+        _gs('GSN-965741-P');
+      </script>
+    </div>
+  </body>
+  <script type="text/javascript" src="/assets/js/flowkit.js"></script>
+  <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+  <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
   <script>
-    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-    insertBefore(d,q)}(window,document,'script','_gs');
-    _gs('GSN-965741-P');
+    //- const player = new Plyr('#player')
+    const player = new Plyr('#player', {
+      title: 'Example Title',
+      controls: ['play-large', 'play', 'progress', 'current-time', 'fullscreen']
+    });
   </script>
 </html>

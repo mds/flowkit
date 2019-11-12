@@ -1,6 +1,16 @@
+//- @codekit-prepend 'jquery.js'
+//- @codekit-prepend 'MorphSVGPlugin.min.js'
+//- @codekit-prepend 'TweenMax.min.js'
+//- @codekit-prepend 'mousetrap.min.js'
+//- @codekit-prepend 'jquery.touchSwipe.min.js'
+//- @codekit-prepend 'svgReplace.js'
+//- @codekit-prepend 'plyr.js'
+
 $( document ).ready(function() {
 
-  startAnimations();
+
+
+  // startAnimations();
 
   // cycle through animations
   function startAnimations (){
@@ -30,40 +40,96 @@ $( document ).ready(function() {
     }
   });
 
-  //firefox detect
-  var browser=navigator.userAgent.toLowerCase();
-  if(browser.indexOf('firefox') > -1) {
-      alert("The arrow in the carousel below doesn't animate correctly in Firefox 😱. I'll fix this real soon, pinky promise. In the meantime you can view the rest of the site with no problem. And if you're super curious about the cool arrow animations, pop open Chrome or Safari. Cheers! —MDS");
-  }
 
-  // I'm doing this with CSS now
-  // // scroll to buy section
-  // $(".fk-cta-primary").click(function() {
-  //   $('html,body').animate({
-  //       scrollTop: $(".fk-decision").offset().top},
-  //       'slow');
+  // video player
+
+  $(".plyr__controls").addClass("is-hidden");
+  
+  player.on('play', event => {
+    showVideoControls();
+  });
+
+  player.on('ready', event => {
+    hideVideoControls();
+  });
+  
+  // player.on('paused', event => {
+  //   hideVideoControls();
   // });
 
-  // Parse the URL parameter to scroll to the buy section from an interior page. There's probably an easier way to do this.
-  function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  function showVideoControls() {
+    $(".plyr__controls").removeClass("is-hidden");
+    $(".plyr__controls").addClass("is-showing");
   }
-  // Give the parameter a variable name
-  var dynamicContent = getParameterByName('buy');
 
-  if (dynamicContent == 'true') {
-    setTimeout(function(){
-      $('html,body').animate({
-        scrollTop: $("#buy").offset().top},
-        'slow');
-    }, 0);
+  function hideVideoControls() {
+    $(".plyr__controls").removeClass("is-showing");
+    $(".plyr__controls").addClass("is-hidden");
   }
+
+  // three-way video switch controls
+  $(".fk-video-control-figma").on("click", function() {
+      $(".fk-video-control-sketch.is-active").removeClass("is-active");
+      $(".fk-video-control-xd.is-active").removeClass("is-active");
+      $(this).addClass("is-active");
+
+      // update source video
+      player.source = {
+        type: 'video',
+        title: 'Figma',
+        sources: [
+            {
+                src: 'assets/video/video-example-figma.mp4',
+                type: 'video/mp4',
+            },
+        ],
+        // poster: '/path/to/poster.jpg'
+      };
+  });
+
+  $(".fk-video-control-sketch").on("click", function() {      
+      $(".fk-video-control-figma.is-active").removeClass("is-active");
+      $(".fk-video-control-xd.is-active").removeClass("is-active");
+      $(this).addClass("is-active");
+
+      // update source video
+      player.source = {
+        type: 'video',
+        title: 'Sketch',
+        sources: [
+            {
+                src: 'assets/video/video-example-sketch.mp4',
+                type: 'video/mp4',
+            },
+        ],
+        // poster: '/path/to/poster.jpg'
+      };
+  });
+
+  $(".fk-video-control-xd").on("click", function() {      
+      $(".fk-video-control-figma.is-active").removeClass("is-active");
+      $(".fk-video-control-sketch.is-active").removeClass("is-active");
+      $(this).addClass("is-active");
+
+      // update source video
+      player.source = {
+        type: 'video',
+        title: 'XD',
+        sources: [
+            {
+                src: 'assets/video/video-example-xd.mp4',
+                type: 'video/mp4',
+            },
+        ],
+        // poster: '/path/to/poster.jpg'
+      };
+  });
+
+  
+
+
+
+
 
   // for removing the grey box around pressed things in mobile safari
   document.addEventListener("touchstart", function(){}, true);
@@ -388,7 +454,7 @@ $( document ).ready(function() {
     }
   };
 
-  //scale down on mouse down
+  // scale down on mouse down
   $('.fk-arrow').on("mousedown", function (event) {
     bounceDown();
   });
@@ -875,7 +941,7 @@ $( document ).ready(function() {
 
   // sets alt style
   function fkAnimateStyleDefaultToAlt(){
-    window.style = "alt";
+    window.style = "dashed";
     setFkArrowName();
     $('.fk-arrow').addClass('fk-arrow--alt')
     $('#1-tap').addClass('fk-tap--alt');
@@ -1087,9 +1153,21 @@ $( document ).ready(function() {
   $('.copyright').text('©'+year);
 
 
-  // sendOwl.abandonCallback = function() {
-  //   alert("Cart abandoned");
-  // }
+  var dateObj = new Date();
+  var month = dateObj.getUTCMonth() + 1; //months from 1-12
+  var day = dateObj.getUTCDate();
+  var year = dateObj.getUTCFullYear();
+
+  newdate = day + " " + GetMonthName(month) + ", " + year;
+  newdatePlusYear = day + " " + GetMonthName(month) + ", " + (year+1);
+
+  function GetMonthName(monthNumber) {
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return months[monthNumber - 1];
+  }
+
+  $('.fk-license-date').text(newdate);
+  $('.fk-license-date-plus-year').text(newdatePlusYear);
 
 
   ///////////////////////////////////////////////////////////////

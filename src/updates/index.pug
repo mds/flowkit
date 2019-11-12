@@ -3,15 +3,45 @@ extends ../includes/layout.pug
 block head
   title Flowkit Updates
 
+block content
   body.fk-no-title
     .fk-container
-      - var headerTitle = "Updates";
+      - headerTitle = " ";
       include ../includes/header-interior.pug
 
       section.fk-main
         .fk-container-content.fk-container-content--body
 
-          //- img.fk-big-img(src="../assets/img/updates/01-main.svg")
+          h1 What's New
+
+          h4 Version 3.0
+          p.fk-intro Flowkit has been completely redesigned for the third time for Figma, Sketch, and Adobe XD. 
+          ul
+              li Released on 18 November, 2019
+              li Completely new look and feel
+              li Designed on a <code>90/180</code> grid
+              li <em>Brand-new</em> native Figma plugin for placing components
+              li Completely abstracted component system for easy customization
+              li Update with <code>Sketch version 59.1</code> and later
+              li Update with <code>Figma build 7</code> and later
+              li Update with <code>Adobe XD version 24.0.22.19</code> and later
+              
+              
+              
+          h4 Version 2.0.3 – Bug Fixes
+          ul
+              li Updated on 10 June, 2019
+              li Updated Sketch version with Sketch 55.1
+              li Fixed blue green dash/fill problem
+              li Fixed split dividers to be equal size when scaling, instead of one side scaling.
+              li Fixed a random typo that I can't remember, but had a note about doing so, so I'm pretty sure it happened.
+              li Changed default font to Verdana so both Windows and Mac users can enjoy Flowkit without getting font-missing errors if they don't have SF Pro or Roboto Mono, or anything better than Verdana. It's for the best, trust me.
+              li Extended the download period to 6 months instead of 1 month, because this is the number one thing I get support emails about.
+              li Fixed a reflection issue when you override a tap origin "A" with a directional swipe or any other interaction override.
+
+          h4 Version 2.0.2 – Bug Fix
+          p This version fixes a rotational issue when overriding the standard point of origin, which uses the end cap component, <code>Cap / Dot / Solid</code>, with an arrow. Now you can override the default starting points with backwards facing arrows.
+          img(src="../assets/img/updates/2-0-2-fix.svg")
 
           h3 Version 2.0
           p.fk-intro Flowkit has been redesigned from the ground up for both Figma and Sketch. Both files contain the same content in regards to symbols and components, but each format was designed natively to leverage the unique features of each tool.

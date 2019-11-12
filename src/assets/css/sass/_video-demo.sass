@@ -1,0 +1,62 @@
+.fk-video-group-internal
+  max-width: 56rem
+  padding: 0 1rem
+  margin: 0 auto 0
+
+section.fk-video-demo
+  display: grid
+  grid-template-columns: 1fr
+  padding: 0 1rem
+  
+  +medium
+    direction: ltr
+    grid-template-columns: 1fr 2fr
+    grid-column-gap: 7rem
+    padding: 1rem 4rem 4rem
+
+  .fk-video-group-content
+    margin-top: 1rem
+    
+    h2
+      padding: 1rem 0
+      +medium
+        text-align: left
+        padding: 1rem 0
+
+.fk-video-controls
+  padding: 1rem 0
+  border-radius: 2.5rem
+
+  ul
+    list-style: none
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+
+    li
+      line-height: 0
+      margin: 0 .25rem
+
+    a
+      border: 3px solid rgba($color-white, 0)
+      border-radius: 2rem
+      line-height: 0
+      display: block
+      padding: .5rem
+      text-align: center
+      +easeall
+
+      &:hover
+        background: rgba($color-purple, .1)
+        +easeall        
+
+      &.is-active
+        border-color: $color-purple
+        &:hover
+          background: none
+
+      img
+        width: 20px
+        height: 20px
+        text-align: center
+        margin: auto
+

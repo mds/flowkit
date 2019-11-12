@@ -1,0 +1,36 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit — For Teachers and Students
+
+block content
+  body.fk-no-title
+    .fk-container
+      - var headerTitle = " ";
+      include ../includes/header-interior.pug
+
+      section.fk-main
+        .fk-container-content.fk-container-content--body
+
+          h1 Flowkit for Teachers and Students 
+          p A <strong>50% OFF</strong> educational discount can be requested and purchased by currently enrolled students, faculty, or staff members of an academic institution. This discount is only valid for the purchase of a single user license and is limited to one code per person.
+          p To qualify for an educational discount please email <code>matt@mds.is</code> with the subject <code>Flowkit Educational Discount Request</code> and include the following information:
+          ul
+            li Your full name
+            li Your email address
+            li Educational institution
+            li Country
+            li Course you're enrolled in
+            li Proof of student/teacher status as an attachment (eg. Scan of ID card with a visible expiration date, enrollment document, invoice or receipt)
+
+
+
+      include ../includes/foot.pug
+
+      //- Go Squared
+      script.
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+        _gs('GSN-965741-P');

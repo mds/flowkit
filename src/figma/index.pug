@@ -1,0 +1,30 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit – Figma Plugin
+
+block content
+  body
+    .fk-container
+
+      - var headerTitle = " ";
+      include ../includes/header-interior.pug
+
+      section.fk-main
+        .fk-container-content.fk-container-content--body
+
+          h1 Figma Plugin
+          p.fk-intro The Figma plugin is perhaps the most delightful way to use Flowkit. Using the plugin you can generate any of the Flowkit components directly into your document with one click.
+
+    .fk-video-group-internal
+      <video id="player" crossorigin playsinline>
+        <source src="../assets/video/video-example-figma-plugin.mp4" type="video/mp4" />
+      </video>
+
+    .fk-container
+      .fk-container-content.fk-container-content--body
+        p Install the plugin <a href=#figma-plugin-link>here</a>.
+
+    include ../includes/foot.pug
+
+

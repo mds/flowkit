@@ -1,0 +1,16 @@
+section.fk-video-demo
+
+	.fk-video-group-content
+		h2 Works where <strong>you work</strong>
+		p Flowkit was uniquely designed for <code>Figma</code>, <code>Sketch</code>, and <code>XD</code> using best practices and workflows for each individual platform.
+		.fk-video-controls
+			ul
+				li: a.fk-video-control.fk-video-control-figma.is-active(href="#figma-video"): img(src="assets/img/icon-figma.svg")
+				li: a.fk-video-control.fk-video-control-sketch(href="#sketch-video"): img(src="assets/img/icon-sketch.svg")
+				li: a.fk-video-control.fk-video-control-xd(href="#xd-video"): img(src="assets/img/icon-xd.svg")
+
+	.fk-video-group
+		//- poster="/path/to/poster.jpg"
+		<video id="player" crossorigin playsinline>
+			<source src="assets/video/video-example-figma.mp4" type="video/mp4" />
+		</video>

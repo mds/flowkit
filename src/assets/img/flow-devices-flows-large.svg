@@ -1,111 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="788px" height="675px" viewBox="0 0 788 675" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>flow-devices-flows-large</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="flow-devices-large" transform="translate(3.000000, -30.000000)">
-            <g id="flow-devices-flows-large" transform="translate(37.000000, 0.000000)">
-                <g id="Tap-/-Up-/-Curve-/-Right-/-Hook" transform="translate(0.000000, 368.000000)">
-                    <g id="Assets-/-Tap-/-Default" transform="translate(-40.000000, 80.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
-                        <circle id="Oval" cx="40" cy="40" r="40"></circle>
-                    </g>
-                    <g id="Flow-/-Up-/-Curve-/-Right-/-Hook">
-                        <path d="M2.13162821e-14,120 L2.13162821e-14,40 L2.13162821e-14,40 C1.86108671e-14,17.90861 17.90861,-1.01527322e-14 40,-1.42108547e-14 L270,0" id="Path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
-                        <path d="M270,1.12585494e-14 L320,5.00379973e-15 L320,7.10542736e-14 C342.09139,6.69961511e-14 360,17.90861 360,40 L360,90" id="hook" stroke="#252525" stroke-width="4" stroke-linecap="round" transform="translate(315.000000, 45.000000) rotate(-360.000000) translate(-315.000000, -45.000000) "></path>
-                        <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(360.000000, 90.000000) scale(1, -1) rotate(-90.000000) translate(-360.000000, -90.000000) translate(350.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
-                            <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
-                        </g>
-                        <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(0.000000, 120.000000) rotate(-90.000000) translate(-0.000000, -120.000000) translate(-10.000000, 110.000000)" fill-rule="evenodd" fill="#252525">
-                            <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
-                        </g>
-                    </g>
-                </g>
-                <g id="Tap-/-Left-/-Arrow-ALT" transform="translate(452.000000, 411.000000)">
-                    <g id="Assets-/-Tap-/-ALT" transform="translate(124.000000, 50.000000)" fill-rule="evenodd" fill="#EF0055" fill-opacity="0.4">
-                        <circle id="Oval" cx="40" cy="40" r="40"></circle>
-                    </g>
-                    <g id="Flow-/-Left-/-Arrow-ALT">
-                        <path class="fk-path-alt" d="M0,90 L164,90" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12"></path>
-                        <g id="Assets-/-Cap-/-Arrow-/-ALT" transform="translate(0.000000, 90.000000) scale(-1, 1) translate(-0.000000, -90.000000) translate(-10.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
-                            <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
-                        </g>
-                        <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(154.000000, 80.000000)" fill-rule="evenodd" fill="#252525">
-                            <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
-                        </g>
-                    </g>
-                </g>
-                <g id="flow4-annotate" transform="translate(658.000000, 259.000000)">
-                    <g id="Annotate-/-Down-/-Circle">
-                        <path d="M50,80 L50,40 L50,80 Z" id="path" stroke="#EF0055" stroke-width="4"></path>
-                        <g id="Assets-/-Cap-/-Line-/-Vertical" transform="translate(50.000000, 80.000000) rotate(-270.000000) translate(-50.000000, -80.000000) translate(40.000000, 70.000000)" fill-rule="evenodd" fill="#EF0055">
-                            <rect id="Rectangle-2" x="8" y="2" width="4" height="16" rx="1"></rect>
-                        </g>
-                        <g id="Assets-/-Annotate" transform="translate(10.000000, -40.000000)" stroke-width="4" stroke="#EF0055">
-                            <circle id="Oval" cx="40" cy="40" r="38"></circle>
-                        </g>
-                    </g>
-                    <rect id="Rectangle-12" fill="#EF0055" x="14" y="96" width="72" height="4" rx="2"></rect>
-                    <rect id="Rectangle-12" fill="#EF0055" x="14" y="104" width="42" height="4" rx="2"></rect>
-                </g>
-                <g id="Tap-/-Right-/-Snake-/-Down-/-Default" transform="translate(103.000000, 114.000000)">
-                    <g id="Assets-/-Tap-/-Default" transform="translate(-40.000000, -40.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
-                        <circle id="Oval" cx="40" cy="40" r="40"></circle>
-                    </g>
-                    <g id="Flow-/-Right-/-Snake-/-Down-/-Default">
-                        <path d="M0,100 L48.5,100 L48.5,100 C70.59139,100 88.5,82.09139 88.5,60 L88.5,40 L88.5,40 C88.5,17.90861 106.40861,4.05812251e-15 128.5,4.73316543e-30 L177,-7.10542736e-15" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" transform="translate(88.500000, 50.000000) scale(1, -1) translate(-88.500000, -50.000000) "></path>
-                        <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(177.000000, 100.000000) scale(1, -1) translate(-177.000000, -100.000000) translate(167.000000, 90.000000)" fill-rule="evenodd" fill="#252525">
-                            <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
-                        </g>
-                        <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(0.000000, 0.000000) scale(1, -1) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
-                            <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
-                        </g>
-                    </g>
-                </g>
-                <g id="Tap-/-Right-/-Snake-/-Down-/-Default" transform="translate(429.000000, 70.000000)">
-                    <g id="Assets-/-Tap-/-Default" transform="translate(-40.000000, -40.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
-                        <circle id="Oval" cx="40" cy="40" r="40"></circle>
-                    </g>
-                    <g id="Flow-/-Right-/-Snake-/-Down-/-Default">
-                        <path d="M0,100 L41.5,100 L41.5,100 C63.59139,100 81.5,82.09139 81.5,60 L81.5,40 L81.5,40 C81.5,17.90861 99.40861,4.05812251e-15 121.5,4.73316543e-30 L163,-7.10542736e-15" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" transform="translate(81.500000, 50.000000) scale(1, -1) translate(-81.500000, -50.000000) "></path>
-                        <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(163.000000, 100.000000) scale(1, -1) translate(-163.000000, -100.000000) translate(153.000000, 90.000000)" fill-rule="evenodd" fill="#252525">
-                            <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
-                        </g>
-                        <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(0.000000, 0.000000) scale(1, -1) translate(-0.000000, -0.000000) translate(-10.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
-                            <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
-                        </g>
-                    </g>
-                </g>
-                <g id="Tap-/-Left-/-Arrow-ALT" transform="translate(139.000000, 0.000000)">
-                    <g id="Assets-/-Tap-/-ALT" transform="translate(124.000000, 30.000000)" fill-rule="evenodd" fill="#EF0055" fill-opacity="0.4">
-                        <circle id="Oval" cx="40" cy="40" r="40"></circle>
-                    </g>
-                    <g id="Flow-/-Left-/-Arrow-ALT">
-                        <path class="fk-path-alt" d="M0,70 L164,70" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4,12"></path>
-                        <g id="Assets-/-Cap-/-Arrow-/-ALT" transform="translate(0.000000, 70.000000) scale(-1, 1) translate(-0.000000, -70.000000) translate(-10.000000, 60.000000)" fill-rule="evenodd" fill="#252525">
-                            <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
-                        </g>
-                        <g id="Assets-/-Cap-/-Circle-/-ALT" transform="translate(154.000000, 60.000000)" fill-rule="evenodd" fill="#252525">
-                            <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
-                        </g>
-                    </g>
-                </g>
-                <g id="Tap-/-Right-/-Snake-/-Up-/-Default" transform="translate(359.000000, 565.000000)">
-                    <g id="Assets-/-Tap-/-Default" transform="translate(-40.000000, 60.000000)" fill-rule="evenodd" fill="#006DFF" fill-opacity="0.400000006">
-                        <circle id="Oval" cx="40" cy="40" r="40"></circle>
-                    </g>
-                    <g id="Flow-/-Right-/-Snake-/-Up-/-Default">
-                        <path d="M0,100 L76.5,100 L76.5,100 C98.59139,100 116.5,82.09139 116.5,60 L116.5,40 L116.5,40 C116.5,17.90861 134.40861,3.07846457e-14 156.5,7.10542736e-15 L233,-7.10542736e-15" id="path" stroke="#252525" stroke-width="4" stroke-linecap="round"></path>
-                        <g id="Assets-/-Cap-/-Arrow-/-Default" transform="translate(223.000000, -10.000000)" fill-rule="evenodd" fill="#252525">
-                            <path d="M4,15.258963 L4,4.741037 L4,4.741037 C4,4.18875225 4.44771525,3.741037 5,3.741037 C5.17705464,3.741037 5.35093497,3.7880454 5.50387103,3.8772581 L14.5192362,9.1362211 L14.5192362,9.1362211 C14.9962881,9.41450138 15.1574243,10.0268191 14.879144,10.503871 C14.7922253,10.6528747 14.6682398,10.7768601 14.5192362,10.8637789 L5.50387103,16.1227419 L5.50387103,16.1227419 C5.02681911,16.4010222 4.41450138,16.2398859 4.1362211,15.762834 C4.0470084,15.609898 4,15.4360176 4,15.258963 Z" id="shape"></path>
-                        </g>
-                        <g id="Assets-/-Cap-/-Circle-/-Default" transform="translate(-10.000000, 90.000000)" fill-rule="evenodd" fill="#252525">
-                            <circle id="map/path-end-circle" cx="10" cy="10" r="5"></circle>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="788" height="675" viewBox="0 0 788 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M748 309V269V309Z" stroke="#FC5555" stroke-width="4"/>
+<path d="M756 310V308C756 307.448 755.552 307 755 307H741C740.448 307 740 307.448 740 308V310C740 310.552 740.448 311 741 311H755C755.552 311 756 310.552 756 310Z" fill="#FC5555"/>
+<path d="M748 267C768.987 267 786 249.987 786 229C786 208.013 768.987 191 748 191C727.013 191 710 208.013 710 229C710 249.987 727.013 267 748 267Z" stroke="#FC5555" stroke-width="4"/>
+<path d="M782 325H714C712.895 325 712 325.895 712 327C712 328.105 712.895 329 714 329H782C783.105 329 784 328.105 784 327C784 325.895 783.105 325 782 325Z" fill="#FC5555"/>
+<path d="M752 333H714C712.895 333 712 333.895 712 335C712 336.105 712.895 337 714 337H752C753.105 337 754 336.105 754 335C754 333.895 753.105 333 752 333Z" fill="#FC5555"/>
+<path d="M229.436 136L229.436 129C229.437 104.699 209.737 85 185.437 85L143 85" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M229.437 136L229.437 140C229.437 164.301 249.136 184 273.437 184L315 184" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M309 174L319.156 182.464C320.116 183.263 320.116 184.737 319.156 185.536L309 194" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="8" y2="-1" transform="matrix(1 0 0 -1 309 182)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171 85C171 100.464 158.464 113 143 113C127.536 113 115 100.464 115 85C115 69.536 127.536 57 143 57C158.464 57 171 69.536 171 85Z" fill="#7B61FF" fill-opacity="0.1" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M143 93C147.418 93 151 89.4183 151 85C151 80.5817 147.418 77 143 77C138.582 77 135 80.5817 135 85C135 89.4183 138.582 93 143 93Z" fill="white" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M550.411 91L550.411 83C550.411 58.6995 530.712 39 506.411 39L469 39" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M550.411 90L550.411 95C550.411 119.301 570.111 139 594.411 139L631 139" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M625 129L635.156 137.464C636.116 138.263 636.116 139.737 635.156 140.536L625 149" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="8" y2="-1" transform="matrix(1 0 0 -1 625 137)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M497 39C497 54.464 484.464 67 469 67C453.536 67 441 54.464 441 39C441 23.536 453.536 11 469 11C484.464 11 497 23.536 497 39Z" fill="#7B61FF" fill-opacity="0.1" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M469 47C473.418 47 477 43.4183 477 39C477 34.5817 473.418 31 469 31C464.582 31 461 34.5817 461 39C461 43.4183 464.582 47 469 47Z" fill="white" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M517.086 563L517.086 570C517.086 594.301 497.386 614 473.086 614L401 614" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M517.086 563L517.086 559C517.086 534.699 536.785 515 561.086 515L632 515" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M626 525L636.156 516.536C637.116 515.737 637.116 514.263 636.156 513.464L626 505" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="628" y1="515" x2="634" y2="516" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M429 614C429 598.536 416.464 586 401 586C385.536 586 373 598.536 373 614C373 629.464 385.536 642 401 642C416.464 642 429 629.464 429 614Z" fill="#7B61FF" fill-opacity="0.1" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M401 606C405.418 606 409 609.582 409 614C409 618.418 405.418 622 401 622C396.582 622 393 618.418 393 614C393 609.582 396.582 606 401 606Z" fill="white" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="164" y2="-2" transform="matrix(-1 0 0 1 345 42)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fk-path-alt" stroke-dasharray="4 12"/>
+<path d="M317 40C317 55.464 329.536 68 345 68C360.464 68 373 55.464 373 40C373 24.536 360.464 12 345 12C329.536 12 317 24.536 317 40Z" fill="#F56D4E" fill-opacity="0.05" stroke="#FC5555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M345 48C340.582 48 337 44.4183 337 40C337 35.5817 340.582 32 345 32C349.418 32 353 35.5817 353 40C353 44.4183 349.418 48 345 48Z" fill="white" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 50L174.844 41.5364C173.884 40.7369 173.884 39.2631 174.844 38.4636L185 30" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="8" y2="-1" transform="matrix(-1 0 0 1 185 42)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="164" y2="-2" transform="matrix(-1 0 0 1 656 475)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="fk-path-alt" stroke-dasharray="4 12"/>
+<path d="M628 473C628 488.464 640.536 501 656 501C671.464 501 684 488.464 684 473C684 457.536 671.464 445 656 445C640.536 445 628 457.536 628 473Z" fill="#F56D4E" fill-opacity="0.05" stroke="#FC5555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M656 481C651.582 481 648 477.418 648 473C648 468.582 651.582 465 656 465C660.418 465 664 468.582 664 473C664 477.418 660.418 481 656 481Z" fill="white" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M496 483L485.844 474.536C484.884 473.737 484.884 472.263 485.844 471.464L496 463" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="8" y2="-1" transform="matrix(-1 0 0 1 496 475)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M399 401L399 400C399 375.699 379.301 356 355 356L127 356" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M309 356L81 356C56.6995 356 37 375.699 37 400L37 462" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M408.784 394.655L400.68 405.1C399.915 406.087 398.442 406.138 397.609 405.207L388.796 395.353" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2" y1="-2" x2="8" y2="-1" transform="matrix(0.0348995 0.999391 0.999391 -0.0348996 400.789 394.934)" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37 434C21.536 434 9 446.536 9 462C9 477.464 21.536 490 37 490C52.464 490 65 477.464 65 462C65 446.536 52.464 434 37 434Z" fill="#7B61FF" fill-opacity="0.1" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29 462C29 457.582 32.5817 454 37 454C41.4183 454 45 457.582 45 462C45 466.418 41.4183 470 37 470C32.5817 470 29 466.418 29 462Z" fill="white" stroke="#2B2C34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="788" height="675" fill="white"/>
+</clipPath>
+</defs>
 </svg>

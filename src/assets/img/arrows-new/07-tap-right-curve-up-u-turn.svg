@@ -1,0 +1,6 @@
+<svg id="07-tap-right-curve-up-u-turn" width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="7-path" d="M38 150L194 150C218.301 150 238 130.011 238 105.353L238 56.6471C238 31.9892 218.301 12 194 12L28 12" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="7-endpoint-b" d="M36 22L25.8437 13.5364C24.8842 12.7369 24.8842 11.2631 25.8437 10.4636L36 2" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="7-tap" d="M58 150C58 165.464 45.464 178 30 178C14.536 178 2 165.464 2 150C2 134.536 14.536 122 30 122C45.464 122 58 134.536 58 150Z" fill="#7B61FF" fill-opacity="0.1" stroke="#7B61FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="7-endpoint-a" fill-rule="evenodd" clip-rule="evenodd" d="M30 158C34.4183 158 38 154.418 38 150C38 145.582 34.4183 142 30 142C25.5817 142 22 145.582 22 150C22 154.418 25.5817 158 30 158Z" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
