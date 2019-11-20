@@ -1,0 +1,31 @@
+
+.fk-card-logo-left
+  transform-origin: left
+  animation: fk-card-logo-anim-left 1s infinite ease-in-out
+.fk-card-logo-bottom
+  transform-origin: bottom
+  animation: fk-card-logo-anim-bottom 1s infinite ease-in-out
+.fk-card-logo-top
+  transform-origin: top
+  animation: fk-card-logo-anim-top 1s infinite ease-in-out
+
+
+@keyframes fk-card-logo-anim-left
+  0%, 100%
+    transform: translate(0, 0)
+  50%
+    transform: translate(-8px, 0)
+
+
+@keyframes fk-card-logo-anim-top
+  0%, 100%
+    transform: translate(0, 0)
+  50%
+    transform: translate(-4px, -8px)
+
+@keyframes fk-card-logo-anim-bottom
+  0%, 100%
+    transform: translate(0, 0)
+  50%
+    transform: translate(0, 8px)
+

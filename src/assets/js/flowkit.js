@@ -1171,5 +1171,8 @@ $( document ).ready(function() {
   $('.fk-license-date').text(newdate);
   $('.fk-license-date-plus-year').text(newdatePlusYear);
 
+  
+  $('#fk-video-tiny').play();
+
 
 });

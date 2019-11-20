@@ -3329,6 +3329,10 @@ p.centered {
     .fk-decision-piece3 {
       right: 0rem; } }
 
+.fk-tiny-group .fk-tiny-video {
+  max-width: 60rem;
+  margin: auto; }
+
 .fk-tiny-group .fk-tiny-annotation {
   margin: 0 0 2rem 0;
   padding: 0;
@@ -3688,3 +3692,69 @@ footer {
 
 #fk-thanks .fk-sketch {
   opacity: 0; }
+
+.fk-card-logo-left {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: fk-card-logo-anim-left 1s infinite ease-in-out;
+          animation: fk-card-logo-anim-left 1s infinite ease-in-out; }
+
+.fk-card-logo-bottom {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: fk-card-logo-anim-bottom 1s infinite ease-in-out;
+          animation: fk-card-logo-anim-bottom 1s infinite ease-in-out; }
+
+.fk-card-logo-top {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: fk-card-logo-anim-top 1s infinite ease-in-out;
+          animation: fk-card-logo-anim-top 1s infinite ease-in-out; }
+
+@-webkit-keyframes fk-card-logo-anim-left {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(-8px, 0);
+            transform: translate(-8px, 0); } }
+
+@keyframes fk-card-logo-anim-left {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(-8px, 0);
+            transform: translate(-8px, 0); } }
+
+@-webkit-keyframes fk-card-logo-anim-top {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(-4px, -8px);
+            transform: translate(-4px, -8px); } }
+
+@keyframes fk-card-logo-anim-top {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(-4px, -8px);
+            transform: translate(-4px, -8px); } }
+
+@-webkit-keyframes fk-card-logo-anim-bottom {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px); } }
+
+@keyframes fk-card-logo-anim-bottom {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px); } }
