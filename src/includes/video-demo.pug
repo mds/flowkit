@@ -10,7 +10,15 @@ section.fk-video-demo
 				li: a.fk-video-control.fk-video-control-xd(href="#xd-video"): img(src="assets/img/icon-xd.svg")
 
 	.fk-video-group
-		//- poster="/path/to/poster.jpg"
-		<video id="player" crossorigin playsinline>
+		<video id="player" poster="assets/img/poster-figma.png" crossorigin playsinline>
 			<source src="assets/video/video-example-figma.mp4" type="video/mp4" />
 		</video>
+
+		.is-hidden
+			<video>
+				<source src="assets/video/video-example-sketch.mp4" poster="assets/img/poster-sketch.png" type="video/mp4" />
+			</video>
+
+			<video>
+				<source src="assets/video/video-example-xd.mp4" poster="assets/img/poster-xd.png" type="video/mp4" />
+			</video>

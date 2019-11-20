@@ -80,6 +80,7 @@ $( document ).ready(function() {
         sources: [
             {
                 src: 'assets/video/video-example-figma.mp4',
+                poster: 'assets/img/poster-figma.png',
                 type: 'video/mp4',
             },
         ],
@@ -91,7 +92,6 @@ $( document ).ready(function() {
       $(".fk-video-control-figma.is-active").removeClass("is-active");
       $(".fk-video-control-xd.is-active").removeClass("is-active");
       $(this).addClass("is-active");
-
       // update source video
       player.source = {
         type: 'video',
@@ -99,6 +99,7 @@ $( document ).ready(function() {
         sources: [
             {
                 src: 'assets/video/video-example-sketch.mp4',
+                poster: 'assets/img/poster-sketch.png',
                 type: 'video/mp4',
             },
         ],
@@ -118,6 +119,7 @@ $( document ).ready(function() {
         sources: [
             {
                 src: 'assets/video/video-example-xd.mp4',
+                poster: 'assets/img/poster-xd.png',
                 type: 'video/mp4',
             },
         ],
@@ -1169,41 +1171,5 @@ $( document ).ready(function() {
   $('.fk-license-date').text(newdate);
   $('.fk-license-date-plus-year').text(newdatePlusYear);
 
-
-  ///////////////////////////////////////////////////////////////
-  // Video Trailer
-  ///////////////////////////////////////////////////////////////
-
-
-  // Get Wistia's API
-  window._wq = window._wq || [];
-  _wq.push({ id: "tofi9zegwu", onReady: function(video) {
-
-    console.log("_wq.push worked", video)
-
-  }});
-
-
-  ///////////////////////////////////////////////////////////////
-  // Event Tracking
-  ///////////////////////////////////////////////////////////////
-
-  // CTA Events
-  $('header .fk-cta-primary').click(function(){ _gs('event', 'Header Primary Clicked') });
-  $('footer .fk-cta-primary').click(function(){ _gs('event', 'Footer Buy Clicked') });
-  $('.fk-decision .fk-cta-primary').click(function(){ _gs('event', 'Large Decision Buy Clicked') });
-  $('.fk-decision .fk-cta-secondary').click(function(){ _gs('event', 'Large Decision Preview Clicked') });
-  // Flow Demo Events
-  $('.fk-play-btn').click(function(){ _gs('event', 'Clicked Play Button') });
-  $('.fk-flow-demo-hit1').click(function(){ _gs('event', 'Flow Demo 1') });
-  $('.fk-flow-demo-hit2').click(function(){ _gs('event', 'Flow Demo 2') });
-  $('.fk-flow-demo-hit3').click(function(){ _gs('event', 'Flow Demo 3') });
-  // Carousel Events
-  $('.fk-arrow').click(function(){ _gs('event', 'Carousel Arrow Clicked') });
-  $('.fk-cycle-prev').click(function(){ _gs('event', 'Carousel Prev Clicked') });
-  $('.fk-cycle-next').click(function(){ _gs('event', 'Carousel Next Clicked') });
-  $('.fk-controls-type a').click(function(){ _gs('event', 'Carousel Type Changed') });
-  $('.fk-controls-direction a').click(function(){ _gs('event', 'Carousel Direction Changed') });
-  $('.fk-controls-style a').click(function(){ _gs('event', 'Carousel Style Changed') });
 
 });

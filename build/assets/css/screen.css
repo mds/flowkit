@@ -1531,11 +1531,12 @@ header {
     grid-template-columns: 1fr auto 1fr;
     -webkit-box-align: center;
             align-items: center;
-    padding: 0 2rem;
+    padding: 0;
     margin: auto;
     max-width: 76rem; }
     @media (min-width: 1280px) {
       header .fk-header-wrapper {
+        padding: 0 2rem;
         max-width: none; } }
   header .fk-cta-secondary {
     display: none; }
@@ -1628,9 +1629,7 @@ header {
 
 .fk-header-scrolled {
   padding: 1rem !important;
-  background: rgba(255, 255, 255, 0.85);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.95);
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out; }
   @media (min-width: 900px) {

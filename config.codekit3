@@ -15,6 +15,14 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
+	"/src/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.htaccess",
+		"oF": 0
+		},
 	"/src/_archive": {
 		"ft": 65536,
 		"oA": 1,
@@ -2090,6 +2098,39 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/img/poster-figma.png": {
+		"ft": 32768,
+		"iS": 451725,
+		"oA": 0,
+		"oAP": "/build/assets/img/poster-figma.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/poster-sketch.png": {
+		"ft": 32768,
+		"iS": 746820,
+		"oA": 0,
+		"oAP": "/build/assets/img/poster-sketch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/poster-xd.png": {
+		"ft": 32768,
+		"iS": 602468,
+		"oA": 0,
+		"oAP": "/build/assets/img/poster-xd.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/preview-full-figma.png": {
 		"ft": 32768,
 		"iS": 434717,
@@ -3147,7 +3188,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/build/includes/tweets-3.html",
 		"oF": 0,
 		"oS": 0
@@ -3159,16 +3200,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/includes/video-demo.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"/src/index-orig.pug": {
-		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/index-orig.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -3271,7 +3302,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/img/favicon.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 595193142.87491906
+	"lastBuiltDate": 595445988.02814496
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

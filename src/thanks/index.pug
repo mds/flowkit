@@ -7,20 +7,21 @@ block content
   body
     .fk-container
 
-      - var headerTitle = "Thanks!";
+      - var headerTitle = "";
       <style> .fk-cta-group { display: none; !important }</style>
       include ../includes/header-interior.pug
 
       section.fk-main
         .fk-container-content.fk-container-content--body
 
-          p.centered.fk-intro <strong>Check your email for your order.</strong> Please note, the file download link is sent automatically via Sendowl, once payment is processed. PayPal payments tend to take a little longer than credit cards.
+          h1 Woohoo!
 
-          p.centered.small  If you have any issues please don't hesitate to email me &rarr; matt at mds dot is. The charge will appear on your statement from Studio MDS, LLC.
+          p.fk-intro <strong>Check your email for your order.</strong> Please note, the download link and license are sent automatically via Sendowl, once payment is processed. PayPal tends to take slightly longer than credit cards. 
 
+          p <code>The charge will appear on your statement from Studio MDS, LLC.</code>
 
-          p.centered
-            a.fk-cta.fk-cta-secondary(href='https://twitter.com/intent/tweet?text=I+just+bought+Flowkit+2.0+for+Figma+and+Sketch+by+@mds.+This+is+gonna+save+so+much+time+when+I+need+to+make+user+flows.+👌https://useflowkit.com') Tweet about it
+          br
+          p: a(href="https://twitter.com/intent/tweet?text=Just+picked+up+Flowkit+3.0.+Love+the+idea+of+creating+flows+inside+of+my+design+tool+of+choice.+♥️+https://useflowkit.com") &rarr; Tweet about it
 
 
     include ../includes/foot.pug
