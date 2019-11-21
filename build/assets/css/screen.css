@@ -3620,19 +3620,37 @@ ul.fk-logos {
 
 footer {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 2fr 1fr;
   -webkit-box-align: start;
           align-items: start;
   padding: 4rem 1rem 8rem;
   position: relative;
   max-width: 80rem;
   margin: auto; }
+  @media (min-width: 900px) {
+    footer {
+      grid-template-columns: auto auto; } }
   footer img.fk-mds {
     margin: 0;
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    opacity: 1; }
+    opacity: 1;
+    float: left;
+    margin-top: -.25rem;
+    margin-right: .5rem;
+    box-shadow: 0 0 0 4px #7B61FF;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    @media (min-width: 900px) {
+      footer img.fk-mds {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        margin-right: 1rem; } }
   footer a {
     color: #5A6C7B;
     box-shadow: inset 0 -2px 0 0 rgba(90, 108, 123, 0);
@@ -3642,14 +3660,17 @@ footer {
       box-shadow: inset 0 -1.1em 0 0 rgba(90, 108, 123, 0.1);
       -webkit-transition: all .2s ease-out;
       transition: all .2s ease-out; }
+      footer a:hover img {
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+        box-shadow: 0 0 0 6px #7B61FF; }
 
 .fk-footer {
   display: inline-block;
   text-align: left;
-  padding: 0 1rem 0;
   margin: 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: .875rem;
   font-weight: 500;
   color: #5A6C7B;
   line-height: 2.3; }
