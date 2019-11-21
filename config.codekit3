@@ -3046,6 +3046,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/free/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/free/index.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/includes/bottomnav.pug": {
 		"cB": 0,
 		"cOD": 1,
