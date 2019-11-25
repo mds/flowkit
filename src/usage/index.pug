@@ -4,153 +4,287 @@ block head
   title Flowkit Usage
 
 block content
-  body.fk-no-title
+  body.fk-no-title.fk-interior
     .fk-container
-      - var headerTitle = " ";
+      - var headerTitle = "";
       include ../includes/header-interior.pug
 
       section.fk-main
         .fk-container-content.fk-container-content--body
 
           h1 Usage
-          p.fk-intro <strong>3.0</strong> documentation is coming soon. Now that there are 3 different pieces of software—<code>.fig</code> <code>.sketch</code> <code>.xd</code>—supported and a brand new Figma plugin, there are a lot of different ways to use Flowkit. If you have any specific questions I will be happy to answer them for you. In the meantime, I'l be cranking away on new documentation.
+          p.fk-intro Flowkit 3.0 works with Figma, Sketch, and Adobe XD. To find what your looking for more quickly choose your favorite software below, or keep scrolling. 
+
+          h4 Jump to
+          ul.fk-ul-logos
+            li.fk-header-figma: a(href="#figma") Flowkit for Figma
+            li.fk-header-sketch: a(href="#sketch") Flowkit for Sketch
+            li.fk-header-xd: a(href="#xd") Flowkit for XD
+            
+          p Regardless of you design tool of choice, each version follows the same <a href="/names">naming conventions</a> and contains the same components.
+
+          p Each version is designed on a <code>180px</code> grid with <code>90px</code> subsections to allow for quick and easy snapping between the assets. The padding is built in so it looks good, right out of the box, all snapped together.
+          br
+          br
+          hr
+
+          h2.fk-header-figma#figma Flowkit for Figma
+          p Flowkit for Figma has two options for usage and both options operate independently from the other. You only need one of them to use Flowkit, though you can certainly use both.
+
+          ol
+            li: a(href="#figma-plugin") The plugin
+              ul
+                li: a(href="#figma-plugin-install") Installing the plugin 
+                li: a(href="#figma-plugin-activation") Activating the plugin
+                li: a(href="#figma-plugin-use") Using the plugin
+                //- li: a(href="#") Creating high-level flows
+                //- li: a(href="#") Creating screen to screen flows
+                //- li: a(href="#") Creating content maps
+                //- li: a(href="#") Annotating and labeling
+                //- li: a(href="#") Modifying the color or style
+            li: a(href="#figma-library") The component library
+              ul
+                li: a(href="#figma-library-load") Loading the library
+                li: a(href="#figma-library-use") Using the library
+                //- li: a(href="#") Creating high level flows
+                //- li: a(href="#") Creating screen to screen flows
+                //- li: a(href="#") Creating content maps
+                //- li: a(href="#") Annotating and labeling
+                li: a(href="#figma-library-modify") Modifying the color or style
+
+          p The plugin is the recommend way to use Flowkit for Figma. Both options have the same components, but there are some differences.
+
+          p As of <code class="fk-license-date">the time of this writing</code>, Figma does not allow plugins to access libraries. To bypass this issue, the Flowkit plugin dynamically generates each asset as a frame with all of the proper resizing rules in place, but is <strong>not</strong> an actual instance of the Flowkit library from the <code>Flowkit 3.0.fig</code> file.
+
+          h4.fk-header-figma#figma-plugin-install Installing the plugin
+          p You can <a href="https://www.figma.com/c/plugin/777287184344500379/Flowkit">install the plugin right here</a> by clicking the <code>Install</code> button in the top right of the Figma plugin page.
 
 
-          h4 2.0 Installation
-          p Flowkit is available in both Sketch and Figma formats. Each format was created natively, leveraging unique features from each platform. Because of this, installing the library is quite simple and no additional software is required.
+          img(src="/assets/img/figma-plugin-overview.png" alt="screen shot of flowkit in the figma plugin browser")
 
-          img(src="../assets/img/usage/files.svg" alt="figma and sketch file format icons")
 
-          h4.fk-header-figma#installing-in-figma Installing in Figma
-          p Figma requires users to have a paid Team account to create and access Figma Libraries. Therefore, to use Flowkit as a shared library between users and files, you and your team will need to have a paid Figma Team account.
+          h4.fk-header-figma#figma-plugin-activation Activating the plugin
+          p Once installed, choose <code>Plugins / Flowkit</code> from the top menu bar in Figma. This will launch the plugin for the first time. Enter your license code (found in your order email) and press return to activate.
+
+          img(src="/assets/img/figma-plugin-welcome.png" alt="image of the flowkit plugin launched for the first time")
+
+
+          h4.fk-header-figma#figma-plugin-use Using the plugin
+          p Once activated, you have access to all of the Flowkit assets. Selecting any asset from the plugin window will place that asset onto you canvas.
+
+          img(src="/assets/img/figma-plugin-usage.gif" alt="image of the flowkit plugin launched with assets showing")
+
+          p If nothing on the canvas is selected, Flowkit assets will place in the center of your view area. If you have an object on the canvas selected, Flowkit assets will be place directly to the right of your selected object, even if it's not in view.
+
+          ul
+            li Choose any asset in the plugin window to place onto the canvas
+            li <code>Default</code> <code>Dashed</code> <code>Tap</code> <code>Swipe</code> and <code>Long press</code> are all directional flows.
+            li The <code>&rarr;</code> dropdown contains a directional modifier for the flows: <code>&rarr; &darr; &uarr; &larr;</code>
+            li <code>Blocks</code> are used to represent sections, features, pages, etc. They are abstract enough to use them however you'd like.
+            li <code>Annotate</code> contains text blocks for annotating up, down, left, right and also contains <code>labels</code> for labelling any flow lines.
+            li The color selector comes with 8 preset colors and the ability to use your own <code>hex code</code>. This will change the color of every asset in the plugin. <strong>Note</strong>: Figma doesn't currently allow plugins to access to the default color picker.
+
+
+          p By default the plugin will remain visible, but you can change this if you'd like by accessing the settings in the lower right and deselecting <code>Keep Visible</code>.
+
+          img(src="/assets/img/figma-plugin-visible.png" alt="screen shot of flowkit in the figma plugin browser")
+
+
+
+          h4.fk-header-figma#figma-libary The component library
+
+          p Figma requires users to have a paid Team account to create and access Figma Libraries. Therefore, to use Flowkit as a shared library between users and files, you and your team will need to have a paid Figma Team account. You don't need a Team account to open <code>Flowkit 3.0.fig</code> only to publish and share as a library.
+
+          p <strong>Note</strong>: This is the nice thing about the plugin vs. the component library—you can use the plugin on any team or any document with the free Figma plan.
 
           img(src="../assets/img/usage/overview-figma.png" alt="bird's eye view of flowkit components in figma")
 
+          h4.fk-header-figma#figma-library-load Loading the library
           ul
-            li Open <code>flowkit-v2.fig</code> with Figma.
-            li Click the book icon in the top right to access <code>Libraries</code>.
-            li Navigate to the <code>Flowkit 2.0</code> line item and click <code>Publish</code>.
+            li Open <code>Flowkit 3.0.fig</code> with Figma.
+            li Click the book icon in the top right of the assets panel to access <code>Libraries</code>.
+            li Navigate to the <code>Flowkit 3.0</code> line item and click <code>Publish</code>.
             li Create a Team project called Flowkit and click <code>Move</code>.
             li Flowkit will now be available as a library across all Team projects.
             li For more info on Figma libraries, <a href="https://help.figma.com/editor/team-library">read Figma's documentation</a>.
-            li Please make sure you have the appropriate Flowkit Team license to share the library with your design team. Have a personal license and need to upgrade? Email <code>matt@mds.is</code> and I'll hook you up with an upgrade coupon code.
+            li Please make sure you have the appropriate Flowkit Team license to share the library with your design team.
+            li If you have a free Figma account, it is recommended that you create userflows as additional pages  inside of the Flowkit file in order to leverage the assets as components.
+          
 
-          blockquote
-            h5 Free Figma Accounts
-            p If you have a free Figma account, it is recommended that you create userflows as additional pages  inside of the Flowkit file in order to leverage the assets as components.
+          p You will now have access to all of the Flowkit components in the left panel.
 
-          h4.fk-header-sketch#installing-in-sketch Installing in Sketch
-          p Installing the Flowkit Library will make it available for use with all of your Sketch files.
 
-          img(src="../assets/img/usage/overview-sketch.png" alt="bird's eye view of flowkit components in sketch")
+          h4.fk-header-figma#figma-library-use Using the libary
+          p In any new document that you'd like to use Flowkit, go to the assets tab in the layers panel, click the book icon, scroll to Flowkit 3.0 and activate. You can now place those libary components via the assets panel.
+          p Pressing <code>Option 2</code> is the quickest way to access Figma library assets.
+
+          h4.fk-header-figma#figma-library-modify Modifying the color or style
+          p To change the color or style of a flow component instance, you can select the compent and change the color in the right properties panel.
+
+          img(src="../assets/img/figma-component-color.gif" alt="changing the color of a flow component in figma")
+
+          p To change the default color or style of <strong>every single directional component</strong>, edit the components in the <code>Master</code> frame. You may want to duplicate the file before doing so, in case you want to revert back.
+
+          img(src="../assets/img/figma-component-master.gif" alt="changing the color of all directional components in figma")
+
+          hr
+
+          h2.fk-header-sketch#sketch Flowkit for Sketch
+          p Flowkit for Sketch is built from nested components with all of the resize rules built in. Each path and end point can be overriden from the properties panel for fully customization. You can even modify your own library to better suit your personal style.
+
+          ul
+            li: a(href="#sketch-library-load") Loading the library
+            li: a(href="#sketch-library-use") Using the library
+            //- li: a(href="#sketch-library-modify") Modifying the color or style
+
+          h4.fk-header-sketch#sketch-library-load Loading the Library
+          p Installing the Flowkit Library will make it available for use with all of your Sketch documents.
+
+          img(src="../assets/img/sketch-library.png" alt="bird's eye view of flowkit components in sketch")
+          img(src="../assets/img/sketch-library-load.png" alt="load the sketch library")  
 
           ul
             li Open Sketch preferences, navigate to the <code>Libraries</code> tab.
             li Choose <code>Add Library...</code> in the bottom left.
-            li Select <code>flowkit-v2.sketch</code> and click <code>Open</code>
-            li Now you're ready to use Flowkit 2.0 in any Sketch 55+ document.
+            li Select <code>Flowkit 3.0.sketch</code> and click <code>Open</code>
+            li Now you're ready to use Flowkit 3.0 in any Sketch 60+ document.
 
-          blockquote
-            h5 Sketch Runner + Flowkit
-            p Using Flowkit with Sketch Runner is highly recommended. You can download the free Sketch Runner plugin, <a href="http://sketchrunner.com">here</a>. Sketch Runner will allow you to use keyboard commands to insert Flowkit library symbols onto your canvas. Use <code>⌘ "</code> to open Sketch Runner, then type in the easy-to-remember™ Flowkit naming convention <code>Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2</code> to place the symbol you want.
+          p <strong>Note:</strong> Flowkit uses the open source font <a href="https://rsms.me/inter/">Inter</a> for it's text annotations and labels. You will need to install the font or replace the font with your own preference in the main <code>Flowkit 3.0.sketch</code> file to ensure proper function.
 
-            p <a href="https://github.com/mds/sketch-shortcuts">Download this free shortcut plugin</a> to use Flowkit even faster.
+          h4.fk-header-sketch#sketch-library-use Using the libary
+            p Using Flowkit with Sketch Runner is highly recommended. You can download the free Sketch Runner plugin, <a href="http://sketchrunner.com">here</a>. Sketch Runner will allow you to use keyboard commands to insert Flowkit library symbols onto your canvas.
 
-          h3 Creating High-level Flows
-          p.fk-intro Every main component inside of Flowkit is based on a <code>180x180</code> grid. Each one was designed to have 0px of margin on all sides when linking blocks and flows.
+            p Use <code>⌘ "</code> to open Sketch Runner, then type in the easy-to-remember™ Flowkit naming convention <code>Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2</code> to place the symbol you want.
 
-          img(src="../assets/img/usage/high-level.gif" alt="360 pixel grid with blocks and flows fitting together nicely")
+            img(src="../assets/img/sketch-library-runner.gif" alt="using sketch runner with sketch")
 
-          p It is recommend to create one high-level flow focused on one particular section or feature of your project, per large artboard that can later be shared or exported.
-
-          h4.fk-header-figma#high-level-flows-in-figma High-level flows in Figma
-          ul
-            li Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.
-            li At the top of the Components panel, search for <code>block default</code>, choose a block component and place it on the canvas.
-            li Now search for <code>flow right</code>, choose a flow component and place it on the canvas.
-            li Continue adding components by searching and navigating the component list, as necessary.
-
-          h4.fk-header-sketch#high-level-flows-in-sketch High-level flows in Sketch
-          ul
-            li Use <code>⌘ "</code> to open Sketch Runner.
-            li Type <code>block default</code> and hit <code>return</code>.
-            li Use <code>⌘ "</code> again, and type <code>flow right straight</code>.
-            li Continue adding components with Sketch Runner, or by navigating the Flowkit symbol list from the Sketch app toolbar.
-
-          h3 Screen to Screen Flows
-          p.fk-intro <strong>Do not</strong> place the Flowkit components on top of artboards or frames and try to connect them to other artboards or frames. This will result in clipped components and unhappy Flowkit users. ☹️
-
-          img(src="../assets/img/usage/screen-flow-incorrect.gif" alt="flow components getting clipped by artboards")
-
-          p <strong>Do</strong> place the Flowkit components on top of artboard instances on one giant artboard. This is the recommended screen flow technique when using Flowkit.
-
-          img(src="../assets/img/usage/screen-flow-correct.gif" alt="flow components not getting clipped by artboards")
-
-          p There are two distinct ways to create screen flows in both Figma and Sketch—dynamic screens and exported screens.
-
-          h4.fk-header-figma#screen-flows-in-figma Screen flows in Figma
-          ul
-            h5 Dynamic Screens (recommended)
-            li Select a frame and press <code>⌘⌥K</code> to convert to a component
-            li Copy and paste an instance of your frame component onto a larger frame to begin building your flow.
-            li With your first frame instance in place, navigate to the component panel with <code>⌥2</code> and search for <code>tap right</code>.
-            li Rinse and repeat as necessary.
-            li Any adjustments made to your master frames will be reflected in your flow frame automatically.
-            li Don't forget to reposition your flow components if you refactor your designs.
-          ul
-            h5 Exported Screens (alternate)
-            li This is a quick way to create a flow when dynamic screens don't matter.
-            li Right click any frame and choose <code>Copy as > Copy as PNG</code>.
-            li Paste the bitmap onto your large flow frame.
-            li Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.
-            li Search for <code>tap right straight</code> and place the flow component on your large flow frame.
-            li Rinse and repeat as necessary.
-
-          h4.fk-header-sketch#screen-flows-in-sketch Screen flows in Sketch
-          ul
-            h5 Dynamic Screens with Plugins
-            li Install either the free <a href="https://github.com/MengTo/Angle-Sketch-Plugin">Angle</a> or <a href="https://magicsketch.io/mirror/">Magic Mirror</a> plugin.
-            li Create a large artboard to contain your screen flows.
-            li Draw a rectangle the same size as the first artboard you'd like to use.
-            li Apply the Magic Mirror or Angle plugin to the rectangle, to mirror your artboard. Please refer to the plugin documentation for more details on this.
-            li Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.
-            li Rinse and repeat as necessary.
-          ul
-            h5 Dynamic Screens with Symbols
-            li Convert your artboards to symbols.
-            li Create a large artboard to contain your screen flows.
-            li Place the symbol instance of your artboard onto the large artboard.
-            li Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.
-            li Rinse and repeat as necessary.
-          ul
-            h5 Exported Static Screens
-            li Select an artboard and choose <code>Make Exportable</code> in the bottom right of the inspector panel
-            li Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.
-            li Rinse and repeat as necessary.
+            p <a href="https://github.com/mds/sketch-shortcuts">Download this free quick key shortcut plugin</a> to use Flowkit even faster.
 
 
-          h3 Overrides
-          p.fk-intro Whether you're building complex flows or changing interactions on tap components, Flowkit comes with lots of prebuilt override capabilities.
+            p If you're not using Sketch Runner to insert symbols you have two options:
 
-          h4 Linking flow components
-          p There are times when linking multiple flow components together is necessary to give you just the crazy line you want in your document. You can achieve the appearance of a continuous line by simply hiding the nested endcaps.
-          h4.fk-header-figma Figma
-          img(src="../assets/img/usage/complex-flow-figma.gif" alt="linking multiple flow components together to create one large crazy line in figma")
-          h4.fk-header-sketch Sketch
-          img(src="../assets/img/usage/complex-flow-sketch.gif" alt="linking multiple flow components together to create one large crazy line in sketch")
+            ol
+              li You can insert symbols the old fashioned way by going to <br> <code>Insert / Flowkit 3.0 / *your symbol of choice*</code>
+              li You can go the the <strong>components</strong> section (beside layers) in the left panel and drag and drop any symbol onto your canvas or artboard. <strong>Note:</strong> The components panel is a new feature of Sketch v60.
 
+          hr
 
-          h4 Changing tap interactions
-          p Screen flows can be created with <code>tap</code>, <code>swipe</code>, and <code>long press</code>.
-          h4.fk-header-figma Figma
-          img(src="../assets/img/usage/tap-override-figma.gif" alt="creating a screenflow in figma")
-          h4.fk-header-sketch Sketch
-          img(src="../assets/img/usage/tap-override-sketch.gif" alt="creating a screenflow in sketch")
+          h2.fk-header-xd#xd Flowkit for XD
+          p Save <code>Flowkit 3.0.xd</code> as a Cloud Document and use the Flowkit components as linked assets to share and reuse design across multiple documents. For more information on XD cloud documents, <a href="https://helpx.adobe.com/xd/help/cloud-documents.html">go here</a>.
+
+          img(src="../assets/img/xd-library.png" alt="bird's eye view of the Flowkit XD library")
 
 
+
+          h4.fk-header-xd#xd-usage Using the library
+          p <code>CMD Shift Y</code> will give you quick access to your library components. Click and drag any Flowkit component onto your canvas. Select any nested component and <code>Option Drag</code> from the library to override it.
+          img(src="../assets/img/xd-usage.gif" alt="using the XD library")
+
+
+
+          
+
+          //- h3 Creating High-level Flows
+          //- p.fk-intro Every main component inside of Flowkit is based on a <code>180x180</code> grid. Each one was designed to have 0px of margin on all sides when linking blocks and flows.
+
+          //- img(src="../assets/img/usage/high-level.gif" alt="360 pixel grid with blocks and flows fitting together nicely")
+
+          //- p It is recommend to create one high-level flow focused on one particular section or feature of your project, per large artboard that can later be shared or exported.
+
+          //- h4.fk-header-figma#high-level-flows-in-figma High-level flows in Figma
+          //- ul
+          //-   li Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.
+          //-   li At the top of the Components panel, search for <code>block default</code>, choose a block component and place it on the canvas.
+          //-   li Now search for <code>flow right</code>, choose a flow component and place it on the canvas.
+          //-   li Continue adding components by searching and navigating the component list, as necessary.
+
+          //- h4.fk-header-sketch#high-level-flows-in-sketch High-level flows in Sketch
+          //- ul
+          //-   li Use <code>⌘ "</code> to open Sketch Runner.
+          //-   li Type <code>block default</code> and hit <code>return</code>.
+          //-   li Use <code>⌘ "</code> again, and type <code>flow right straight</code>.
+          //-   li Continue adding components with Sketch Runner, or by navigating the Flowkit symbol list from the Sketch app toolbar.
+
+          //- h3 Screen to Screen Flows
+          //- p.fk-intro <strong>Do not</strong> place the Flowkit components on top of artboards or frames and try to connect them to other artboards or frames. This will result in clipped components and unhappy Flowkit users. ☹️
+
+          //- img(src="../assets/img/usage/screen-flow-incorrect.gif" alt="flow components getting clipped by artboards")
+
+          //- p <strong>Do</strong> place the Flowkit components on top of artboard instances on one giant artboard. This is the recommended screen flow technique when using Flowkit.
+
+          //- img(src="../assets/img/usage/screen-flow-correct.gif" alt="flow components not getting clipped by artboards")
+
+          //- p There are two distinct ways to create screen flows in both Figma and Sketch—dynamic screens and exported screens.
+
+          //- h4.fk-header-figma#screen-flows-in-figma Screen flows in Figma
+          //- ul
+          //-   h5 Dynamic Screens (recommended)
+          //-   li Select a frame and press <code>⌘⌥K</code> to convert to a component
+          //-   li Copy and paste an instance of your frame component onto a larger frame to begin building your flow.
+          //-   li With your first frame instance in place, navigate to the component panel with <code>⌥2</code> and search for <code>tap right</code>.
+          //-   li Rinse and repeat as necessary.
+          //-   li Any adjustments made to your master frames will be reflected in your flow frame automatically.
+          //-   li Don't forget to reposition your flow components if you refactor your designs.
+          //- ul
+          //-   h5 Exported Screens (alternate)
+          //-   li This is a quick way to create a flow when dynamic screens don't matter.
+          //-   li Right click any frame and choose <code>Copy as > Copy as PNG</code>.
+          //-   li Paste the bitmap onto your large flow frame.
+          //-   li Press <code>⌥2</code> or click the components icon in the lower left, to access Flowkit in the Components panel.
+          //-   li Search for <code>tap right straight</code> and place the flow component on your large flow frame.
+          //-   li Rinse and repeat as necessary.
+
+          //- h4.fk-header-sketch#screen-flows-in-sketch Screen flows in Sketch
+          //- ul
+          //-   h5 Dynamic Screens with Plugins
+          //-   li Install either the free <a href="https://github.com/MengTo/Angle-Sketch-Plugin">Angle</a> or <a href="https://magicsketch.io/mirror/">Magic Mirror</a> plugin.
+          //-   li Create a large artboard to contain your screen flows.
+          //-   li Draw a rectangle the same size as the first artboard you'd like to use.
+          //-   li Apply the Magic Mirror or Angle plugin to the rectangle, to mirror your artboard. Please refer to the plugin documentation for more details on this.
+          //-   li Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.
+          //-   li Rinse and repeat as necessary.
+          //- ul
+          //-   h5 Dynamic Screens with Symbols
+          //-   li Convert your artboards to symbols.
+          //-   li Create a large artboard to contain your screen flows.
+          //-   li Place the symbol instance of your artboard onto the large artboard.
+          //-   li Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.
+          //-   li Rinse and repeat as necessary.
+          //- ul
+          //-   h5 Exported Static Screens
+          //-   li Select an artboard and choose <code>Make Exportable</code> in the bottom right of the inspector panel
+          //-   li Use Sketch Runner <code>⌘"</code> and search <code>tap right straight</code> to place your first flow symbol.
+          //-   li Rinse and repeat as necessary.
+
+
+          //- h3 Overrides
+          //- p.fk-intro Whether you're building complex flows or changing interactions on tap components, Flowkit comes with lots of prebuilt override capabilities.
+
+          //- h4 Linking flow components
+          //- p There are times when linking multiple flow components together is necessary to give you just the crazy line you want in your document. You can achieve the appearance of a continuous line by simply hiding the nested endcaps.
+          //- h4.fk-header-figma Figma
+          //- img(src="../assets/img/usage/complex-flow-figma.gif" alt="linking multiple flow components together to create one large crazy line in figma")
+          //- h4.fk-header-sketch Sketch
+          //- img(src="../assets/img/usage/complex-flow-sketch.gif" alt="linking multiple flow components together to create one large crazy line in sketch")
+
+
+          //- h4 Changing tap interactions
+          //- p Screen flows can be created with <code>tap</code>, <code>swipe</code>, and <code>long press</code>.
+          //- h4.fk-header-figma Figma
+          //- img(src="../assets/img/usage/tap-override-figma.gif" alt="creating a screenflow in figma")
+          //- h4.fk-header-sketch Sketch
+          //- img(src="../assets/img/usage/tap-override-sketch.gif" alt="creating a screenflow in sketch")
+
+          hr
 
           h4 Still have questions?
-          p I'd be happy to help you out! <a href="http://twitter.com/mds">Tweet me</a> or shoot an email to <code>matt at mds dot is</code>
+          p I'll post more examples soon, but in the meantime, I'm happy to answer any other questions you might have. <a href="http://twitter.com/mds">Tweet me</a> or shoot an email to <code>matt@mds.is</code>
+
+          hr
+
+          p
+            br
+            a(href="/legacy") See documentation for previous versions
 
 
 

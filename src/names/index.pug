@@ -1,0 +1,104 @@
+extends ../includes/layout.pug
+
+block head
+  title Flowkit Naming Conventions
+
+block content
+  body.fk-no-title
+    .fk-container
+      - headerTitle = " ";
+      include ../includes/header-interior.pug
+
+      section.fk-main
+        .fk-container-content.fk-container-content--body
+
+          h1 Names
+
+          p.fki-intro Each directional asset uses the following naming convention. It begins with the point of origin and ends with the destination.
+          span.code-callout
+            p
+              code Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2
+          ul
+            li
+              em Type
+              |  can be either <code>Flow</code> or <code>Tap</code>, etc., depending on the type of flow you are creating. <code>Flow</code> is intended to be used for high-level user flows, whereas <code>Tap</code> is intended to be used with wireframes or actual screen designs all on the same artboard.
+            li
+              em Direction 1
+              |  determines the initial direction of the path. This can be <code>Right</code>, <code>Left</code>, <code>Up</code>, or <code>Down</code>
+            li
+              em Modifier 1
+              |  comes immediately after the Primary Direction. This can be <code>Straight</code>, <code>Curve</code>, or <code>Snake</code>.
+            li
+              em Direction 2
+              |  comes immediately after the Initial Modifier. <code>Right</code> and <code>Left</code> components can be either <code>Up</code>, or <code>Down</code>, whereas <code>Up</code> and <code>Down</code> components will have Secondary Modifiers as <code>Left</code>, or <code>Right</code>.
+            li
+              em Modifier 2
+              |  is the final section of the Flow component and determines the direction of the arrow. This can be <code>Straight</code>, <code>U-turn</code>, or <code>Hook</code>.
+
+          h4 Flows
+          p These are the primary components in the system. There are 11 options (listed below) for each direction. All Flow components can be scaled without skewing or stretching. Each Flow component also contains nested endpoints that can be hidden or overridden with different end points.
+          p There are 11 variants in total for each direction. For example:
+          ol(type="1")
+            li: code Flow / Right / Straight
+            li: code Flow / Right / Curve / Down / Straight
+            li: code Flow / Right / Curve / Down / U-turn
+            li: code Flow / Right / Curve / Down / Hook
+            li: code Flow / Right / Curve / Up / Straight
+            li: code Flow / Right / Curve / Up / U-turn
+            li: code Flow / Right / Curve / Up / Hook
+            li: code Flow / Right / Snake / Down / Straight
+            li: code Flow / Right / Snake / Down / Hook
+            li: code Flow / Right / Snake / Up / Straight
+            li: code Flow / Right / Snake / Up / Hook
+          img(src="../assets/img/updates/06-flow.svg")
+
+          h4 Taps
+          p Taps are intended for use on top of UI screen designs when laying out flow documents. They follow the same naming pattern as Flow components. Each endpoint has been pre-overridden with the <code>Tap</code> endpoint and can additionally be changed to other interactions, such as <code>Swipe</code>, <code>Long Press</code>, and <code>Double Tap</code>.
+          img(src="../assets/img/updates/07-tap.svg")
+
+          h4 End Points
+          p In Flowkit 2.0 every single <code>End Point</code> is the same dimension and can be interchanged with any other end point instance for full customization. These include <code>circles</code>, <code>arrows</code>, <code>taps</code>, <code>swipes</code>, and more.
+          img(src="../assets/img/updates/08-endpoints.svg")
+
+          h4 Splits
+          p There are 4 directional Split components for indicating a fork in a user flow. These are created with nested Flow components, but can also be extended or modified for more complex flows.
+          img(src="../assets/img/updates/09-split.svg")
+
+          h4 Blocks
+          p Blocks are used as main sections of user flows. Just like every other component, they're built on a 360x360 grid. There are multiple Block options such as <code>Default</code>, <code>Dashed </code>, <code>Emphasis</code>, and <code>Solid</code>.
+          img(src="../assets/img/updates/10-block.svg")
+
+          p There are also <code>Device</code> blocks for <code>iOS</code>,<code>Android</code>, and <code>Browser</code>.
+          img(src="../assets/img/updates/11-devices.svg")
+
+          h4 Labels
+          p There are multiple label styles including <code>solid</code> and <code>outline</code> versions of <code>default</code>, <code>red</code>, <code>blue</code>, and <code>green</code>. Labels are intended for use with Flow or Tap lines to provide more context about a specific user path.
+          img(src="../assets/img/updates/12-labels.svg")
+
+          h4 Annotations
+          p There are two types of annotation components. The general Annotation Labels can be used anywhere within your flow to provide more situational context, whereas the Annotation Points are intended to callout specific areas of your screen designs.
+          img(src="../assets/img/updates/13-annotations.svg")
+
+
+      include ../includes/foot.pug
+
+      //- Drip
+      script(type='text/javascript').
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '7684207';
+        (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/7684207.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+        })();
+
+      //- Go Squared
+      script.
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+        _gs('GSN-965741-P');

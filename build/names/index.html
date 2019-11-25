@@ -1,0 +1,152 @@
+
+<html>
+  <head></head>
+  <title>Flowkit Naming Conventions</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="description" content="Prototype"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="Userflows right inside your favorite design tool. Available for Figma, Sketch, and Adobe XD."/>
+  <meta itemprop="name" content="Flowkit"/>
+  <meta itemprop="description" content="Userflows right inside your favorite design tool. Available for Figma, Sketch, and Adobe XD."/>
+  <meta itemprop="image" content="https://mds-assets.s3.us-east-1.amazonaws.com/flowkit/flowkit-3-card.png?cb=1"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@mds"/>
+  <meta name="twitter:title" content="Flowkit"/>
+  <meta name="twitter:description" content="Userflows right inside your favorite design tool. Available for Figma, Sketch, and Adobe XD."/>
+  <meta name="twitter:creator" content="@mds"/>
+  <meta name="twitter:image:src" content="https://mds-assets.s3.us-east-1.amazonaws.com/flowkit/flowkit-3-card.png?cb=1"/>
+  <meta property="og:title" content="Flowkit"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://useflowkit.com"/>
+  <meta property="og:image" content="https://mds-assets.s3.us-east-1.amazonaws.com/flowkit/flowkit-3-card.png?cb=1"/>
+  <meta property="og:description" content="Userflows right inside your favorite design tool. Available for Figma, Sketch, and Adobe XD."/>
+  <meta property="og:site_name" content="Flowkit"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
+  <link id="favicon" rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
+  <script type="text/javascript">
+    var MTUserId='6dd70d9f-8138-468d-8f7a-9cd561a57f74';
+    var MTFontIds = new Array();
+    MTFontIds.push("5680706"); // TT Rounds Neue W00 Regular
+    MTFontIds.push("5680714"); // TT Rounds Neue W00 Medium
+    MTFontIds.push("5681075"); // TT Rounds Neue W00 DemiBold
+    MTFontIds.push("5681083"); // TT Rounds Neue W00 Bold
+    MTFontIds.push("5681091"); // TT Rounds Neue W00 ExtraBold
+    MTFontIds.push("5681099"); // TT Rounds Neue W00 Black
+    (function() {
+    var mtTracking = document.createElement('script');
+    mtTracking.type='text/javascript';
+    mtTracking.async='true';
+    mtTracking.src='/assets/js/mtiFontTrackingCode.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
+    })();
+  </script>
+  <body class="fk-no-title">
+    <div class="fk-container">
+      <header class="header-interior">
+        <div class="fk-header-wrapper">
+          <div class="fk-top-left"><a href="/"><img class="fk-flowkit-icon" alt="flowkit icon" src="/assets/img/logo-flowkit.svg"/></a></div>
+          <div class="fk-logo">
+            <h1> </h1>
+          </div>
+          <div class="fk-cta-group">
+            <div class="fk-cta-group-container"><a class="fk-cta fk-cta-primary" href="/#buy">Buy</a></div>
+          </div>
+        </div>
+      </header>
+      <section class="fk-main">
+        <div class="fk-container-content fk-container-content--body">
+          <h1>Names</h1>
+          <p class="fki-intro">Each directional asset uses the following naming convention. It begins with the point of origin and ends with the destination.</p><span class="code-callout">
+            <p><code>Type / Direction 1 / Modifier 1 / Direction 2 / Modifier 2</code></p></span>
+          <ul>
+            <li><em>Type</em> can be either <code>Flow</code> or <code>Tap</code>, etc., depending on the type of flow you are creating. <code>Flow</code> is intended to be used for high-level user flows, whereas <code>Tap</code> is intended to be used with wireframes or actual screen designs all on the same artboard.</li>
+            <li><em>Direction 1</em> determines the initial direction of the path. This can be <code>Right</code>, <code>Left</code>, <code>Up</code>, or <code>Down</code></li>
+            <li><em>Modifier 1</em> comes immediately after the Primary Direction. This can be <code>Straight</code>, <code>Curve</code>, or <code>Snake</code>.</li>
+            <li><em>Direction 2</em> comes immediately after the Initial Modifier. <code>Right</code> and <code>Left</code> components can be either <code>Up</code>, or <code>Down</code>, whereas <code>Up</code> and <code>Down</code> components will have Secondary Modifiers as <code>Left</code>, or <code>Right</code>.</li>
+            <li><em>Modifier 2</em> is the final section of the Flow component and determines the direction of the arrow. This can be <code>Straight</code>, <code>U-turn</code>, or <code>Hook</code>.</li>
+          </ul>
+          <h4>Flows</h4>
+          <p>These are the primary components in the system. There are 11 options (listed below) for each direction. All Flow components can be scaled without skewing or stretching. Each Flow component also contains nested endpoints that can be hidden or overridden with different end points.</p>
+          <p>There are 11 variants in total for each direction. For example:</p>
+          <ol type="1">
+            <li><code>Flow / Right / Straight</code></li>
+            <li><code>Flow / Right / Curve / Down / Straight</code></li>
+            <li><code>Flow / Right / Curve / Down / U-turn</code></li>
+            <li><code>Flow / Right / Curve / Down / Hook</code></li>
+            <li><code>Flow / Right / Curve / Up / Straight</code></li>
+            <li><code>Flow / Right / Curve / Up / U-turn</code></li>
+            <li><code>Flow / Right / Curve / Up / Hook</code></li>
+            <li><code>Flow / Right / Snake / Down / Straight</code></li>
+            <li><code>Flow / Right / Snake / Down / Hook</code></li>
+            <li><code>Flow / Right / Snake / Up / Straight</code></li>
+            <li><code>Flow / Right / Snake / Up / Hook</code></li>
+          </ol><img src="../assets/img/updates/06-flow.svg"/>
+          <h4>Taps</h4>
+          <p>Taps are intended for use on top of UI screen designs when laying out flow documents. They follow the same naming pattern as Flow components. Each endpoint has been pre-overridden with the <code>Tap</code> endpoint and can additionally be changed to other interactions, such as <code>Swipe</code>, <code>Long Press</code>, and <code>Double Tap</code>.</p><img src="../assets/img/updates/07-tap.svg"/>
+          <h4>End Points</h4>
+          <p>In Flowkit 2.0 every single <code>End Point</code> is the same dimension and can be interchanged with any other end point instance for full customization. These include <code>circles</code>, <code>arrows</code>, <code>taps</code>, <code>swipes</code>, and more.</p><img src="../assets/img/updates/08-endpoints.svg"/>
+          <h4>Splits</h4>
+          <p>There are 4 directional Split components for indicating a fork in a user flow. These are created with nested Flow components, but can also be extended or modified for more complex flows.</p><img src="../assets/img/updates/09-split.svg"/>
+          <h4>Blocks</h4>
+          <p>Blocks are used as main sections of user flows. Just like every other component, they're built on a 360x360 grid. There are multiple Block options such as <code>Default</code>, <code>Dashed </code>, <code>Emphasis</code>, and <code>Solid</code>.</p><img src="../assets/img/updates/10-block.svg"/>
+          <p>There are also <code>Device</code> blocks for <code>iOS</code>,<code>Android</code>, and <code>Browser</code>.</p><img src="../assets/img/updates/11-devices.svg"/>
+          <h4>Labels</h4>
+          <p>There are multiple label styles including <code>solid</code> and <code>outline</code> versions of <code>default</code>, <code>red</code>, <code>blue</code>, and <code>green</code>. Labels are intended for use with Flow or Tap lines to provide more context about a specific user path.</p><img src="../assets/img/updates/12-labels.svg"/>
+          <h4>Annotations</h4>
+          <p>There are two types of annotation components. The general Annotation Labels can be used anywhere within your flow to provide more situational context, whereas the Annotation Points are intended to callout specific areas of your screen designs.</p><img src="../assets/img/updates/13-annotations.svg"/>
+        </div>
+      </section>
+      <footer>
+        <p class="fk-footer"><a href="https://twitter.com/mds"><img class="fk-mds" src="/assets/img/mds.png" alt="headshot of mds"/></a><span class="copyright"> ©</span> • <a href="https://twitter.com/mds">MDS</a></p>
+        <p class="fk-footer fk-footer--links"><a href="/usage">Usage</a>
+<a href="/updates">Updates</a>
+<a href="/affiliate">Affiliates</a>
+<a href="/license">License</a>
+<a href="/education">Education</a>
+<a href="/support">Support</a>
+        </p>
+      </footer>
+      <script type="text/javascript">
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '7684207';
+        (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/7684207.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+        })();
+        
+      </script>
+      <script>
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
+        _gs('GSN-965741-P');
+      </script>
+    </div>
+  </body>
+  <script>
+    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+    insertBefore(d,q)}(window,document,'script','_gs');
+    _gs('GSN-965741-P');
+    
+  </script>
+  <script type="text/javascript" src="/assets/js/flowkit.js"></script>
+  <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+  <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
+  <script>
+    //- const player = new Plyr('#player')
+    const player = new Plyr('#player', {
+      title: 'Example Title',
+      controls: ['play-large', 'play', 'progress', 'current-time', 'fullscreen']
+    });
+  </script>
+</html>

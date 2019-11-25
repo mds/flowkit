@@ -1346,6 +1346,71 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/figma-component-color.gif": {
+		"ft": 4194304,
+		"iS": 759347,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-component-color.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/figma-component-master.gif": {
+		"ft": 4194304,
+		"iS": 12534430,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-component-master.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/figma-plugin-overview.png": {
+		"ft": 32768,
+		"iS": 622787,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-plugin-overview.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/figma-plugin-scroll.gif": {
+		"ft": 4194304,
+		"iS": 2704216,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-plugin-scroll.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/figma-plugin-usage.gif": {
+		"ft": 4194304,
+		"iS": 6122459,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-plugin-usage.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/figma-plugin-visible.png": {
+		"ft": 32768,
+		"iS": 153975,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-plugin-visible.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/figma-plugin-welcome.png": {
+		"ft": 32768,
+		"iS": 228634,
+		"oA": 0,
+		"oAP": "/build/assets/img/figma-plugin-welcome.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/figma-plugin.png": {
 		"ft": 32768,
 		"iS": 227956,
@@ -2409,6 +2474,36 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/img/sketch-library-load.png": {
+		"ft": 32768,
+		"iS": 845809,
+		"oA": 0,
+		"oAP": "/build/assets/img/sketch-library-load.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sketch-library-runner.gif": {
+		"ft": 4194304,
+		"iS": 6740301,
+		"oA": 0,
+		"oAP": "/build/assets/img/sketch-library-runner.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"/src/assets/img/sketch-library.png": {
+		"ft": 32768,
+		"iS": 797806,
+		"oA": 0,
+		"oAP": "/build/assets/img/sketch-library.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/tiny-demo.png": {
 		"ft": 32768,
 		"iS": 184050,
@@ -2820,6 +2915,25 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"/src/assets/img/xd-library.png": {
+		"ft": 32768,
+		"iS": 702900,
+		"oA": 0,
+		"oAP": "/build/assets/img/xd-library.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/xd-usage.gif": {
+		"ft": 4194304,
+		"iS": 4315574,
+		"oA": 0,
+		"oAP": "/build/assets/img/xd-usage.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"/src/assets/img/xd.jpg": {
 		"ft": 16384,
@@ -3266,6 +3380,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/legacy/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/legacy/index.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/license/index.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -3273,6 +3397,16 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/license/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/names/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/names/index.html",
 		"oF": 0,
 		"oS": 0
 		},
