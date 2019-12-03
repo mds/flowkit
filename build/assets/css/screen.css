@@ -2870,13 +2870,21 @@ p.centered {
         .fk-product-row .fk-package-price a {
           margin-left: .5rem; } }
 
+.fk-promotion {
+  text-align: center;
+  color: #7B61FF;
+  background: rgba(123, 97, 255, 0.1);
+  margin: 3rem 0 0;
+  font-weight: 800;
+  border-radius: 1rem; }
+
 .fk-flow-example {
   position: relative; }
   .fk-flow-example-large {
     max-width: 48.75rem;
     margin: auto;
     display: none; }
-    @media (min-width: 1280px) {
+    @media (min-width: 900px) {
       .fk-flow-example-large {
         display: block; } }
   .fk-flow-example-small {
@@ -2885,7 +2893,7 @@ p.centered {
     display: block;
     position: relative;
     left: -1.5rem; }
-    @media (min-width: 1280px) {
+    @media (min-width: 900px) {
       .fk-flow-example-small {
         display: none; } }
 
@@ -2899,7 +2907,7 @@ p.centered {
   z-index: 10;
   top: 0rem;
   left: 4rem; }
-  @media (min-width: 1280px) {
+  @media (min-width: 900px) {
     .fk-flow-example-devices {
       width: 824px;
       z-index: 10;
@@ -2911,7 +2919,7 @@ p.centered {
   z-index: 20;
   top: 0rem;
   left: 0rem; }
-  @media (min-width: 1280px) {
+  @media (min-width: 900px) {
     .fk-flow-example-flows {
       width: 788px;
       z-index: 20;
