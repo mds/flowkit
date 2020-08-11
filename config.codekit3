@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
 	"/src/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -1244,6 +1238,369 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/src/assets/img/avatars/avatar--james.jpg": {
+		"ft": 16384,
+		"iS": 26457,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar--james.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-abigail.jpg": {
+		"ft": 16384,
+		"iS": 17849,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-abigail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-arantxa.jpg": {
+		"ft": 16384,
+		"iS": 16184,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-arantxa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-betraydan.jpg": {
+		"ft": 16384,
+		"iS": 17295,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-betraydan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-charlie.jpg": {
+		"ft": 16384,
+		"iS": 30248,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-charlie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-chris.jpg": {
+		"ft": 16384,
+		"iS": 30361,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-chris.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-cliff.jpg": {
+		"ft": 16384,
+		"iS": 29305,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/build/assets/img/avatars/avatar-cliff.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-danmall.jpg": {
+		"ft": 16384,
+		"iS": 29430,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-danmall.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-dominic.jpg": {
+		"ft": 16384,
+		"iS": 22209,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-dominic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-dropbox.png": {
+		"ft": 32768,
+		"iS": 18292,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-dropbox.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-erik.jpg": {
+		"ft": 16384,
+		"iS": 38956,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-erik.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-greg.jpg": {
+		"ft": 16384,
+		"iS": 34665,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-greg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-jad.jpg": {
+		"ft": 16384,
+		"iS": 34077,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-jad.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-james.jpg": {
+		"ft": 16384,
+		"iS": 26457,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-james.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-jason.jpg": {
+		"ft": 16384,
+		"iS": 27486,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-jason.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-jeff.jpg": {
+		"ft": 16384,
+		"iS": 24496,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-jeff.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-jess.jpg": {
+		"ft": 16384,
+		"iS": 24587,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-jess.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-joel.jpg": {
+		"ft": 16384,
+		"iS": 5812,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-joel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-joshwin.jpg": {
+		"ft": 16384,
+		"iS": 30002,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-joshwin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-kamal.jpg": {
+		"ft": 16384,
+		"iS": 27625,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-kamal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-kevin.jpg": {
+		"ft": 16384,
+		"iS": 22758,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-kevin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-kris.jpg": {
+		"ft": 16384,
+		"iS": 39601,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-kris.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-kristie-clementine.jpg": {
+		"ft": 16384,
+		"iS": 26637,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-kristie-clementine.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-luke.jpg": {
+		"ft": 16384,
+		"iS": 20177,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-luke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-nate.jpg": {
+		"ft": 16384,
+		"iS": 46696,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-nate.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-nick.jpg": {
+		"ft": 16384,
+		"iS": 27535,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-nick.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-rolando.jpg": {
+		"ft": 16384,
+		"iS": 32979,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-rolando.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-sonali.jpg": {
+		"ft": 16384,
+		"iS": 26647,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-sonali.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-startup-charleston.jpg": {
+		"ft": 16384,
+		"iS": 11692,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-startup-charleston.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-veerle.png": {
+		"ft": 32768,
+		"iS": 169366,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-veerle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-vercel.jpg": {
+		"ft": 16384,
+		"iS": 4041,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-vercel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-zack.jpg": {
+		"ft": 16384,
+		"iS": 24246,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-zack.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/img/avatars/avatar-zen.jpg": {
+		"ft": 16384,
+		"iS": 38419,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/img/avatars/avatar-zen.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/src/assets/img/block-example.svg": {
 		"ft": 2097152,
@@ -3489,7 +3846,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/img/favicon.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 595445988.02814496
+	"lastBuiltDate": 618839746.73974097
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

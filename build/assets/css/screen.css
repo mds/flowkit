@@ -2634,10 +2634,9 @@ section img {
   margin: 3rem auto 0; }
   @media (min-width: 900px) {
     .fk-tiers {
-      grid-template-columns: repeat(1, 80%);
+      grid-template-columns: repeat(2, 30%);
       margin: 1rem auto 4rem;
-      max-width: 100%;
-      grid-template-columns: repeat(3, 32%); } }
+      max-width: 100%; } }
   @media (min-width: 1280px) {
     .fk-tiers {
       margin: 1rem auto 2rem; } }
@@ -2752,17 +2751,9 @@ section img {
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out; }
 
-.fk-price-block--tiny .fk-price-cta {
+.fk-price-block--free .fk-price-cta {
   color: #7B61FF;
   box-shadow: inset 0 0 0 4px #F3F3F7; }
-
-.fk-price-block--tiny ul {
-  padding-bottom: 0; }
-
-.fk-price-block--tiny p {
-  max-width: 15rem;
-  padding: 0;
-  margin: 0 auto; }
 
 .fk-price-block--pro .fk-price-cta {
   background: #7B61FF; }
