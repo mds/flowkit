@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/build",
+		"oF": 0
+		},
 	"/src/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -3846,7 +3852,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/img/favicon.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 618839746.73974097
+	"lastBuiltDate": 618841266.99690294
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
