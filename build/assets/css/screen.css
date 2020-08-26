@@ -2436,7 +2436,7 @@ section.fk-endpoints {
 section.fk-decision {
   background: white;
   position: relative;
-  z-index: 2000; }
+  z-index: 1020; }
   @media (min-width: 1280px) {
     section.fk-decision {
       margin-bottom: 2rem; } }
